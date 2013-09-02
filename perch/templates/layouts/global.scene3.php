@@ -11,7 +11,8 @@
 	<div class="body-gradient-flood gradient-3">
 		<div class="scene-container alley"
 		data-anchor-target  = "#scene3"
-		data-0-top			= "display:!block;">
+		data-0-top			= "display:!block;"
+		data-0-bottom    	= "position:!fixed;">
 
 			<div class="scene-layer alley-master"
 			data-anchor-target	= "#scene3"

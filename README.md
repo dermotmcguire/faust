@@ -1,4 +1,0 @@
-faust
-=====
-
-Faust website development

@@ -107,13 +107,12 @@ body {
 				url(../images/misc/bg-pattern.png) repeat;
 				/* 80% black; http://bit.ly/15Ycag1 */
 	color: #17191D;
-	/*text-align:center;*/
+	text-align:center;
 	font: 16px/21px 'PT Serif', sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 	overflow: auto; /* $anim - change to :hidden for initial state of preloader */
-	/*height: 100%;*/
-	height:auto!important;
+	height: 100%;
 }
 
 
@@ -198,7 +197,7 @@ h2 {
 	font-weight: 700;
 	color: #434343;
 	text-transform: uppercase;
-	/*text-align: center;*/
+	text-align: center;
 	margin-top: 90px;
 	margin-bottom: 80px;
 }
@@ -211,7 +210,7 @@ h2 {
 	text-transform: uppercase;
 	letter-spacing: -5px;
 	display: inline-block;
-  	/*text-align: center;*/
+  	text-align: center;
   	margin-bottom: 0;
 	margin-top: 0;
 	-webkit-mask-image: url(../images/misc/grunge-noise.png);
@@ -230,16 +229,16 @@ h2 {
 		}
 
 		#intermission1 h2:before {
-			/*content: "part 1"*/
+			content: "part 1"
 		}
 		#intermission2 h2:before {
-			/*content: "part 2"*/
+			content: "part 2"
 		}
 		#intermission3 h2:before {
-			/*content: "part 3"*/
+			content: "part 3"
 		}
 		#intermission4.intermission h2.palette-deep-purple:before {
-			/*content: "part 4"*/
+			content: "part 4"
 		}
 		#intermission4.intermission h2.palette-blood-red:before {
 			content: ""
@@ -251,7 +250,7 @@ h2 {
 	line-height:100px;
 }
 
-#intermission4 h2 {
+#intermission4.intermission h2 {
 	display: block;
 	-webkit-mask-image: none;
 	-moz-mask-image: none;
@@ -259,11 +258,11 @@ h2 {
 	mask-image: none;
 }
 
-#intermission4 h2.palette-deep-purple {
+#intermission4.intermission h2.palette-deep-purple {
 	color: #351330;
 }
 
-#intermission4 h2.palette-blood-red  {
+#intermission4.intermission h2.palette-blood-red {
 	color: #700700;
 }
 
@@ -806,13 +805,13 @@ html, body {
 
 
 /* Make clicks pass-through */
-/*#nprogress {
+#nprogress {
   pointer-events: none;
   -webkit-pointer-events: none;
-}*/
+}
 
 /* Make the entire page show a busy cursor */
-/*.nprogress-busy body {
+.nprogress-busy body {
   cursor: wait;
 }
 
@@ -826,10 +825,10 @@ html, body {
 
   width: 100%;
   height: 2px;
-}*/
+}
 
 /* Fancy blur effect */
-/*#nprogress .peg {
+#nprogress .peg {
   display: block;
   position: absolute;
   right: 0px;
@@ -843,41 +842,9 @@ html, body {
   -ms-transform: rotate(3deg) translate(0px, -4px);
   -o-transform: rotate(3deg) translate(0px, -4px);
   transform: rotate(3deg) translate(0px, -4px);
-}*/
-
-/************** progres bar ***********/
-.loading-container {
-	overflow: hidden;
-	margin:auto;
-	width: 190px;
-	height: 60px;	
-}
-.loading-bar {
-	height: 34px;
-	background:url("../images/loading-bar-mask-grey.png") no-repeat;
 }
 
-.loading-bar .progress {
-		height: 100%;
-		color: #fff;
-		text-align: right;
-		line-height: 34px; /* same as #loading-bar height if we want text middle aligned */
-		width: 0px;
-}
 
-.progress {
-	background:url("../images/loading-bar-mask-red.png");
-	/*background-color:#888888;*/
-}
-
-.ready-arrow {
-	/*cursor: pointer;*/
-	margin: 20px auto;
-	width: 42px;
-	height: 42px;
-	display: none;
-	background-image:url("../images/ready-arrow.png");	
-}
 
 
 
@@ -1288,8 +1255,6 @@ html, body {
 }
 
 
-
-
 .hotspot {
 	/* c.f. $COMMON STYLES */
 }
@@ -1411,7 +1376,7 @@ html, body {
 	.cityscape-master .citylights-master {
 		width: 100%;
 		height: 100%;
-		display: inherit;
+		display: none;
 		position: absolute;
 		background: url(../images/part2/room-citylights-master.png) no-repeat;
 		background-position: 50% 100%;
@@ -2020,7 +1985,6 @@ html, body {
 }
 
 .scene-container {
-	top:0;
 	/* c.f. $COMMON STYLES */
 }
 
@@ -2146,93 +2110,37 @@ html, body {
 
 /* $INTERMISSIONS
 ================================================== */
-section.intermission {
-	display:block!important;
-	width: 100%;
-	height:100%;
-	max-width: 1440px;
-	margin: 0 auto;
-	padding: 0;
-	z-index: 2;
-	text-align: center;
+
+.hidden-text { opacity: 0;
+}
+
+.intermission {
 	position: relative;
-	overflow: hidden;
-}
-.intermission-main {
-	/*max-height:675px;*/
-	padding: 50px 0 10px;
-	background: url("../images/newspaper-tile.jpg") 0px -2px repeat;
-}
-.intermission-content {
-	overflow: hidden;
-}
-.intermission footer, .intermission header {
-	background-image: url("../images/sprite-newspaper.png");
+	z-index: 666;
+	overflow: hidden;  /* Switch to auto on hotspot click */
+	margin-top: -11px;
+	margin-bottom: -42px;
 }
 
-.intermission header {
-	height: 19px;
-	background-position: 0px 1px;
+.pushed {
+	overflow: auto;
 }
 
-.intermission footer {
-	height: 55px;
-	background-position: 0px -30px;
+.intermission-bg,
+.last-intermission-bg {
+	min-height: 100%;
+	background: #E8CAA4;
+	background-image: url(../images/misc/intermission-bg.png);
+	background-repeat: repeat;
+	background-position: center top -10%;
+	-webkit-box-shadow: inset 0px 21px 21px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0px 21px 21px 1px rgba(0, 0, 0, 0.6);
+
 }
 
-.intermission .headlines {
-	display: block;
-	overflow: hidden;
-	padding:20px 0;
-}
-
-.intermission .headline {
-	width: 100%;
-	display: block;
-}
-
-.headline h2 {
-	line-height: 0.76em;
-}
-
-.headline h3 {
-	color: #700700!important;
-	line-height: 0.8em;
-}
-
-.headline.title h4 {
-	line-height: 1em;
-}
-
-.headline.left{
-	text-align: right;
-	width:20%;
-}
-
-.headline.right {
-	text-align: left;
-	width:80%;
-}
-
-.headline.title h2, .headline.title h4 {
-	text-align: center;
-}
-
-.headline.left, .headline.right {
-	float:left;
-}
-
-.news-lines {
-	display: block;
-	overflow:hidden;
-	height: 2px;
-	width: 100%;
+.headline {
 	margin: 0 auto;
-	border-top: 3px solid rgba(0, 0, 0, 0.5);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-}
-
-.news-lines.inner {
+	padding-top: 42px;
 	width: 100%;
 }
 
@@ -2240,8 +2148,33 @@ section.intermission {
 	margin: 42px 0;
 }
 
-.more-button {
-	text-align: center;
+.news-lines {
+	height: 2px;
+	width: 80%;
+	margin: 0 auto;
+	border-top: 3px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+.news-lines.inner {
+	width: 100%;
+}
+
+.news-copy {
+	clear: both;
+}
+
+.news-copy .column {
+	width: 300px !important;
+	margin: 0 10px;
+}
+
+.news-copy .column:first-child:first-letter p {
+	font-size: 24px;
+}
+
+.information-text {
+	margin-top: 42px;
+	height: 100%;
 }
 
 
@@ -2252,6 +2185,7 @@ section.intermission {
 ================================================== */
 
 #intermission1 {
+	height: 675px; /* Hide information-text just off-screen */
 }
 
 
@@ -2262,6 +2196,7 @@ section.intermission {
 ================================================== */
 
 #intermission2 {
+	height: 675px; /* Hide information-text just off-screen */
 }
 
 
@@ -2276,6 +2211,7 @@ section.intermission {
 ================================================== */
 
 #intermission3 {
+	height: 675px; /* Hide information-text just off-screen */
 }
 
 .faust-article-left {
@@ -2360,190 +2296,77 @@ section.intermission {
 	color: #351330;
 	margin-bottom: 0;
 }
-
-
 /* $INTERMISSION4
 ================================================== */
-.intermission.four .headline {
-	float:left;
+
+#intermission4 {
+	position: relative;
+	z-index: 300;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
 }
 
-/* @TODO: put in real bg images*/
-.intermission.four .intermission-main {
-	background: #222;
+
+#contact {
+	background: url(../images/intermission-dark.jpg) repeat;
+	position: relative;
+	z-index: 300;
+	padding-top: 20px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
 }
 
-.intermission.four header {
-	background: #222;
+.contact-form p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 2px;
 }
 
-.intermission.four footer {
-	background: #222;
+
+.contact-info {
+	margin-top: 40px;
 }
 
-.intermission.four .intermission-main, .intermission.four .intermission-main p {
-	color: white;
+.contact-info h5 {
+	margin-bottom: 40px;
 }
 
-.intermission.four .headline.left {
-	width: 30%;
+.contact-info img {
+	vertical-align: middle;
+	margin-right: 10px;
 }
 
-.intermission.four .headline.right {
-	text-align: left;
-	width: 70%;
-}
 
-.contact, .credits{
-	margin-top: 50px;
-}
-
-.contact {
-	text-align: left;
-	overflow: hidden;
-}
-
-/* overwrites the margin that column class puts in*/
-.columns.first-contact, .columns.second-contact {
-	margin-left:0px;
-}
-.columns.first-contact li, .columns.second-contact li {
-	line-height:2.5em;
-}
-
-/*============= NEWSLETTER FORM ===========*/
-input {
-	border: 1px solid #fff!important;
-	background: #110F10!important;
-}
-.message {
-	width: 448px !important;
-	height:60px !important;
-}
-.indicates-required {
-	float: right;
-}
-
-input.button {
-	float: right;
-}
-
-/*================= Social ==================*/
-ul.social {
-	margin: 0 10px;
+.social {
 	padding-top: 15px;
-	display: block;
-	overflow: hidden;
-	width: 100%;
-	text-align: left;
 }
 
-ul.social li {
-	display: block;
-	margin-right:10px;
-	width: 40px;
-	height: 40px;
-	text-indent: -999em;
-	overflow: hidden;
-	float: left;
-	background-image: url("../images/sprite-social.png");
+.social ul li {
+	display: inline;
+	margin-right: 5px;
 }
 
-.social li:hover {
+.social img:hover {
 	opacity: 0.7;
 }
 
-li.twitter{
-	background-position: -1px -1px;
-}
-li.twitter:hover{
-	background-position: -1px -1px;
+
+.copyright {
+	border-top: 1px solid #858585;
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 30px;
 }
 
-li.facebook {
-	background-position: -1px -100px;
+.copyright p {
+	color: #858585;
+	font-size: 14px;
 }
 
-li.instagram {
-	background-position: -1px -246px;
-}
-
-li.vimeo {
-	background-position: -1px -197px;
-}
-
-li.soundcloud {
-	background-position: -1px -149px;
-}
-
-li.pinterest {
-	background-position: -1px -50px;
-}
-
-/*================= Credits ==================*/
-ul.credits {
-	overflow: hidden;
-}
-
-ul.credits p {
-	margin: auto;
-	overflow: hidden;
-}
-
-.alphacrucis p {
-	width: 335px;
-}
-
-.invisible-artists p {
-	width: 330px;
-}
-
-.gina-kiel p {
-	width: 352px;
-}
-
-.drawing-book p {
-	width: 328px;
-}
-
-.columns.credit {
-	margin: 0px;
-}
-
-.credit .logo {
-	display: block;
-	margin: 0 5px;
-	height:62px;
-	background: url("../images/sprite-credit.png") no-repeat;
-}
-
-.alphacrucis.logo {
-	width:143px;
-	background-position: 1px 1px;
-}
-
-.invisible-artists.logo {
-	width:124px;
-	background-position: 1px -73px;
-}
-
-.gina-kiel.logo {
-	width:55px;
-	background-position: 1px -136px;
-}
-
-.drawing-book.logo {
-	width:68px;
-	background-position: 1px -198px;
-}
-
-.credit span {
-	line-height: 62px;
-	float:left;
-}
-.credit .logo {
-	text-indent: -999em;
-}
 
 
 

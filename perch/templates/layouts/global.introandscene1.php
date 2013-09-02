@@ -36,8 +36,8 @@
 				<img class="intro-face-righteye eyeglow" src="images/intro/face-righteye.png" />
 			</div>
 
-			<!-- title -->
-<!-- 			<div class="title"> 
+
+			<div class="title"> <!-- title -->
 				<p>I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
 				<p class="sub-quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
 
@@ -47,32 +47,13 @@
 
 				<p class="loading-text pulse">LOADING</p>
 				<p class="loading-text-ready pulse">START SCROLLING</p>
-			</div>  -->
-			<div class="title"> <!-- title -->
-				<p class="quote">I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
-				<p class="sub quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
-
-				<div id="title-logo" class="loading-start"><div class="loading-ready"></div></div>
-				<div class="loading-container">
-					<div class="loading-bar">
-						<div class="progress">
-						</div>
-					</div>	
-					<p class="loading-text loading ">Loading</p>
-					<p class="loading-text ready ">Start Scrolling</p>
-				</div>
-				<a href="#scene-one"><span class="ready-arrow"> </span></a>		
-			</div>			
-			<!-- end title -->
+			</div> <!-- end title -->
 
 		</div>
 
 	</div> <!-- End Intro -->
 
 	<div class="city-pre">
-		<div class="js-image scene-layer one-c" data-image-url="images/intro/spotlight-left.png">
-			<img src="">
-		</div>			
 		<div class="intro-spotlights">
 			<img class="spotlight-left-outer"		src="images/intro/spotlight-left.png"  />
 			<img class="spotlight-right-inner"		src="images/intro/spotlight-right.png"  />
@@ -85,7 +66,8 @@
 
 		<div class="city centered"
 			data-anchor-target  = "#scene1"
-			data-0-top			= "display:!block;">
+			data-0-top			= "display:!block;"
+			data-0-bottom    	= "position:!fixed;">
 
 
 			<div class="scene1-layer city-left-back"

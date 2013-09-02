@@ -30,14 +30,17 @@
 
 	<!-- JS
 	================================================== -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="js/progressbar.js" type="text/javascript"></script>
+	<script src="js/nprogress.js" type="text/javascript"></script>
+	<script src="js/jquery.transit.js" type="text/javascript"></script>
 	<script src="js/smartpreload.js" type="text/javascript"></script>
 	<script src="js/modernizr.custom.js" type="text/javascript"></script>
+	<script src="js/skrollr.min.js" type="text/javascript"></script>
+	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
 	<script src="js/jquery.inview.js" type="text/javascript"></script>
 	<script src="js/smooth-scroll.js" type="text/javascript"></script>
 	<script src="js/jquery.columnizer.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-
 
 	<!--[if lt IE 9]>
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
@@ -59,19 +62,22 @@
 	<link rel="apple-touch-icon" sizes="114x114"	href="images/misc/touch-icon-iphone-114.png" />
 	<link rel="apple-touch-icon" sizes="72x72"		href="images/misc/touch-icon-ipad-144.png" />
 	<link rel="apple-touch-icon" sizes="144x144"	href="images/misc/touch-icon-ipad-144.png" />
-	
+
 	<!-- Image Load Parser c.f. http://codepen.io/patrickkunka/pen/zxgas
 	================================================== -->
+	<script type="text/javascript">
+		function imgLoaded(img){
+	    var $img = $(img);
+	    $img.parent().addClass('loaded');
+		};
+	</script>
 
 
 </head>
 <body>
 <div class="left-border"></div>
 <div class="right-border"></div>
-<div id="nav-menu"
-data-anchor-target = "#scene0"
-data-1000-bottom   = "opacity:0;"
-data-1100-bottom   = "opacity:1;">
+<div id='nav-menu'>
 	<ul>
 		<li class='has-sub'><a href='#intermission-1'><span>Part I</span></a>
 			<ul>
@@ -114,100 +120,124 @@ data-1100-bottom   = "opacity:1;">
 		</li>
 	</ul>
 </div>
+
 		
 <!-- The Intro and the First Scene
 ================================================== -->
-<!-- Part 1 Start -->
+<!-- Intermission 1 Start -->
 	<?php perch_layout('global.introandscene1'); ?>
-<!-- Part 1 End -->
-	<!-- INTERMISSION 1 -->
-	<section class="intermission one" id="intermission1">
-		<header> </header>
-		<!-- SECTION HEADLINES -->
-		<div class="intermission-main">
-			<!-- <div class="news lines"> -->
-				<div class="news-lines"></div>
-				<div class="container">
-					<div class="headlines">
-						<div class="headline left">
-							<h3 class="palette-blood-red">PART I</h3>
-						</div>
-						<div class="headline right">
-							<h2>BEFORE THE FALL</h2>
-						</div>
-					</div>
-				</div>
-				<div class="news-lines"></div>
-		</div>
-		<footer></footer>
-	</section>
-	<?php perch_layout('global.scene2'); ?>
-	<section class="intermission two" id="intermission2">
-		<header> </header>
-		<!-- SECTION HEADLINES -->
-		<div class="intermission-main">
-			<!-- <div class="news lines"> -->
-				<div class="news-lines"></div>
-				<div class="container">
-					<div class="headlines">
-						<div class="headline left">
-							<h3 class="palette-blood-red">PART II</h3>
-						</div>
-						<div class="headline right">
-							<h2>BEFORE THE FALL</h2>
-						</div>
-					</div>
-				</div>
-				<div class="news-lines"></div>
-		</div>
-		<footer></footer>
-	</section>
+<!-- Intermission 1 End -->
 
-		<?php perch_layout('global.scene3'); ?>
-	<section class="intermission three" id="intermission3">
-		<header> </header>
-		<!-- SECTION HEADLINES -->
-		<div class="intermission-main">
-			<!-- <div class="news lines"> -->
-				<div class="news-lines"></div>
-				<div class="container">
-					<div class="headlines">
-						<div class="headline left">
-							<h3 class="palette-blood-red">PART III</h3>
-						</div>
-						<div class="headline right">
-							<h2>BEFORE THE FALL</h2>
-						</div>
-					</div>
-				</div>
-				<div class="news-lines"></div>
-		</div>
-		<footer></footer>
-	</section>
-	<?php perch_layout('global.scene4andintermission4'); ?>
+
+
+<!-- The First Intermission
+================================================== -->
+<!-- Intermission 1 Start -->
+<?php perch_layout('global.intermission1'); ?>
+<!-- Intermission 1 End -->
+
+
+
+<!-- The Second Scene
+================================================== -->
+<!-- Scene 2 Start -->
+<?php perch_layout('global.scene2'); ?>
+<!-- Scene 2 End -->
+
+
+
+<!-- The Second Intermission
+================================================== -->
+<!-- Intermission 2 Start -->
+<?php perch_layout('global.intermission2'); ?>
+<!-- Intermission 2 End -->
+
+
+
+<!-- The Third Scene
+================================================== -->
+<!-- Scene 3 Start -->
+<?php perch_layout('global.scene3'); ?>
+<!-- Scene 3 End -->
+
+
+
+<!-- The Third Intermission
+================================================== -->
+<!-- Intermission 3 Start -->
+<?php perch_layout('global.intermission3'); ?>
+<!-- Intermission 3 End -->
+
+
+
+<!-- The Fourth Scene and Intermissions
+================================================== -->
+<!-- Scene 4 Start -->
+<?php perch_layout('global.scene4andintermission4'); ?>
+<!-- Scene 4 End -->
+
 
 			
 <div class="clear"></div>
 
 
-	<!-- Skrollr Lives Here! -->
-	<script src="js/skrollr.min.js" type="text/javascript"></script>
-	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
-	<script src="js/skrollr.ie.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	NProgress.start();
+	setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
 
-	<script type="text/javascript">
-	
-	$( document ).ready(function() {
-		console.log( "ready!" );
-		var s = skrollr.init();
-		// progressBar(100, $(".loading-bar"));
-		loading();
+$( window ).load(function() {
+	$(".loading-ready").transition({opacity:1},1000,'linear');
 	});
-	
-	</script>
+</script>
 
 
+<script type="text/javascript">
+	skrollr.init({
+		forceHeight: true,
+		edgeStrategy: 'ease'
+	});
+</script>
 
+
+<script type="text/javascript">
+/* init columnize */
+$(function(columnize){
+	$('.news-copy').columnize({width:300});
+});
+</script>
+
+<script type="text/javascript">
+/* init intermissions push-downs */
+$(function(part1pushing){
+	var push1 = document.getElementById('intermission-1').scrollHeight;
+	$("#part1pushHeight").click(function(){
+		$("#intermission-1").animate({ height : push1+'px' },500);
+	});
+});
+
+$(function(part2pushing){
+	var push2 = document.getElementById('intermission-2').scrollHeight;
+	$("#part2pushHeight").click(function(){
+		$("#intermission-2").animate({ height : push2+'px' },500);
+	});
+});
+
+$(function(part3pushing){
+	var push3 = document.getElementById('intermission-3').scrollHeight;
+	$("#part3pushHeight").click(function(){
+		$("#intermission-3 .hidden-text").css("opacity","1"),
+		$("#intermission-3").animate({ height : push3+'px' },500);
+	});
+});
+
+$(function(part4pushing){
+	var push4 = document.getElementById('intermission-4').scrollHeight;
+	$("#part4pushHeight").click(function(){
+		$("#intermission-4").animate({ height : push4+'px' },500);
+	});
+});
+
+</script>
 <!-- End Document
 ================================================== -->
 </body>
