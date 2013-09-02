@@ -129,54 +129,6 @@
 <!-- Intermission 1 End -->
 
 
-
-<!-- The First Intermission
-================================================== -->
-<!-- Intermission 1 Start -->
-<?php perch_layout('global.intermission1'); ?>
-<!-- Intermission 1 End -->
-
-
-
-<!-- The Second Scene
-================================================== -->
-<!-- Scene 2 Start -->
-<?php perch_layout('global.scene2'); ?>
-<!-- Scene 2 End -->
-
-
-
-<!-- The Second Intermission
-================================================== -->
-<!-- Intermission 2 Start -->
-<?php perch_layout('global.intermission2'); ?>
-<!-- Intermission 2 End -->
-
-
-
-<!-- The Third Scene
-================================================== -->
-<!-- Scene 3 Start -->
-<?php perch_layout('global.scene3'); ?>
-<!-- Scene 3 End -->
-
-
-
-<!-- The Third Intermission
-================================================== -->
-<!-- Intermission 3 Start -->
-<?php perch_layout('global.intermission3'); ?>
-<!-- Intermission 3 End -->
-
-
-
-<!-- The Fourth Scene and Intermissions
-================================================== -->
-<!-- Scene 4 Start -->
-<?php perch_layout('global.scene4andintermission4'); ?>
-<!-- Scene 4 End -->
-
-
 			
 <div class="clear"></div>
 

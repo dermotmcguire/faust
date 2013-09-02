@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Faust test</title>
+
+	<link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="all-scenes  gradient-1">
+
+		<div class="body-gradient-flood gradient-1" id="scene0">
+
+<div class="faust-falling"
+	data-anchor-target = "#scene0"
+	data-0-top		   = "top[swing]: -100%; display: !block;opacity:0.0;"
+	data--200-top 	   = "top[swing]: 20%;opacity:1.0;"
+	data--800-top 	   = "top[swing]: 25%;"
+	data--1000-top     = "top[swing]: 35%;"
+	data--5000-top     = "top[swing]: 10%;"
+	data--7000-top     = "top[swing]: 25%;"
+	data--9000-top	   = "top[swing]: 15%;"
+	data--9200-top	   = "top[swing]: 25%;"
+	data-0-bottom      = "top[swing]: 150%; display: !none;">
+</div>
+
+	<div class="scene intro js-intro-splash"> <!-- Begin Intro -->
+
+		<div class="container">
+
+			<div class="intro-face centered">
+				<div class="intro-face-complete faceglow"></div>
+				<div class="intro-face-glow"></div>
+				<img class="intro-face-lefteye eyeglow" src="images/intro/face-lefteye.png" />
+				<img class="intro-face-righteye eyeglow" src="images/intro/face-righteye.png" />
+			</div>
+
+			<!-- title -->
+<!-- 			<div class="title"> 
+				<p>I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
+				<p class="sub-quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
+
+				<div id="title-logo" class="loading-start"><div class="loading-ready"></div></div>
+
+				<div id="loading-bar" class="loading-start"><div class="loading-ready"></div></div>
+
+				<p class="loading-text pulse">LOADING</p>
+				<p class="loading-text-ready pulse">START SCROLLING</p>
+			</div>  -->
+			<div class="title"> <!-- title -->
+				<p class="quote">I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
+				<p class="sub quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
+
+				<div id="title-logo" class="loading-start"><div class="loading-ready"></div></div>
+				<div class="loading-container">
+					<div class="loading-bar">
+						<div class="progress">
+						</div>
+					</div>	
+					<p class="loading-text loading ">Loading</p>
+					<p class="loading-text ready ">Start Scrolling</p>
+				</div>
+				<a href="#scene-one"><span class="ready-arrow"> </span></a>		
+			</div>			
+			<!-- end title -->
+
+		</div>
+
+	</div> <!-- End Intro -->
+
+	<div class="city-pre">
+		<div class="js-image scene-layer one-c" data-image-url="images/intro/spotlight-left.png">
+			<img src="">
+		</div>			
+		<div class="intro-spotlights">
+			<img class="spotlight-left-outer"		src="images/intro/spotlight-left.png"  />
+			<img class="spotlight-right-inner"		src="images/intro/spotlight-right.png"  />
+			<img class="spotlight-left-inner"		src="images/intro/spotlight-left.png" />
+			<img class="spotlight-right-outer"		src="images/intro/spotlight-right.png" />
+		</div>
+	</div>
+
+	<div class="scene part1" id="scene1"> <!-- Part 1 -->
+
+		<div class="city centered"
+			data-anchor-target  = "#scene1"
+			data-0-top			= "display:!block;">
+
+
+			<div class="scene1-layer city-left-back"
+				data-anchor-target	= "#scene1"
+				data-800-top		= "opacity: 0; transform: translateY(-2%);"
+				data-450-top		= "opacity: 0.7;"
+				data-0-bottom 		= "transform:translateY(0);">
+			</div>
+
+			<div class="scene1-layer city-centre-back"
+				data-anchor-target  = "#scene1"
+				data-800-top		= "opacity: 0; transform: scale(1.1) translateY(4%);"
+				data-450-top		= "opacity: 1;"
+				data-0-bottom		= "transform: scale(1.0) translateY(0%);">
+			</div>
+
+			<div class="scene1-layer city-right-mid"
+				data-anchor-target 	= "#scene1"
+				data-800-top		= "opacity: 0; transform: translateY(6%);"
+				data-450-top		= "opacity: 1; transform: translateY(5%);"
+				data-0-bottom		= "transform: translateY(0);">
+<!-- 
+				<a class="hotspot-link" href="#intermission-1">
+					<span class="hotspot apartment on flicker"
+					data-anchor-target 	= "#scene1"
+					data--130-bottom	= "opacity: 0.0; display: !block;"
+					data-0-bottom		= "opacity: 0.5;"></span>
+				</a> -->
+
+				<span class="hotspot apartment off"
+				data-anchor-target 	= "#scene1"
+				data--130-bottom	= "opacity: 0.0;"
+				data-0-bottom		= "opacity: 1.0;"></span>
+			</div>
+
+			<div class="scene1-layer city-left-mid"
+				data-anchor-target	= "#scene1"
+				data-800-top		= "opacity: 0.0; transform: translateY(6%) translateX(4%);"
+				data-150-top		= "opacity: 1.0;"
+				data-0-bottom		= "transform: translateY(0%) translateX(14%);">
+			</div>
+
+			<div class="scene1-layer city-right-fore"
+				data-anchor-target	= "#scene1"
+				data-800-top		= "opacity: 0.0; transform: translateY(7%) translateX(5%);"
+				data-150-top		= "opacity: 1.0;"
+				data-0-bottom		= "transform: translateY(0%) translateX(0%);">
+
+<!-- 				<a class="hotspot-link" href="#intermission-1">
+					<span class="hotspot sixsixsix on flicker"
+					data-anchor-target 	= "#scene1"
+					data--130-bottom	= "opacity: 0.0; display: !block;"
+					data--0-bottom		= "opacity: 0.5;"></span>
+				</a> -->
+
+				<span class="hotspot sixsixsix off"
+				data-anchor-target 	= "#scene1"
+				data--130-bottom	= "opacity: 0.0;"
+				data-0-bottom		= "opacity: 1.0;"></span>
+			</div>
+
+			<div class="scene1-layer city-left-fore"
+				data-anchor-target	= "#scene1"
+				data-800-top		= "opacity: 0.0; transform: translateY(7%) translateX(-10%);"
+				data-150-top		= "opacity: 1.0;"
+				data-0-bottom		= "transform: translateY(0%) translateX(0%);">
+
+<!-- 				<a class="hotspot-link" href="#intermission-1">
+					<span class="hotspot hotel on flicker"
+					data-anchor-target 	= "#scene1"
+					data--130-bottom	= "opacity: 0.0; display: !block;"
+					data-0-bottom		= "opacity: 0.5;"></span>
+				</a> -->
+
+		     	<span class="hotspot hotel off"
+				data-anchor-target 	= "#scene1"
+				data--130-bottom	= "opacity: 0.0;"
+				data-0-bottom		= "opacity: 1.0;"></span>
+
+<!-- 				<a class="hotspot-link" href="#intermission-1">
+					<span class="hotspot radio on flicker"
+					data-anchor-target 	= "#scene1"
+					data--130-bottom	= "opacity: 0.0; display: !block;"
+					data-0-bottom		= "opacity: 0.5;"></span>
+				</a> -->
+
+				<span class="hotspot radio off"
+				data-anchor-target 	= "#scene1"
+				data--130-bottom	= "opacity: 0.0;"
+				data-0-bottom		= "opacity: 1.0;"></span>
+			</div>
+
+		</div>
+
+	</div>
+
+</div> <!-- End Gradient Flood 1 -->
+		<section class="intermission one" id="intermission1" 				
+				data-anchor-target  = "#intermission1"
+				data-0-top			= "display:!block;">
+			<header> </header>
+			<!-- SECTION HEADLINES -->
+			<div class="intermission-main">
+				<!-- <div class="news lines"> -->
+					<div class="news-lines"></div>
+					<div class="container">
+						<div class="headlines">
+							<div class="headline left">
+								<h3 class="palette-blood-red">PART I</h3>
+							</div>
+							<div class="headline right">
+								<h2>BEFORE THE FALL</h2>
+							</div>
+						</div>
+					</div>
+					<div class="news-lines"></div>
+			</div>
+			<footer></footer>
+		</section>		
+		<div id="scene2" class="scene part2 body-gradient-flood gradient-2"> <!-- Part 1 -->
+			<div class="room centered scene-container"
+			data-anchor-target  = "#scene2"
+			data-0-top			= "display:!block;"
+			data-0-bottom    	= "position:fixed;">
+
+				<div class="scene-layer cityscape-master"
+				data-anchor-target	= "#scene2"
+				data-0-top			= "display:!block; opacity: 0.0; transform: translate3d(200px, -10px, 0) scale(1);"
+				data--500-top		= "opacity: 0.8;"
+				data-0-bottom		= "opacity: 1.0; transform: translate3d(-40px, -40px, 0) scale(1);">
+		
+					<div class="scene-layer citylights-master"
+					data-anchor-target	= "#scene2">
+					</div>
+					<div class="scene-layer sparklelights1-master flicker-slow-one"
+					data-anchor-target	= "#scene2">
+					</div>
+				</div>
+				<div class="scene-layer window-master"
+					data-anchor-target	= "#scene2"
+					data-0-top			= "display:!block; opacity: 0.0; transform: translate3d(-400px, -420px, 0) scale(1.00);"
+					data--500-top		= "opacity: 1.0;"
+					data--5000-top		= "transform: translate3d(-400px, -420px, 0) scale(0.77);"
+					data-0-bottom		= "transform: translate3d(-485px, -530px, 0px) scale(0.5);">
+				</div>
+
+
+			</div>
+		</div>
+<!-- 		<div id="scene1" data-1300="top:100%;" data-1600="top:3%;" data-2000="display:block;" data-2700="top:-100%;display:none;">
+			<h2>Scene One</h2>
+		</div>
+
+		<div id="scene2" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+			<h2>Scene Two</h2>
+		</div>
+
+		<div id="scene3" data-3700="top:100%;" data-3900="top:0%;" data-4900="display:block;" data-5900="top:-100%; display:none;">
+				<h2>Scene Three</h2>
+		</div>
+
+		<div id="scene4" data-5900="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-7000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
+			<h2>Scene Four</h2>
+		</div> -->
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+	<script type="text/javascript" src="skrollr.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+</body>
+
+</html>
