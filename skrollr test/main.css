@@ -239,6 +239,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 
 }
 
+.gradient-4  /* Floods from the start to the end of Part 4 */ {
+background: -moz-linear-gradient(top, rgba(66,66,84,0.75) 0%, rgba(66,66,84,0.5) 25%, rgba(23,25,29,0.5) 75%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(66,66,84,0.75)), color-stop(25%,rgba(66,66,84,0.5)), color-stop(75%,rgba(23,25,29,0.5)), color-stop(100%,rgba(0,0,0,0.25))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(66,66,84,0.75) 0%,rgba(66,66,84,0.5) 25%,rgba(23,25,29,0.5) 75%,rgba(0,0,0,0.25) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(66,66,84,0.75) 0%,rgba(66,66,84,0.5) 25%,rgba(23,25,29,0.5) 75%,rgba(0,0,0,0.25) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(66,66,84,0.75) 0%,rgba(66,66,84,0.5) 25%,rgba(23,25,29,0.5) 75%,rgba(0,0,0,0.25) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(66,66,84,0.75) 0%,rgba(66,66,84,0.5) 25%,rgba(23,25,29,0.5) 75%,rgba(0,0,0,0.25) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', endColorstr='#40000000',GradientType=0 ); /* IE6-9 */
+	/* Spotlight gradient from .palette-sort-of-lavender to .palette-near-black: http://www.colorzilla.com/gradient-editor/#424254+0,424254+25,17191d+75,000000+100&0.75+0,0.5+25,0.5+75,0.25+100;Custom */
+}
+
 .body-gradient-flood {
 	margin: 0 auto;
 	width: 100%;
@@ -442,6 +453,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 	opacity: 1;
 }
 
+/************** LOADING BAR **********/
+.loading-container {
+	overflow: hidden;
+	margin:auto;
+	width: 190px;
+	height: 60px;	
+}
+.loading-bar {
+	height: 34px;
+	background:url("images/loading-bar-mask-grey.png") no-repeat;
+}
+
+.loading-bar .progress {
+		height: 100%;
+		color: #fff;
+		text-align: right;
+		line-height: 34px; /* same as #loading-bar height if we want text middle aligned */
+		width: 0px;
+}
+
+.progress {
+	background:url("images/loading-bar-mask-red.png");
+	/*background-color:#888888;*/
+}
+
+.ready-arrow {
+	/*cursor: pointer;*/
+	margin: 20px auto;
+	width: 42px;
+	height: 42px;
+	display: none;
+	background-image:url("images/ready-arrow.png");	
+}
+
 /************** SPOTLIGHT ************/
 .intro-spotlights {
 	position: absolute;
@@ -574,7 +619,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 
 .room {
 	width: 100%;
-	height: 100%;
 	height: 8000px;
 	position: relative;
 }
@@ -654,16 +698,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 }
 
 /************* ALLEY ***********/
+	.test {
+		position: absolute;
+		width: 1440px !important;
+		height: 1825px !important;
+		background: url(images/alley-master.jpg) no-repeat;
+		color: white;
+	}
 	.alley {
 		width: 100%;
-		display: none;
+		display: inherit;
 		height: 10000px;
 		position: relative!important;
 	}
+
 	.alley .alley-master {
-		display: none;
+		display: inherit;
 		position: absolute;
-		width: 100% !important;
+		width: 1440px !important;
 		height: 1825px !important;
 		background: url(images/alley-master.jpg) no-repeat;
 
@@ -672,7 +724,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 	.alley .alley-rain {
 		background-size: cover;
 		position: absolute;
-	    display: block;
+	    display: inherit;
 	    width: 100%;
 	    height: 100%;
 	    opacity: 1;
@@ -728,6 +780,143 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 		}
 }
 
+/************* NIGHT ************/
+.spot-gradient {
+	width: 100%;
+	height: inherit;
+	position: relative;
+	z-index: 2 !important;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(66,66,84,0.6) 0%, rgba(66,66,84,0.2) 50%, rgba(66,66,84,0) 75%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(66,66,84,0.6)), color-stop(50%,rgba(66,66,84,0.2)), color-stop(75%,rgba(66,66,84,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(66,66,84,0.6) 0%,rgba(66,66,84,0.2) 50%,rgba(66,66,84,0) 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(66,66,84,0.6) 0%,rgba(66,66,84,0.2) 50%,rgba(66,66,84,0) 75%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(66,66,84,0.6) 0%,rgba(66,66,84,0.2) 50%,rgba(66,66,84,0) 75%); /* IE10+ */
+	background: radial-gradient(ellipse at center, rgba(66,66,84,0.6) 0%,rgba(66,66,84,0.2) 50%,rgba(66,66,84,0) 75%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99424254', endColorstr='#00424254',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/* http://www.colorzilla.com/gradient-editor/#424254+0,424254+50&0.6+0,0+75;Custom */
+}
+
+.night {
+	width: 100%;
+	display: none;
+	height: 10000px;
+	position: relative!important;
+}
+
+.night .moon {
+	display: none;
+	position: absolute;
+	width: 1065px;
+	height: 1058px;
+	left:200px;
+	z-index: 5;
+	background: url(images/moon-moon.png) no-repeat;
+}
+
+.night .city-bg {
+	display: none;
+	position: absolute;
+	width: 1330px;
+	height: 930px;
+	z-index: 32;
+	background: url(images/moon-citybg.png) no-repeat;
+}
+
+.night .clouds {
+	display: block;
+	position: absolute;
+	width: 996px;
+	height: 1010px;
+	background: url(images/moon-clouds.png) no-repeat;
+	-webkit-animation-direction: normal !important;
+	animation-direction: normal !important;
+}
+
+		.night .clouds.cloudcruise-one {
+		z-index: 24;
+		top:0;
+		-webkit-animation: cloudcruise 90s 0.5s infinite;
+		-moz-animation: cloudcruise 90s 0.5s infinite;
+		-ms-animation: cloudcruise 90s 0.5s infinite;
+		-o-animation: cloudcruise 90s 0.5s infinite;
+		animation: cloudcruise 90s 0.5s infinite;
+		}
+
+		.night .clouds.cloudcruise-two {
+		z-index: 23;
+		top:20%;
+		-webkit-animation: cloudcruise 120s 1s infinite;
+		-moz-animation: cloudcruise 120s 1s infinite;
+		-ms-animation: cloudcruise 120s 1s infinite;
+		-o-animation: cloudcruise 120s 1s infinite;
+		animation: cloudcruise 120s 1s infinite;
+		}
+
+		.night .clouds.cloudcruise-three {
+		z-index: 22;
+		top:30%;
+		-webkit-animation: cloudcruise 140s 2s infinite;
+		   -moz-animation: cloudcruise 140s 2s infinite;
+			-ms-animation: cloudcruise 140s 2s infinite;
+			 -o-animation: cloudcruise 140s 2s infinite;
+				animation: cloudcruise 140s 2s infinite;
+		}
+
+	@-webkit-keyframes cloudcruise {
+		0% {
+			-webkit-transform: translate3d(-125%, 0, 0);
+		}
+		100% {
+			-webkit-transform: translate3d(125%, 0, 0);
+		}
+	}
+
+	@-moz-keyframes cloudcruise {
+		0% {
+			-moz-transform: translate3d(-125%, 0, 0);
+		}
+		100% {
+			-moz-transform: translate3d(125%, 0, 0);
+		}
+	}
+
+	@-ms-keyframes cloudcruise {
+		0% {
+			-ms-transform: translate3d(-125%, 0, 0);
+		}
+		100% {
+			-ms-transform: translate3d(125%, 0, 0);
+		}
+	}
+
+	@-o-keyframes cloudcruise {
+		0% {
+			-o-transform: translate3d(-125%, 0, 0);
+		}
+		100% {
+			-o-transform: translate3d(125%, 0, 0);
+		}
+	}
+
+	@keyframes cloudcruise {
+		0% {
+			transform: translate3d(-125%, 0, 0);
+		}
+		100% {
+			transform: translate3d(125%, 0, 0);
+		}
+	}
+
+.night .couple {
+	display: none;
+	position: absolute;
+	width: 485px;
+	height: 1175px;
+	z-index: 33;
+	left: 35%;
+	background: url(images/moon-couple.png) no-repeat;
+}
+
 /************* SCENES ***********/
 .scene {
 	/*height: auto;*/
@@ -748,6 +937,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 
 #scene3 {
 	height: 10000px;
+}
+
+#scene4{
+	background:#111;
+	height: 10000px;
+}
+
+.scene-container {
+	position: fixed;
+	overflow:hidden;
+	display: none;
+	width: 1440px;
+	height: 100%;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
 }
 
 .scene-layer {
@@ -783,19 +990,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700700', end
 	-ms-perspective: 1000;
 	-o-perspective: 1000;
 	perspective: 1000;
-}
-
-.scene-container {
-	position: fixed;
-	overflow:hidden;
-	display: none;
-	width: 1440px;
-	height: 100%;
-	-webkit-perspective: 800px;
-	-moz-perspective: 800px;
-	-ms-perspective: 800px;
-	-o-perspective: 800px;
-	perspective: 800px;
 }
 
 /* $INTERMISSIONS
@@ -897,3 +1091,4 @@ section.intermission {
 .more-button {
 	text-align: center;
 }
+
