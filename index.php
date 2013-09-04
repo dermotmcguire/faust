@@ -16,13 +16,14 @@
 
 	<!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 
 	<!-- CSS
   ================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Old+Standard+TT:400,400italic,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/fixed-positioning.css">
 	<link rel="stylesheet" href="stylesheets/animations.css">
 	<link rel='stylesheet' media='screen and (min-width: 767px)' href="stylesheets/layout.css"/>
 	<link rel='stylesheet' media='screen and (max-width: 767px)' href="stylesheets/mobile.css"/>
@@ -30,17 +31,14 @@
 
 	<!-- JS
 	================================================== -->
-	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<script src="js/progressbar.js" type="text/javascript"></script>
-	<script src="js/nprogress.js" type="text/javascript"></script>
-	<script src="js/jquery.transit.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 	<script src="js/smartpreload.js" type="text/javascript"></script>
 	<script src="js/modernizr.custom.js" type="text/javascript"></script>
-	<script src="js/skrollr.min.js" type="text/javascript"></script>
-	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
 	<script src="js/jquery.inview.js" type="text/javascript"></script>
 	<script src="js/smooth-scroll.js" type="text/javascript"></script>
 	<script src="js/jquery.columnizer.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+
 
 	<!--[if lt IE 9]>
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
@@ -62,24 +60,18 @@
 	<link rel="apple-touch-icon" sizes="114x114"	href="images/misc/touch-icon-iphone-114.png" />
 	<link rel="apple-touch-icon" sizes="72x72"		href="images/misc/touch-icon-ipad-144.png" />
 	<link rel="apple-touch-icon" sizes="144x144"	href="images/misc/touch-icon-ipad-144.png" />
-
+	
 	<!-- Image Load Parser c.f. http://codepen.io/patrickkunka/pen/zxgas
 	================================================== -->
-	<script type="text/javascript">
-		function imgLoaded(img){
-	    var $img = $(img);
-	    $img.parent().addClass('loaded');
-		};
-	</script>
 
 
 </head>
 <body>
 <div class="left-border"></div>
 <div class="right-border"></div>
-<div id='nav-menu'>
+<div id="nav-menu">
 	<ul>
-		<li class='has-sub'><a href='#intermission-1'><span>Part I</span></a>
+		<li class='has-sub'><a href='#intermission1'><span>Part I</span></a>
 			<ul>
 				<li class='has-sub'><a href="#intermission-1"><span>Before the Fall</span></a>
 					<ul class="part1-submenu">
@@ -89,7 +81,7 @@
 	   			</li>
 	 		</ul>
 		</li>
-		<li class='has-sub'><a href='#intermission-2'><span>Part II</span></a>
+		<li class='has-sub'><a href='#intermission2'><span>Part II</span></a>
 	 		<ul>
 	   			<li class='has-sub'><a href="#intermission-2"><span>The Wages of Sin</span></a>
    					<ul class="part2-submenu">
@@ -99,7 +91,7 @@
    				</li>
 	 		</ul>
 		</li>
-		<li class='has-sub'><a href='#intermission-3'><span>Part III</span></a>
+		<li class='has-sub'><a href='#intermission3'><span>Part III</span></a>
 	 		<ul>
 	   			<li class='has-sub'><a href="#intermission-3"><span>The Stars Never Shine</span></a>
 	     			<ul class="part3-submenu">
@@ -109,44 +101,49 @@
 	   			</li>
 	 		</ul>
 		</li>
-		<li class='has-sub'><a href='#intermission-4'><span>Part IV</span></a>
+		<li class='has-sub'><a href='#intermission4'><span>Part IV</span></a>
 	 		<ul>
 	   			<li class='has-sub'><a href="#intermission-4"><span>Sign in Blood</span></a>
 	     			<ul class="part4-submenu">
-	       				<li class='last'><a href="#contact-us"><span>Contact Us</span></a></li>
+	       				<li class='last'><a href="#intermission4"><span>Contact Us</span></a></li>
 	     			</ul>
 	   			</li>
 	 		</ul>
 		</li>
 	</ul>
 </div>
-
+<div class="all-scenes  gradient-1">
 		
 <!-- The Intro and the First Scene
 ================================================== -->
-<!-- Intermission 1 Start -->
+<!-- Part 1 Start -->
 	<?php perch_layout('global.introandscene1'); ?>
-<!-- Intermission 1 End -->
+	<?php perch_layout('global.intermission1'); ?>
+	<?php perch_layout('global.scene2'); ?>
+	<?php perch_layout('global.intermission2'); ?>
+	<?php perch_layout('global.scene3'); ?>
+	<?php perch_layout('global.intermission3'); ?>
+	<?php perch_layout('global.scene4'); ?>
+	<?php perch_layout('global.intermission4'); ?>
+
+</div>
 
 
 			
 <div class="clear"></div>
 
 
-<script type="text/javascript">
-	NProgress.start();
-	setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
-
-$( window ).load(function() {
-	$(".loading-ready").transition({opacity:1},1000,'linear');
-	});
-</script>
+	<!-- Skrollr Lives Here! -->
+	<script src="js/skrollr.min.js" type="text/javascript"></script>
+	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
+	<script src="js/skrollr.ie.min.js" type="text/javascript"></script>
 
 
-<script type="text/javascript">
-	skrollr.init({
-		forceHeight: true,
-		edgeStrategy: 'ease'
+
+<!-- End Document
+================================================== -->
+</body>
+</html> 'ease'
 	});
 </script>
 
