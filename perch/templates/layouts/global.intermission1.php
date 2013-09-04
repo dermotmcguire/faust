@@ -1,6 +1,8 @@
 <section class="intermission one" id="intermission1" 				
 		data-anchor-target  = "#intermission1"
 		data-0-top			= "display:!block;">
+	<div class="intermission-gradient">
+	</div>
 	<header> </header>
 	<!-- SECTION HEADLINES -->
 	<div class="intermission-main">

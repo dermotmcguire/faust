@@ -1,5 +1,29 @@
+$(window).resize(function() {
+	setMargins();
+});
+
+function setMargins() {
+	var marginLeft = $(".all-scenes").css("margin-left");
+	var marginRight = $(".all-scenes").css("margin-right");
+	console.log("set the left margins to: ", marginLeft);
+	console.log("set the right margins to: ", marginRight);
+	if ($(window).width() > 1440) {
+		console.log("wide");
+		$(".left-border").css("left", marginLeft);
+		$(".right-border").css("right", marginRight);			
+	}
+	else {
+		$(".left-border").css("left", "0");
+		$(".right-border").css("right", "0");
+	}
+}
+
+
 $( document ).ready(function() {
+	setMargins();
+
 	function progressBar(percent, $element) {
+
 		loadingBarWidth = percent * $element.width() / 100;
 		$('.progress').animate({width: loadingBarWidth },{
 	        complete: function () {
@@ -13,6 +37,8 @@ $( document ).ready(function() {
 				 		$(".ready-arrow").css("display", "block").addClass("pulse");
 				 		//this delays the page content from loading for 2.5s
 						$("section").delay(500).fadeIn(2000);
+						$("body").css("overflow","hidden");
+						$("body").css("height","auto");
 					});
 				};
 	        }

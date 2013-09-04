@@ -1,4 +1,6 @@
 <section class="intermission three" id="intermission3" 				>
+		<div class="intermission-gradient">
+	</div>
 	<header> </header>
 
 	<div class="intermission-main">
