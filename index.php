@@ -34,7 +34,9 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 	<script src="js/smartpreload.js" type="text/javascript"></script>
 	<script src="js/modernizr.custom.js" type="text/javascript"></script>
-	<script src="js/jquery.inview.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.inview.js"></script>
+	<script type="text/javascript" src="js/howler.min.js"></script>
+	<script type="text/javascript" src="js/sounds.js"></script>
 	<script src="js/smooth-scroll.js" type="text/javascript"></script>
 	<script src="js/jquery.columnizer.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
@@ -43,7 +45,7 @@
 	<!--[if lt IE 9]>
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
 	<![endif]-->
-	
+
 	<!-- Contact Form
 	================================================== -->
 	<script src="cfg-contactform-4/js/contactform.js"></script>
@@ -60,7 +62,7 @@
 	<link rel="apple-touch-icon" sizes="114x114"	href="images/misc/touch-icon-iphone-114.png" />
 	<link rel="apple-touch-icon" sizes="72x72"		href="images/misc/touch-icon-ipad-144.png" />
 	<link rel="apple-touch-icon" sizes="144x144"	href="images/misc/touch-icon-ipad-144.png" />
-	
+
 	<!-- Image Load Parser c.f. http://codepen.io/patrickkunka/pen/zxgas
 	================================================== -->
 
@@ -113,7 +115,7 @@
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">
-		
+
 <!-- The Intro and the First Scene
 ================================================== -->
 <!-- Part 1 Start -->
@@ -128,7 +130,7 @@
 </div>
 
 
-			
+
 <div class="clear"></div>
 
 
