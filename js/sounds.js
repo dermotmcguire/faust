@@ -15,25 +15,36 @@ $( document ).ready(function() {
     if (visible) {
 			sound2a.pause().fadeIn(0.5, 2000);
 			sound2b.pause().fadeIn(0.2, 2000);
+      music2.pause().fadeIn(0.5, 2000);
+
     } else {
 			sound2a.fadeOut(0, 2000);
 			sound2b.fadeOut(0, 2000);
+      music2.fadeOut(0, 2000);
+
     }
   });
 
   $('#scene3').bind('inview', function (event, visible) {
     if (visible) {
 			sound3.pause().fadeIn(0.5, 2000);
+      music3.pause().fadeIn(0.5, 2000);
+
     } else {
 			sound3.fadeOut(0, 2000);
+      music3.fadeOut(0, 2000);
+
     }
   });
 
   $('#scene4').bind('inview', function (event, visible) {
     if (visible) {
 			sound4.pause().fadeIn(0.5, 2000);
+      music4.pause().fadeIn(0.5, 2000);
+
     } else {
 			sound4.fadeOut(0, 2000);
+      music4.fadeOut(0, 2000);
     }
   });
 
@@ -66,6 +77,21 @@ var sound4 = new Howl({
 });
 var music1 = new Howl({
   urls: ['sounds/scene-one-music-quiet.mp3', 'sounds/scene-one-music-quiet.ogg'],
+  buffer: true,
+  volume: 0.1
+});
+var music2 = new Howl({
+  urls: ['sounds/scene-two-music-quiet.mp3', 'sounds/scene-two-music-quiet.ogg'],
+  buffer: true,
+  volume: 0.1
+});
+var music3 = new Howl({
+  urls: ['sounds/scene-three-music-quiet.mp3', 'sounds/scene-three-music-quiet.ogg'],
+  buffer: true,
+  volume: 0.1
+});
+var music4 = new Howl({
+  urls: ['sounds/scene-four-music-quiet.mp3', 'sounds/scene-four-music-quiet.ogg'],
   buffer: true,
   volume: 0.1
 });
