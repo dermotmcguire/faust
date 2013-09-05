@@ -1,5 +1,7 @@
 <section class="intermission three" id="intermission3" 				>
-		<div class="intermission-gradient">
+	<div class="intermission-gradient-top">
+	</div>
+	<div class="intermission-gradient-vignette">
 	</div>
 	<header> </header>
 
@@ -42,4 +44,6 @@
 		</div>
 	</div>
 	<footer></footer>
-</section>	
+	<div class="intermission-gradient-bottom">
+	</div>
+</section>
