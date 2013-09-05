@@ -1646,7 +1646,7 @@ section.intermission {
 }
 
 .contact h4 {
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1em;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -1666,6 +1666,10 @@ section.intermission {
 }
 
 /*============= NEWSLETTER FORM ===========*/
+#mc_embed_signup form {
+	padding: 0px!important;
+}
+
 input {
 	border: 1px solid #fff!important;
 	background: #110F10!important;
@@ -1680,13 +1684,12 @@ input {
 
 input.button {
 	font-family: 'Old Standard TT', sans-serif;
-	float: right;
-	color: white;
+
 }
 
 /*================= Social ==================*/
 ul.social {
-	margin: 0 10px;
+	margin: 0px;
 	padding-top: 15px;
 	display: block;
 	overflow: hidden;

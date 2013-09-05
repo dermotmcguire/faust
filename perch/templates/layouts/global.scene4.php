@@ -78,6 +78,9 @@
 					</p>
 					<a href="mailto:info@faust-musical.com"> info@faust-musical.com </a>
 					<!-- SOCIAL SECTION -->
+					<p>
+						Or check us out here:
+					</p>
 					<ul class="social">
 						<a href="https://www.facebook.com/pages/FAUST-A-Musical/1405003313058613" target="blank">
 							<li class="facebook">
@@ -128,7 +131,8 @@
 						<div id="mce-responses" class="clear">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</div>
+						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 					</form>
 					</div>						
 						<!--End mc_embed_signup-->
