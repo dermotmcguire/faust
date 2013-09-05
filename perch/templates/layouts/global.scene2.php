@@ -23,6 +23,11 @@
 			data-image-url		= "images/room-sparklelights1-master.png">
 			<img src="">
 			</div>
+			<div class="js-image scene-layer sparklelights2-master flicker-slow-one"
+			data-anchor-target	= "#scene2"
+			data-image-url		= "images/room-sparklelights2-master.png">
+			<img src="">
+			</div>
 		</div>
 		<div class="js-image scene-layer window-master"
 			data-anchor-target	= "#scene2"
@@ -44,6 +49,7 @@
 			data-100-bottom		= "transform: translate3d(-15%, -30%, 0) scale(0.5); filter: blur(1.0px); top:0%;"
 			data--1000-bottom	= "top:-100%;"
 			data-image-url		= "images/room-master.png">
+			<span class="couch-salome-sprite"></span>
 			<img src="">
 		</div>
 		<div class="js-image scene-layer mephisto-master"

@@ -1,18 +1,14 @@
 // JavaScript Document
 $(document).ready(function() {
-
   var device = navigator.userAgent.toLowerCase();
   var ios = device.match(/(iphone|ipod|ipad)/);
  //function that returns element's y position
     
     $("a[href*=#]").on('click', function(e) {
-      //   console.log($(this).attr('href'));
-      // var locationToGo = $(this).attr('href');
-      // console.log("1");
-      // var locationToGo = locationToGo.split('#');
-      // console.log("1");
-      // var locationToGo = locationToGo(1);
-      // console.log(locationToGo);
+      var locationToGo = $(this).attr('href');
+
+      // $('.more-info').hide();
+
       var scrollTarget = $(this.hash).offset().top;
       if(scrollTarget) 
           e.preventDefault();
@@ -28,6 +24,24 @@ $(document).ready(function() {
             var nav2clone = $("nav")
             nav2clone.show();
           }
+          if (locationToGo == '#the-project' ){ 
+              $('.more-info.one').show('slow');
+              console.log('one');
+          };
+          if (locationToGo == '#the-production') {
+              $('.more-info.one').show('slow');
+              console.log('one');
+          };
+
+          if (locationToGo == '#listen' || locationToGo == '#look') {
+              $('.more-info.two').show('slow');
+              console.log('two');
+          };
+          if (locationToGo == '#newsflash' || locationToGo == 'the-archives') {
+              $('.more-info.three').show('slow');
+              console.log('three');
+          };
+
       });
     }
     });

@@ -1,5 +1,8 @@
 <div id="scene3" class="scene part3  gradient-3"> <!-- Part 3 -->
-	<div class="body-gradient-flood centered alley">
+	<div class="body-gradient-flood centered alley" 
+		data--0-top				= "position: !relative;"
+		data-0-top				= "position: !fixed"
+		data-0-bottom 			= "position: !relative">
 		<div class="js-image scene-layer alley-master"
 			data-anchor-target	= "#scene3"
 			data--0-top			= "position: !relative;"

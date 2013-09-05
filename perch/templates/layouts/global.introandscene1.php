@@ -112,6 +112,7 @@
 				data-0-bottom		= "transform: translateY(0%) translateX(0%);"
 				data-image-url		= "images/city-right-fore.png">
 				<img src="">
+				<span class="hotspot sixsixsix on flicker"></span>
 			</div>
 
 			<div class="js-image scene1-layer city-left-fore"
@@ -121,6 +122,8 @@
 				data-0-bottom		= "transform: translateY(0%) translateX(0%);"
 				data-image-url		= "images/city-left-fore.png">
 				<img src="">
+				<span class="hotspot hotel on flicker"></span>
+				<span class="hotspot radio on flicker"></span>
 			</div>
 		</div>
 	</div>

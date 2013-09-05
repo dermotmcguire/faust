@@ -18,7 +18,7 @@
 				data-anchor-target="#scene4"
 				data-0-top			= "display:!block;  transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
 				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px); opacity:0;"
-				data--200-bottom	= "opacity:1">
+				data--500-bottom	= "opacity:1">
 			</div>
 			<div class="scene-layer city-bg"
 				data-anchor-target 	= "#scene4"

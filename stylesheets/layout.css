@@ -864,6 +864,75 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 }
 
 
+.hotspot.sixsixsix {
+	display:block;
+	position: absolute;
+	right: 14px;
+	bottom: 414px;
+	width: 225px;
+	height: 354px;
+}
+.hotspot.sixsixsix.on {
+	z-index: 100;
+	background: url("../images/city-hotspot-666-on.png") no-repeat;
+}
+/*.hotspot.sixsixsix.off {
+	display: block;
+	opacity: 1;
+	background: url("../images/city-hotspot-666-off.png") no-repeat;
+}*/
+
+.hotspot.apartment {
+	right:583px;
+	width:66px;
+	bottom:290px;
+	height:135px;
+}
+.hotspot.apartment.on {
+	z-index: 100;
+	background: url("../images/city-hotspot-apartment-on.png") no-repeat;
+}
+/*.hotspot.apartment.off {
+	display: block;
+	opacity: 1;
+	background: url("../images/city-hotspot-apartment-off.png") no-repeat;
+}*/
+
+.hotspot.hotel {
+	position: absolute;
+	display:block;
+	left: 64px;
+	bottom: 500px;
+	height: 344px;
+	width: 150px;
+}
+.hotspot.hotel.on {
+	z-index: 100;
+	background: url("../images/city-hotspot-hotel-on.png") no-repeat;
+}
+/*.hotspot.hotel.off {
+	opacity: 1;
+	background: url("../images/city-hotspot-hotel-off.png") no-repeat;
+}*/
+
+.hotspot.radio {
+	position: absolute;
+	display:block;
+	left: 193px;
+	bottom: 55px;
+	width: 90px;
+	height: 300px;
+}
+.hotspot.radio.on {
+	z-index: 100;
+	background: url("../images/city-hotspot-radio-on.png") no-repeat;
+}
+/*.hotspot.radio.off {
+	display: block;
+	opacity: 1;
+	background: url("../images/city-hotspot-radio-off.png") no-repeat;
+}*/
+
 .city-centre-back,
 .city-left-back,
 .city-right-mid,
@@ -940,7 +1009,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 	position: absolute;
 	background: url(../images/room-sparklelights1-master.png) no-repeat;
 	background-position: 50% 40%;
-
+	opacity:0.5;
+	z-index: 16;
+}
+.cityscape-master .sparklelights2-master {
+	width: 100%;
+	height: 100%;
+	display: inherit;
+	position: absolute;
+	background: url(../images/room-sparklelights2-master.png) no-repeat;
+	background-position: 50% 40%;
+	opacity:0.5;
 	z-index: 16;
 }
 
@@ -953,6 +1032,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 
 		z-index: 24;
 }
+
+.couch-salome-sprite {
+		background: url("../images/sprite-smoke.png") no-repeat;
+		opacity:1;
+		position: absolute;
+		display: inherit;
+		top: 880px;
+		left: 390px;
+		width: 250px;
+	    height: 300px;
+	    -webkit-animation: smokesprite 3s steps(36) alternate infinite;
+	       -moz-animation: smokesprite 3s steps(36) alternate infinite;
+	        -ms-animation: smokesprite 3s steps(36) alternate infinite;
+	         -o-animation: smokesprite 3s steps(36) alternate infinite;
+	            animation: smokesprite 3s steps(36) alternate infinite;
+
+		z-index: 28;
+	}
+		@-webkit-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@-moz-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@-ms-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@-o-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
 
 .room .mephisto-master {
 	left: 0;
@@ -979,10 +1100,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 /************* ALLEY ***********/
 
 	.alley {
-		width: 100%;
+		width: 1440px;
+		overflow:hidden;
 		display: inherit;
 		height: 10000px;
-		position: relative!important;
+		position: relative;
 	}
 
 	.alley .alley-master {
@@ -1078,7 +1200,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 	overflow:hidden;
 	display: block;
 	width: 1440px;
-	/*height: 100%;*/
+	height: 100%;
 	-webkit-perspective: 800px;
 	-moz-perspective: 800px;
 	-ms-perspective: 800px;
