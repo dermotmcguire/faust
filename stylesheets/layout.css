@@ -117,6 +117,22 @@ h4 {
 	/*background-image:url(../images/bubbles3.png);*/
 }
 
+/* $PALETTE
+================================================== */
+
+	.palette-near-black				{ color: #17191D; }
+	.palette-dark-grey				{ color: #2A2C31; }
+	.palette-deep-purple,
+	.headline .palette-deep-purple	{ color: #351330; }
+	.palette-sort-of-lavender 		{ color: #424254; }
+	.palette-kind-of-cyan			{ color: #64908A; }
+	.palette-light-tan				{ color: #E8CAA4; }
+	.palette-blood-red,
+	.headline .palette-blood-red 	{ color: #700700; }
+
+
+
+
 /* $FONTS
 ================================================== */
 
@@ -1630,7 +1646,7 @@ section.intermission {
 }
 
 .contact h4 {
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 1em;
 	text-transform: uppercase;
 	font-weight: bold;
