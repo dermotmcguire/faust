@@ -69,8 +69,50 @@
 			</div>
 			<!-- SECTION MAIN CONTENT -->
 			<div class="contact">
-				<!-- CONTACT FORM -->
+				<!-- CONTACT DETAILS -->
+				<div class="eight columns contact-details">
+					<!-- CONTACT OPTION 1 -->
+					<h4>Contact Us</h4>
+					<p>
+						We’d be delighted to answer your enquiries at:
+					</p>
+					<a href="mailto:info@faust-musical.com"> info@faust-musical.com </a>
+					<!-- SOCIAL SECTION -->
+					<ul class="social">
+						<a href="https://www.facebook.com/pages/FAUST-A-Musical/1405003313058613" target="blank">
+							<li class="facebook">
+								facebook
+							</li>
+						</a>
+						<a href="https://twitter.com/FAUST_Musical" target="blank">
+							<li class="twitter">
+								twitter
+							</li>
+						</a>
+						<a href="www.instagram.com/faust_musical/" target="blank">
+							<li class="instagram">
+								instagram
+							</li>
+						</a>
+						<a href="pinterest.com/FAUSTmusical/" target="blank">
+							<li class="pinterest">
+								pinterest
+							</li>
+						</a>
+						<a href="http://soundcloud.com/faust_musical" target="blank">
+							<li class="soundcloud">
+								soundcloud
+							</li>
+						</a>
+						<a href="https://vimeo.com/faustmusical/" target="blank">
+							<li class="vimeo">
+								vimeo
+							</li>
+						</a>
+					</ul>
+					<!-- CONTACT FORM -->
 				<div class="eight columns contact-form">
+					<h4> Sign up for our Newsletter</h4>
 					<!-- Begin MailChimp Signup Form -->
 					<div id="mc_embed_signup">
 					<form action="http://emmachee.us6.list-manage.com/subscribe/post?u=e012a3ed241e30c1824ba75a6&amp;id=fc942f19c0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -286,72 +328,26 @@
 					</script>
 <!--End mc_embed_signup-->
 				</div>
-				<!-- CONTACT DETAILS -->
-				<div class="eight columns contact-details">
-					<!-- CONTACT OPTION 1 -->
-					<ul class="four columns first-contact">
-						<li>
-							Contact Type 1
-						</li>
-						<li>
-							John Example
-						</li>
-						<li>
-							+123 456 789
-						</li>
-						<li>
-							johnexample@gmail.com
-						</li>
-					</ul>
-					<!-- CONTACT OPTION 2 -->
-					<ul class="four columns second-contact">
-						<li>
-							Contact Type 2
-						</li>
-						<li>
-							John Example
-						</li>
-						<li>
-							+123 456 789
-						</li>
-						<li>
-							johnexample@gmail.com
-						</li>
-					</ul>
-					<!-- SOCIAL SECTION -->
-					<ul class="social">
-						<a href="https://www.facebook.com/pages/FAUST-A-Musical/1405003313058613" target="blank">
-							<li class="facebook">
-								facebook
-							</li>
-						</a>
-						<a href="https://twitter.com/FAUST_Musical" target="blank">
-							<li class="twitter">
-								twitter
-							</li>
-						</a>
-						<a href="www.instagram.com/faust_musical/" target="blank">
-							<li class="instagram">
-								instagram
-							</li>
-						</a>
-						<a href="pinterest.com/FAUSTmusical/" target="blank">
-							<li class="pinterest">
-								pinterest
-							</li>
-						</a>
-						<a href="http://soundcloud.com/faust_musical" target="blank">
-							<li class="soundcloud">
-								soundcloud
-							</li>
-						</a>
-						<a href="https://vimeo.com/faustmusical/" target="blank">
-							<li class="vimeo">
-								vimeo
-							</li>
-						</a>
-					</ul>
 				</div>
+
+				<div class="eight columns">
+					<!-- EXTRA INFO -->
+					<h4>Info For Artist and Performers</h4>
+					<p>
+						FAUST is a project offering many great opportunities to performers and creative people of serious talent and serious focus. If you sing, design costumes, design sets, direct, act, play, produce music, stage-manage, dance, choreograph, engineer sounds or design lighting etc, AND, you’re serious, we’d like to hear from you.
+					</p>
+					<p>
+						You can send your bios, resumes, portfolios, etc to <a href="mailt-:roles@faust-musical.com">roles@faust-musical.com</a>
+					</p>
+					<p>
+						Where relevant, links to your audio and video files are highly advantageous inclusions.
+					</p>
+					<h4>Info For Sponsors</h4>
+					<p>
+						FAUST is presently in pre-production. Various production scenarios of the project are being financially modeled and we will shortly make these available along with a range of sponsorship and investment ‘packages’.
+					</p>
+				</div>
+
 				<!-- CREDITS SECTION -->
 				<ul class="sixteen columns logo-soup credits">
 					<li class="columns eight credit alphacrucis">

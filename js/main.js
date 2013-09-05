@@ -45,7 +45,7 @@ function intermissionClick(){
 		$('.more-info.four').slideToggle();
 	});	
 
-	
+
 }
 
 //SETS UP THE VARIABLES NEEDED FOR THE PROGESS BAR
@@ -88,7 +88,7 @@ function progressBar(percent, $element) {
 	$('.progress').animate({width: loadingBarWidth },{
         complete: function () {
         	if ($(".progress").width() == $(".loading-bar").width()){
-			 	$(".loading-bar").animate({opacity:"0"}, 500);
+			 	$(".loading-bar").animate({opacity:"0"}, 200);
 			 	$(".loading-text.loading").animate({opacity:"0"}, 500, function(){
 			 		//wait for the fade before sliding up.
 				 	$(".loading-text.loading").css("margin-top", '-55px').addClass("slideUp");
@@ -96,7 +96,7 @@ function progressBar(percent, $element) {
 				 	//uses big entrance as well as pulse animation effects					 		
 			 		$(".ready-arrow").css("display", "block").addClass("pulse");
 			 		//this delays the page content from loading for 2.5s
-					$("#nav-menu").delay(500).fadeIn(2000);
+					$("#nav-menu").delay(1000).fadeIn(2000);
 					$("body").css("overflow","hidden");
 					$("body").css("height","auto");
 				});

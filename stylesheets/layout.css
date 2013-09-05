@@ -271,7 +271,7 @@ padding-bottom: 10px;
 
 /*****************************************/
 .intro {
-	height:800px;
+	height:1000px;
 	/*width: 1440px;*/
 }
 .all-scenes {
@@ -863,11 +863,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 	background:url(../images/city-left-fore.png);
 }
 
-.hotspot.harbringer {
+.hotspot.harbinger {
 	display:block;
 	position: absolute;
-	right: 14px;
-	top: 0px;
+	right: 224px;
+	top: 480px;
 	width: 177px;
 	height: 257px;
 }
@@ -1600,6 +1600,18 @@ section.intermission {
 .contact {
 	text-align: left;
 	overflow: hidden;
+}
+
+.contact h4 {
+	font-size: 40px;
+	line-height: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+.contact a {
+	color: #700700;
 }
 
 /* overwrites the margin that column class puts in*/

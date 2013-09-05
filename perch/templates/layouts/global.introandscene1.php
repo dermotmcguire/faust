@@ -95,7 +95,6 @@
 				data-image-url		= "images/city-right-mid.png">
 				<img src="">
 				<span class="hotspot apartment on flicker"></span>
-				<span class="hotspot harbinger on flicker"></span>
 			</div>
 
 			<div class="js-image scene1-layer city-left-mid"

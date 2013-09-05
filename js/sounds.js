@@ -3,7 +3,7 @@ $( document ).ready(function() {
   $('#scene1').bind('inview', function (event, visible) {
     if (visible) {
 			sound1.pause().fadeIn(0.5, 2000);
-			music1.pause().fadeIn(0.2, 1000);
+			music1.pause().fadeIn(0.5, 1000);
 			music1.loop(false);
     } else {
 			sound1.fadeOut(0, 2000);
@@ -14,7 +14,7 @@ $( document ).ready(function() {
   $('#scene2').bind('inview', function (event, visible) {
     if (visible) {
 			sound2a.pause().fadeIn(0.5, 2000);
-			sound2b.pause().fadeIn(0.2, 2000);
+			sound2b.pause().fadeIn(0.5, 2000);
     } else {
 			sound2a.fadeOut(0, 2000);
 			sound2b.fadeOut(0, 2000);
