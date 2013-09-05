@@ -1103,7 +1103,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf424254', e
 	height: 1058px;
 	left:200px;
 	z-index: 5;
-	background: url(../images/red-moon.png) no-repeat;
+	opacity:0;
+	background: url(../images/moon-moon-red.png) no-repeat;
 }
 
 .night .city-bg {
