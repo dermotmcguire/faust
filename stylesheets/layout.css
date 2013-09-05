@@ -1646,10 +1646,13 @@ section.intermission {
 	width: 70%;
 }
 
-.contact, .credits{
+.contact{
 	margin-top: 50px;
 }
 
+.credits {
+	margin-top: 80px;
+}
 .contact {
 	text-align: left;
 	overflow: hidden;
@@ -1699,8 +1702,8 @@ input.button {
 
 /*================= Social ==================*/
 ul.social {
-	margin: 0px;
-	padding-top: 15px;
+	margin: 0px 0px 60px;
+	/*padding-top: 15px;*/
 	display: block;
 	overflow: hidden;
 	width: 100%;

@@ -75,8 +75,9 @@
 					<h4>Contact Us</h4>
 					<p>
 						We’d be delighted to answer your enquiries at:
+						</br>
+						<a href="mailto:info@faust-musical.com"> info@faust-musical.com </a>
 					</p>
-					<a href="mailto:info@faust-musical.com"> info@faust-musical.com </a>
 					<!-- SOCIAL SECTION -->
 					<p>
 						Or check us out here:
