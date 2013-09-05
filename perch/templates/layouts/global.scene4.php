@@ -146,7 +146,9 @@
 						FAUST is a project offering many great opportunities to performers and creative people of serious talent and serious focus. If you sing, design costumes, design sets, direct, act, play, produce music, stage-manage, dance, choreograph, engineer sounds or design lighting etc, AND, you’re serious, we’d like to hear from you.
 					</p>
 					<p>
-						You can send your bios, resumes, portfolios, etc to <a href="mailt-:roles@faust-musical.com">roles@faust-musical.com</a>
+						You can send your bios, resumes, portfolios, etc to
+						</br>
+						<a href="mailt-:roles@faust-musical.com">roles@faust-musical.com</a>
 					</p>
 					<p>
 						Where relevant, links to your audio and video files are highly advantageous inclusions.
