@@ -5,8 +5,6 @@ $(window).resize(function() {
 function setMargins() {
 	var marginLeft = $(".all-scenes").css("margin-left");
 	var marginRight = $(".all-scenes").css("margin-right");
-	console.log("set the left margins to: ", marginLeft);
-	console.log("set the right margins to: ", marginRight);
 	if ($(window).width() > 1440) {
 		console.log("wide");
 		$(".left-border").css("left", marginLeft);
@@ -36,7 +34,7 @@ $( document ).ready(function() {
 					 	//uses big entrance as well as pulse animation effects					 		
 				 		$(".ready-arrow").css("display", "block").addClass("pulse");
 				 		//this delays the page content from loading for 2.5s
-						$("section").delay(500).fadeIn(2000);
+						$("#nav-menu").delay(500).fadeIn(2000);
 						$("body").css("overflow","hidden");
 						$("body").css("height","auto");
 					});

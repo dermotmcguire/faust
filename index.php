@@ -73,7 +73,7 @@
 	<ul>
 		<li class='has-sub'><a href='#intermission1'><span>Part I</span></a>
 			<ul>
-				<li class='has-sub'><a href="#intermission-1"><span>Before the Fall</span></a>
+				<li class='has-sub'><a href="#intermission1"><span>Before the Fall</span></a>
 					<ul class="part1-submenu">
 	       				<li><a href="#the-project"><span>The Project</span></a></li>
 	       				<li class='last'><a href="#the-production"><span>The Production</span></a></li>
@@ -83,7 +83,7 @@
 		</li>
 		<li class='has-sub'><a href='#intermission2'><span>Part II</span></a>
 	 		<ul>
-	   			<li class='has-sub'><a href="#intermission-2"><span>The Wages of Sin</span></a>
+	   			<li class='has-sub'><a href="#intermission2"><span>The Wages of Sin</span></a>
    					<ul class="part2-submenu">
 	      				<li><a href="#listen"><span>Listen</span></a></li>
 	       				<li class='last'><a href="#look"><span>Look</span></a></li>
@@ -93,7 +93,7 @@
 		</li>
 		<li class='has-sub'><a href='#intermission3'><span>Part III</span></a>
 	 		<ul>
-	   			<li class='has-sub'><a href="#intermission-3"><span>The Stars Never Shine</span></a>
+	   			<li class='has-sub'><a href="#intermission3"><span>The Stars Never Shine</span></a>
 	     			<ul class="part3-submenu">
 	       				<li><a href="#newsflash"><span>Newsflash</span></a></li>
 	       				<li class='last'><a href="#the-archives"><span>The Archives</span></a></li>
@@ -103,7 +103,7 @@
 		</li>
 		<li class='has-sub'><a href='#intermission4'><span>Part IV</span></a>
 	 		<ul>
-	   			<li class='has-sub'><a href="#intermission-4"><span>Sign in Blood</span></a>
+	   			<li class='has-sub'><a href="#intermission4"><span>Sign in Blood</span></a>
 	     			<ul class="part4-submenu">
 	       				<li class='last'><a href="#intermission4"><span>Contact Us</span></a></li>
 	     			</ul>
@@ -124,7 +124,6 @@
 	<?php perch_layout('global.scene3'); ?>
 	<?php perch_layout('global.intermission3'); ?>
 	<?php perch_layout('global.scene4'); ?>
-	<?php perch_layout('global.intermission4'); ?>
 
 </div>
 

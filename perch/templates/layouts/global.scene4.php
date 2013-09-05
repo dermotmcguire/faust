@@ -2,11 +2,19 @@
 		<div class="body-gradient-flood gradient-4 night scene-container"
 			data-anchor-target  = "#scene4"
 			data--1-top			= "position:!fixed;"
-			data-0-top			= "position:!relative; top:0"
-			data-0-bottom    	= "position:!fixed;">
+			data-0-top			= "position:!relative; bottom:0;"
+			data-0-bottom		= "position:!fixed;"
+			data--100-bottom    	= "position:!fixed; top:0%;"
+			data--950-bottom		= "position:!fixed; top:-90%;" >
 			
 			<div class="spot-gradient"></div>
-					<div class="scene-layer moon"
+
+			<div class="scene-layer moon"
+				data-anchor-target="#scene4"
+				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
+				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px);">
+			</div>
+			<div class="scene-layer red-moon"
 				data-anchor-target="#scene4"
 				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
 				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px);">
@@ -40,7 +48,9 @@
 			</div>
 
 		</div>
-		<!-- Intermission 4 -->
+</div>
+
+<!-- Intermission 4 -->
 <section class="intermission four" id="intermission4">
 	<header> </header>
 	<!-- SECTION HEADLINES -->
@@ -369,5 +379,3 @@
 	</div>
 	<footer></footer>
 </section>
-</div>
-

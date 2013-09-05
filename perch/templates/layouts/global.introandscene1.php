@@ -29,6 +29,7 @@
 				<div id="title-logo" class="loading-start">
 					<div class="loading-ready"></div>
 				</div>
+				<h3 class="title-sub-heading">The Musical</h3>
 				<div class="loading-container">
 					<div class="loading-bar">
 						<div class="progress">
