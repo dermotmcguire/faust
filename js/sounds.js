@@ -16,7 +16,7 @@ $( document ).ready(function() {
 			sound2a.pause().fadeIn(0.5, 2000);
 			sound2b.pause().fadeIn(0.2, 2000);
       music2.pause().fadeIn(0.5, 2000);
-
+      music2.loop(true);
     } else {
 			sound2a.fadeOut(0, 2000);
 			sound2b.fadeOut(0, 2000);
@@ -29,7 +29,7 @@ $( document ).ready(function() {
     if (visible) {
 			sound3.pause().fadeIn(0.5, 2000);
       music3.pause().fadeIn(0.5, 2000);
-
+      music3.loop(true);
     } else {
 			sound3.fadeOut(0, 2000);
       music3.fadeOut(0, 2000);
@@ -41,7 +41,7 @@ $( document ).ready(function() {
     if (visible) {
 			sound4.pause().fadeIn(0.5, 2000);
       music4.pause().fadeIn(0.5, 2000);
-
+      music4.loop(true);
     } else {
 			sound4.fadeOut(0, 2000);
       music4.fadeOut(0, 2000);

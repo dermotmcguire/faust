@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="scene intro js-intro-splash"> <!-- Begin Intro -->
-		<div class="container">
+		<div class="container gradient-0">
 			<div class="intro-face centered">
 				<div class="intro-face-complete faceglow"></div>
 				<div class="intro-face-glow"></div>
@@ -34,12 +34,12 @@
 					<div class="loading-bar">
 						<div class="progress">
 						</div>
-					</div>	
+					</div>
 					<p class="loading-text loading pulse">Loading</p>
 					<p class="loading-text ready ">Start Scrolling</p>
 				</div>
-				<a href="#scene-one"><span class="ready-arrow pulse"> </span></a>		
-			</div>			
+				<a href="#scene-one"><span class="ready-arrow pulse"> </span></a>
+			</div>
 			<!-- end title -->
 		</div>
 	</div> <!-- End Intro -->
@@ -47,7 +47,7 @@
 	<div class="city-pre">
 		<div class="js-image scene-layer one-c" data-image-url="images/spotlight-left.png">
 			<img src="">
-		</div>			
+		</div>
 		<div class="intro-spotlights">
 			<!-- <div class="js-image spotlight-left-outer"> -->
 				<img class="spotlight-left-outer"		src="images/spotlight-left.png"  />
@@ -128,4 +128,4 @@
 			</div>
 		</div>
 	</div>
-</div> 
+</div>
