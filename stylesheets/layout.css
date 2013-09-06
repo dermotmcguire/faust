@@ -1519,12 +1519,6 @@ section.intermission {
 	line-height: 0.8em;
 }
 
-/*.news.container h3:before {
-	content: "&#8606;";
-}
-.news.container h3:after {
-	content: "&#8608;";
-}*/
 
 /*specific to intermission3 only as the text is too long for one line*/
 .intermission.three .headline h2 {

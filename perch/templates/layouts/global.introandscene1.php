@@ -99,7 +99,7 @@
 
 			<div class="js-image scene1-layer city-left-mid"
 				data-anchor-target	= "#scene1"
-				data-800-top		= "opacity: 0.0; transform: translateY(6%) translateX(4%);"
+				data-800-top		= "opacity: 0.0; transform: translateY(0%) translateX(0%);"
 				data-150-top		= "opacity: 1.0;"
 				data-0-bottom		= "transform: translateY(0%) translateX(14%);"
 				data-image-url		= "images/city-left-mid.png">
@@ -118,7 +118,7 @@
 
 			<div class="js-image scene1-layer city-left-fore"
 				data-anchor-target	= "#scene1"
-				data-800-top		= "opacity: 0.0; transform: translateY(7%) translateX(-10%);"
+				data-800-top		= "opacity: 0.0; transform: translateY(0%) translateX(-3%);"
 				data-150-top		= "opacity: 1.0;"
 				data-0-bottom		= "transform: translateY(0%) translateX(0%);"
 				data-image-url		= "images/city-left-fore.png">

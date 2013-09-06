@@ -1,4 +1,4 @@
-<div id="scene4" class="scene part4 "> <!-- Part 3 -->
+<div id="scene4" class="scene part4 "> <!-- Part 4 -->
 		<div class="body-gradient-flood gradient-4 night scene-container"
 			data-anchor-target  = "#scene4"
 			data--1-top			= "position:!fixed;"
@@ -153,6 +153,7 @@
 					<p>
 						Where relevant, links to your audio and video files are highly advantageous inclusions.
 					</p>
+					
 					<h4>Info For Sponsors</h4>
 					<p>
 						FAUST is presently in pre-production. Various production scenarios of the project are being financially modeled and we will shortly make these available along with a range of sponsorship and investment ‘packages’.
