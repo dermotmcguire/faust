@@ -24,22 +24,28 @@
 			<div class="narrative-text news-copy">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor non nibh vel sollicitudin. Cras bibendum vitae sem ac pulvinar. Mauris nec turpis magna. Pellentesque non massa nisl. Ut eu placerat nibh, viverra tristique purus. Duis faucibus gravida arcu, vitae condimentum lectus gravida sit amet. Praesent id erat vitae purus tristique tincidunt. Vestibulum mattis ut arcu quis volutpat. Phasellus in vestibulum odio. Etiam mauris tellus, faucibus ut risus at, fringilla tristique orci. Praesent sit amet libero id metus blandit iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo risus, luctus eget risus sit amet, accumsan faucibus dui. Morbi non felis ligula. Curabitur laoreet consectetur interdum. Mauris posuere sit amet dui eu porttitor.
 			</div>
-			<div class="news-lines inner" id="news-lines-1"></div>
 
-			<div class="eight columns">
+			<div class="eight columns button">
 				<button class="more-info-button one"><h3 id="the-project" >&#8606;THE PROJECT&#8608;</h3></button>
 			</div>
-			<div class="eight columns">
+			<div class="eight columns button">
 				<button class="more-info-button one"><h3 id="the-production" >&#8606;THE PRODUCTION&#8608;</h3></button>
 			</div>
-			<div class="news-lines inner"></div>
 		</div>
 		<div class="more-info one container">
 			<div class="eight columns information-text" id="the-project">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor non nibh vel sollicitudin. Cras bibendum vitae sem ac pulvinar. Mauris nec turpis magna. Pellentesque non massa nisl. Ut eu placerat nibh, viverra tristique purus. Duis faucibus gravida arcu, vitae condimentum lectus gravida sit amet. Praesent id erat vitae purus tristique tincidunt. Vestibulum mattis ut arcu quis volutpat. Phasellus in vestibulum odio. Etiam mauris tellus, faucibus ut risus at, fringilla tristique orci. Praesent sit amet libero id metus blandit iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo risus, luctus eget risus sit amet, accumsan faucibus dui. Morbi non felis ligula. Curabitur laoreet consectetur interdum. Mauris posuere sit amet dui eu porttitor.
+				<h3> HEADLINE </h3>
+				<div class="article-divide"></div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor non nibh vel sollicitudin. Cras bibendum vitae sem ac pulvinar. Mauris nec turpis magna. Pellentesque non massa nisl. Ut eu placerat nibh, viverra tristique purus. Duis faucibus gravida arcu, vitae condimentum lectus gravida sit amet. Praesent id erat vitae purus tristique tincidunt. Vestibulum mattis ut arcu quis volutpat. Phasellus in vestibulum odio. Etiam mauris tellus, faucibus ut risus at, fringilla tristique orci. Praesent sit amet libero id metus blandit iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo risus, luctus eget risus sit amet, accumsan faucibus dui. Morbi non felis ligula. Curabitur laoreet consectetur interdum. Mauris posuere sit amet dui eu porttitor.
+				</p>
 			</div>
 			<div class="eight columns information-text" id="the-production">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor non nibh vel sollicitudin. Cras bibendum vitae sem ac pulvinar. Mauris nec turpis magna. Pellentesque non massa nisl. Ut eu placerat nibh, viverra tristique purus. Duis faucibus gravida arcu, vitae condimentum lectus gravida sit amet. Praesent id erat vitae purus tristique tincidunt. Vestibulum mattis ut arcu quis volutpat. Phasellus in vestibulum odio. Etiam mauris tellus, faucibus ut risus at, fringilla tristique orci. Praesent sit amet libero id metus blandit iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo risus, luctus eget risus sit amet, accumsan faucibus dui. Morbi non felis ligula. Curabitur laoreet consectetur interdum. Mauris posuere sit amet dui eu porttitor.
+				<h3> HEADLINE </h3>
+				<div class="article-divide"></div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor non nibh vel sollicitudin. Cras bibendum vitae sem ac pulvinar. Mauris nec turpis magna. Pellentesque non massa nisl. Ut eu placerat nibh, viverra tristique purus. Duis faucibus gravida arcu, vitae condimentum lectus gravida sit amet. Praesent id erat vitae purus tristique tincidunt. Vestibulum mattis ut arcu quis volutpat. Phasellus in vestibulum odio. Etiam mauris tellus, faucibus ut risus at, fringilla tristique orci. Praesent sit amet libero id metus blandit iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin leo risus, luctus eget risus sit amet, accumsan faucibus dui. Morbi non felis ligula. Curabitur laoreet consectetur interdum. Mauris posuere sit amet dui eu porttitor.
+				</p>
 			</div>
 		</div>
 	</div>

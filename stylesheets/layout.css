@@ -419,11 +419,27 @@ p {
 	letter-spacing: -2px;
 }
 
+.eight.columns.button {
+/*	border: 3px solid rgba(0, 0, 0, 0.5);
+	outline: 1px solid rgba(0, 0, 0, 0.6);
+	outline-offset: -6px;*/
+}
+
+.more-info-button h3 {
+	margin:20px 0;
+	line-height: 1em;
+}
 .intermission h2, .intermission h3 {
 	-webkit-mask-image: url(../images/grunge-noise.png);
 	-moz-mask-image: url(../images/grunge-noise.png);
 	-o-mask-image: url(../images/grunge-noise.png);
 	mask-image: url(../images/grunge-noise.png);
+}
+
+
+.information-text h3{
+	line-height: 1em;
+	margin: 0px;
 }
 
 #intermission4 h2.palette-deep-purple {
@@ -684,7 +700,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .title {
 	text-align: center;
 	width: 420px;
-	margin:-212px auto 0;
+	margin:0 auto 0;
+	padding:100px 0 0;
 	height:auto;
 }
 
@@ -696,6 +713,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .quote.sub {
+	margin-bottom: 100px;
 	color:grey;
 }
 
@@ -727,13 +745,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .intro-face {
 	height: 530px;
 	width: 420px;
-	margin: -42px auto 0;
-	z-index: 3;
-	position: relative;
+	/*margin: -42px auto 0;*/
+	bottom: 930px;
+	left: 40%;
+	z-index: 30;
+	opacity:1;
+	position: absolute!important;
 }
 
 .intro-face .intro-face-complete {
-	background: url("../images/face-complete.png") no-repeat;
+	background: url("../images/face-complete2.png") no-repeat;
 
 	/*position: absolute;*/
 	height: 100%;
@@ -745,7 +766,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .intro-face .intro-face-glow {
-	background: url("../images/face-glow.png") no-repeat;
+	background: url("../images/face-glow2.png") no-repeat;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -1149,16 +1170,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 	.alley {
 		width: 1440px;
-		overflow:hidden;
-		display: inherit;
 		height: 10000px;
 		position: relative;
+		overflow:hidden;
+		display: inherit;
 	}
 
 	.alley .alley-master {
-		display: inherit;
+		display: none;
 		position: absolute;
-		width: 1440px !important;
+		width: 100% !important;
 		height: 1825px !important;
 		background: url(../images/alley-master.jpg) no-repeat;
 
@@ -1571,28 +1592,46 @@ section.intermission {
 .narrative-text .column {
 	margin: 0;
 }
-/*
-.narrative-text .column.first {
-	margin-right: 10px;
+.information-text p {
+	text-align: left;
 }
 
-.narrative-text .column.last {
+/*this add a nice article looking border*/
+.more-info .information-text:first-child {
+	margin-right: 0px;
+	padding-right: 8px;
+	border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.information-text .column.last {
 	margin-left: 10px;
-}*/
+}
+
+.article-divide {
+	height: 2px;
+	border-top: 3px solid rgba(0, 0, 0, 0.5);
+	width: 30%;
+	margin: 30px auto;
+}
 
 .more-info.container {
-	margin: 42px auto;
 	display:none;
 }
 
 .more-info-button {
+	margin-bottom:40px;
 	background: none;
-	border:none;
+	width: 100%;
+	border: 3px solid rgba(0, 0, 0, 0.5);
+	outline: 1px solid rgba(0, 0, 0, 0.6);
+	outline-offset: -6px;
 	text-align: center;
 }
 
 .more-info-button:hover{
 	cursor: pointer;
+	border: 3px solid rgba(0, 0, 0, 1);
+	outline: 1px solid rgba(0, 0, 0, 1);
 }
 
 
