@@ -27,10 +27,10 @@
 			<div class="news-lines inner" id="news-lines-1"></div>
 
 			<div class="eight columns">
-				<button class="more-info-button one"><h3 id="the-project" >&#10524;&nbsp;THE PROJECT&nbsp;&#10523;</h3></button>
+				<button class="more-info-button one"><h3 id="the-project" >&#10524;THE PROJECT&#10523;</h3></button>
 			</div>
 			<div class="eight columns">
-				<button class="more-info-button one"><h3 id="the-production" >&#10524;&nbsp;THE PRODUCTION&nbsp;&#10523;</h3></button>
+				<button class="more-info-button one"><h3 id="the-production" >&#10524;THE PRODUCTION&#10523;</h3></button>
 			</div>
 			<div class="news-lines inner"></div>
 		</div>

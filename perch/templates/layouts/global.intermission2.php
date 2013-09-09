@@ -27,27 +27,23 @@
 			<div class="news-lines inner" id="news-lines-1"></div>
 
 			<div class="eight columns">
-				<button class="more-info-button two"><h3 id="listen" >&#10524;&nbsp;LISTEN&#10523;</h3></button>
+				<button class="more-info-button two"><h3 id="listen" >&#10524;LISTEN&#10523;</h3></button>
 			</div>
 			<div class="eight columns">
-				<button class="more-info-button two"><h3 id="look" >&#10524;&nbsp;LOOK&#10523;</h3></button>
+				<button class="more-info-button two"><h3 id="look" >&#10524;LOOK&#10523;</h3></button>
 			</div>
 			<div class="news-lines inner"></div>
 		</div>
 		<div class="more-info two container">
 			<div class="eight columns information-text" id="listen">
 				<?php perch_content('Listen-Intro'); ?>
-				<!-- <?php perch_content('Listen-Tracks'); ?> -->
 				<?php perch_content('Listen-TrackLinks'); ?>
 				<div class="article-divide"></div>
-
 			</div>
 			<div class="eight columns information-text" id="look">
 				<?php perch_content('Look-Section'); ?>
-				<div class="news-lines end-of-section"></div>
 				<?php perch_content('Look-Embeds'); ?>
 				<div class="article-divide"></div>
-
 			</div>
 		</div>
 	</div>
