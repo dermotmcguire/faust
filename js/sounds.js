@@ -5,7 +5,7 @@ $( document ).ready(function() {
   $(".audio-button").click( function () {
     //this toggles the mute class, performs the check logic
     $(this).toggleClass("mute");
-    //after altering the class then run the appropriate howler function.
+    //after altering the class, run the appropriate howler function.
     if ($(".audio-button").hasClass("mute") === true) {
         Howler.mute();
     }

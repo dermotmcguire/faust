@@ -113,7 +113,7 @@
 	 		</ul>
 		</li>
 		<li class="audio-button">
-			<span>Audio </span>
+			<span class="icon-volume"></span>
 		</li> 
 	</ul>
 </div>
