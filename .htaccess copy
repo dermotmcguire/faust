@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /home/151967/domains/digital.invisibleartists.com.au/html/dev/ALP01/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user

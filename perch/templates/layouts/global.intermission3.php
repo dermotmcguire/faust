@@ -53,6 +53,9 @@
 				)); ?>
 				</div>
 			</div>
+
+			<div class="article-divide"></div>
+
 			<div class="clear"></div>
 			<div class="sixteen columns information-text" id="the-archives">
 				<?php perch_content_custom('News Articles', array(
@@ -62,6 +65,9 @@
 					'count'=>9
 				)); ?>
 			</div>
+			
+			<div class="article-divide"></div>
+
 		</div>
 	</div>
 	<footer></footer>

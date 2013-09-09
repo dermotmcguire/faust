@@ -1,0 +1,922 @@
+/*
+==============================================
+CSS3 ANIMATION CHEAT SHEET
+==============================================
+
+Made by Justin Aguilar
+
+www.justinaguilar.com/animations/
+
+Questions, comments, concerns, love letters:
+justin@justinaguilar.com
+==============================================
+*/
+
+
+/*
+==============================================
+pulse
+==============================================
+*/
+
+.pulse{
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+	50% {
+		ransform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;
+	}
+}
+
+
+/*
+==============================================
+bigEntrance
+==============================================
+*/
+
+
+.bigEntrance{
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;
+
+	animation-duration: 1.6s;
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+
+	visibility: visible !important;
+}
+
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+		opacity: 1;
+	}
+	45% {
+		transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	75% {
+		transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes bigEntrance {
+	0% {
+		-webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		-webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
+		opacity: 1;
+	}
+	45% {
+		-webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		-webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	75% {
+		-webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+}
+
+/*
+==============================================
+slideUp
+==============================================
+*/
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(2%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	65%{
+		-webkit-transform: translateY(4%);
+	}
+	80%{
+		-webkit-transform: translateY(-4%);
+	}
+	95%{
+		-webkit-transform: translateY(2%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}
+
+/*
+==============================================
+Custom - Eyeglow
+==============================================
+*/
+
+.eyeglow {
+	animation-name: eyeglow;
+	-webkit-animation-name: eyeglow;
+
+	animation-duration: 4s;
+	-webkit-animation-duration: 4s;
+
+	animation-delay:2s;
+	-webkit-animation-delay:2s;
+
+	animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
+
+ 	animation-direction: alternate;
+ 	-webkit-animation-direction: alternate;
+
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+
+	visibility: visible !important;
+}
+
+@keyframes eyeglow {
+	from { opacity: 0.1; }
+	to   { opacity: 1.0; }
+}
+
+@-webkit-keyframes eyeglow {
+	from { opacity: 0.1; }
+	to   { opacity: 1.0; }
+}
+
+/*
+==============================================
+Custom - Faceglow
+==============================================
+*/
+
+.faceglow {
+	animation-name: faceglow;
+	-webkit-animation-name: faceglow;
+
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+
+	animation-delay:2s;
+	-webkit-animation-delay:2s;
+
+	animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
+
+ 	animation-direction: alternate;
+ 	-webkit-animation-direction: alternate;
+
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+
+	visibility: visible !important;
+}
+
+@keyframes faceglow {
+	from { opacity: 0.6; }
+	to   { opacity: 1.0; }
+}
+
+@-webkit-keyframes faceglow {
+	from { opacity: 0.6; }
+	to   { opacity: 1.0; }
+}
+
+
+/*
+==============================================
+Custom - Flicker
+==============================================
+*/
+
+.flicker {
+	animation-name: flicker;
+	-webkit-animation-name: flicker;
+
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+
+	animation-delay:2s;
+	-webkit-animation-delay:2s; /* Safari and Chrome */
+
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+
+	visibility: visible !important;
+}
+
+@keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.75;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 0.9; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: 0.8; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+/*
+==============================================
+Custom - Flicker
+==============================================
+*/
+
+.flicker-slow-two {
+	animation-name: flicker-slow-two;
+	-webkit-animation-name: flicker-slow-two;
+
+	animation-duration: 8s;
+	-webkit-animation-duration: 8s;
+
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari and Chrome */
+
+	animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
+
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+
+	visibility: visible !important;
+}
+
+@keyframes flicker-slow-two {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.75;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 0.9; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: 0.8; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+@-webkit-keyframes flicker-slow-two {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+/*
+==============================================
+Custom - Flicker
+==============================================
+*/
+
+.flicker-slow-one {
+	animation-name: flicker-slow-one;
+	-webkit-animation-name: flicker-slow-one;
+
+	animation-duration: 6s;
+	-webkit-animation-duration: 6s;
+
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari and Chrome */
+
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+
+	visibility: visible !important;
+}
+
+@keyframes flicker-slow-one {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.75;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 0.9; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: 0.8; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+@-webkit-keyframes flicker-slow-one {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
