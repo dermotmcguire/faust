@@ -112,6 +112,9 @@
 	   			</li>
 	 		</ul>
 		</li>
+		<li class="audio-button">
+			<span>Audio </span>
+		</li> 
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">

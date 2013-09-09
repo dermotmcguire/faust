@@ -1,5 +1,21 @@
 $( document ).ready(function() {
 
+  //This space is for mute and unmute function
+  //function check on click whether the mute class is in place and performs appropriate function
+  $(".audio-button").click( function () {
+    //this toggles the mute class, performs the check logic
+    $(this).toggleClass("mute");
+    //after altering the class then run the appropriate howler function.
+    if ($(".audio-button").hasClass("mute") === true) {
+        Howler.mute();
+    }
+    else {
+        Howler.unmute();
+    }
+  });
+
+
+
   $('#scene1').bind('inview', function (event, visible) {
     if (visible) {
 			sound1.pause().fadeIn(0.5, 2000);
