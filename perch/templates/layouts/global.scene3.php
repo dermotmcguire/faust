@@ -6,7 +6,7 @@
 			data--1000-bottom	= "top:-100%; position: !relative">
 		<div class="js-image scene-layer alley-master"
 			data-anchor-target	= "#scene3"
-			data-0-top 			= "opacity: 0; display:!block; position: !absolute; left: 10px; top: 0%;"
+			data-0-top 			= "opacity: 0; display:!block; left: 10px; top: 0%;"
 			data--1000-top		= "top: 0%; opacity: 1;";
 			data--4500-top		= ""
 			data--5000-top		= "top:-8%; "
