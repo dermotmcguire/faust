@@ -24,22 +24,27 @@
 			<div class="narrative-text news-copy">
 				<?php perch_content('Part 1 Narrative Content'); ?>
 			</div>
-			<div class="news-lines inner" id="news-lines-1"></div>
-
-			<div class="eight columns">
+			<div class="eight columns button">
 				<button class="more-info-button one"><h3 id="the-project" >&#10524;&nbsp;THE PROJECT&nbsp;&#10523;</h3></button>
 			</div>
-			<div class="eight columns">
+			<div class="eight columns button">
 				<button class="more-info-button one"><h3 id="the-production" >&#10524;&nbsp;THE PRODUCTION&nbsp;&#10523;</h3></button>
 			</div>
-			<div class="news-lines inner"></div>
 		</div>
 		<div class="more-info one container">
 			<div class="eight columns information-text" id="the-project">
-				<?php perch_content('The Project'); ?>
+				<h3> HEADLINE </h3>
+				<div class="article-divide"></div>
+				<p>
+					<?php perch_content('The Project'); ?>
+				</p>
 			</div>
 			<div class="eight columns information-text" id="the-production">
-				<?php perch_content('The Production'); ?>
+				<h3> HEADLINE </h3>
+				<div class="article-divide"></div>
+				<p>
+					<?php perch_content('The Production'); ?>
+				</p>
 			</div>
 		</div>
 	</div>

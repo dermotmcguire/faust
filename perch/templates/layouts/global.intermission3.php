@@ -24,7 +24,6 @@
 			</div>
 
 			<div class="clear"></div>
-			<div class="news-lines inner" id="news-lines-1"></div>
 
 			<div class="eight columns">
 				<button class="more-info-button three"><h3 id="newsflash" >&#10524;&nbsp;NEWSFLASH&#10523;</h3></button>
@@ -32,7 +31,6 @@
 			<div class="eight columns">
 				<button class="more-info-button three"><h3 id="the-archives" >&#10524;&nbsp;THE ARCHIVES&#10523;</h3></button>
 			</div>
-			<div class="news-lines inner"></div>
 		</div>
 		<div class="more-info three container">
 			<div class="information-text" id="newsflash">
