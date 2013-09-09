@@ -113,12 +113,14 @@ function progressBar(percent, $element) {
 
 //WHEN THE PAGE IS SCALED THE SIDE GRADIENTS ADJUST
 function setMargins() {
+	var allScene_width = $(".all-scenes").width();
+	var margin = ($("body").width() - allScene_width-20)/2;
 	var marginLeft = $(".all-scenes").css("margin-left");
 	var marginRight = $(".all-scenes").css("margin-right");
 	if ($(window).width() > 1440) {
-		console.log("wide");
-		$(".left-border").css("left", marginLeft);
-		$(".right-border").css("right", marginRight);			
+		console.log(margin, margin);
+		$(".left-border").css("left", margin);
+		$(".right-border").css("right", margin);			
 	}
 	else {
 		$(".left-border").css("left", "0");

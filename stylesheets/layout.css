@@ -706,8 +706,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .quote, .loading-text {
-	color: white;
+	color: #ececec;
 }
+
+.loading-text {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-family: 'League Gothic';
+}
+
 .quote {
 	font-style: italic;
 }
@@ -715,10 +722,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .quote.sub {
 	margin-bottom: 100px;
 	color:grey;
-}
-
-.loading-text {
-	text-transform: uppercase;
 }
 
 .loading {
