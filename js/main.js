@@ -69,11 +69,11 @@ function loading(){
 				//increase counter of loaded images
 				numberOfLoaded++;
 				//remove the image from the page as we no longer need it
-				this.remove();
+				$(this).remove();
 				progressBar(step * numberOfLoaded, $('.loading-bar'));
 			});
 			// load image into the background of the appropriate div, or this can be set in the css which is preferable.
-			$(item).css('background-image', "url("+imageURL+")");
+			// $(item).css('background-image', "url("+imageURL+")");
 		}
 		else if (imageURL == undefined) {
 			console.log(this);

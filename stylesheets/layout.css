@@ -1180,11 +1180,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	}
 
 	.alley .alley-master {
-		display: none;
+		background: url("../images/alley-master.jpg") no-repeat;
+				/*background-position: top center;*/
+		display: inherit;
 		position: absolute;
 		width: 100% !important;
-		height: 1825px !important;
-		background: url(../images/alley-master.jpg) no-repeat;
+		height: 100%;
 
 		z-index: 5;
 	}
