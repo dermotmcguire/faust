@@ -187,6 +187,11 @@ League Gothic*/
 	-moz-transform: scale(2,2);
 }
 
+.icon-volume:hover {
+	color:#700700;
+	cursor: pointer;
+}
+
 .audio-button.mute .icon-volume:before {
   content: "\e00c";
 }
