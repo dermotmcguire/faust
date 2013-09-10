@@ -1,12 +1,10 @@
 <div id="scene3" class="scene part3  gradient-3"> <!-- Part 3 -->
 	<div class="body-gradient-flood centered alley" 
 			data-1-top			= "position: !relative;"
-			data-0-top			= "position: !fixed; top: 0%;"
-			data-100-bottom		= "top:0%;"
-			data--1000-bottom	= "top:-100%; position: !relative">
+			data-0-top			= "position: !fixed; top: 0%;">
 		<div class="js-image scene-layer alley-master"
 			data-anchor-target	= "#scene3"
-			data-0-top 			= "opacity: 0; display:!block; left: 10px; top: 0%;"
+			data-0-top 			= "opacity: 1; display:!block; left: 10px; top: 0%;"
 			data--1000-top		= "top: 0%; opacity: 1;";
 			data--4500-top		= ""
 			data--5000-top		= "top:-8%; "
