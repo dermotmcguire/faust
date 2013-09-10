@@ -10,9 +10,11 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>FAUST</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>FAUST - The Musical</title>
+	<meta name="description" content="FAUST, a musical, is an original work written and composed for the stage by Alpha Crucis Arts, based on the legend of Faust - the man who sold his soul to the Devil." />
+	<meta name="keywords" content="faust, faust the musical, alpha crucis arts, alphacrucis arts" />
+	<meta name="robots" content="index, follow" />
+	<meta name="author" content="Alpha Crucis Arts">
 
 	<!-- Mobile Specific Metas
   ================================================== -->
