@@ -1778,7 +1778,12 @@ p.embedded-youtube-description {
 }
 
 
-
+.information-text p a {
+	color: #700700;
+}
+.information-text p a:hover {
+	color: #b40b00;
+}
 
 
 
@@ -1974,11 +1979,11 @@ p.date {
 }
 
 .contact a {
-	color: #b40b00;
+	color: #700700;
 }
 
 .contact a:hover {
-
+	color: #b40b00;
 }
 
 /* overwrites the margin that column class puts in*/
