@@ -23,13 +23,8 @@
 				<?php perch_content('Part 3 Narrative Content'); ?>
 			</div>
 			<div class="clear"></div>
-
-
-			<div class="eight columns">
-				<button class="more-info-button three"><h3 id="newsflash" >&#10524;&nbsp;NEWSFLASH&#10523;</h3></button>
-			</div>
-			<div class="eight columns">
-				<button class="more-info-button three"><h3 id="the-archives" >&#10524;&nbsp;THE ARCHIVES&#10523;</h3></button>
+			<div class="sixteen columns">
+				<button class="more-info-button three"><h3 id="newsflash" >&#10524;NEWSFLASH&#10523;</h3></button>
 			</div>
 		</div>
 		<div class="more-info three container">
@@ -43,11 +38,9 @@
 			</div>
 		</div>
 		<div class="news container">
-			<div class="news-lines inner" id="news-lines-1"></div>
 			<div class="sixteen columns">
 				<button class="more-info-button three"><h3 id="the-archives" >&#10524;THE ARCHIVES&#10523;</h3></button>
 			</div>
-			<div class="news-lines inner"></div>
 		</div>
 		<div class="more-info three container">
 			<div class="sixteen columns information-text" id="the-archives">
