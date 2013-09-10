@@ -22,8 +22,8 @@
 			<div class="narrative-text news-copy">
 				<?php perch_content('Part 3 Narrative Content'); ?>
 			</div>
-
 			<div class="clear"></div>
+
 
 			<div class="eight columns">
 				<button class="more-info-button three"><h3 id="newsflash" >&#10524;&nbsp;NEWSFLASH&#10523;</h3></button>
@@ -33,31 +33,28 @@
 			</div>
 		</div>
 		<div class="more-info three container">
-			<div class="information-text" id="newsflash">
-				<div class="one-third column">
-				<?php perch_content_custom('News Articles', array(
-					'template'=>'_faust_article_one-third.html',
-					'sort'=>'date',
-					'sort-order'=>'DESC',
-					'count'=>2
-				)); ?>
-				</div>
-				<div class="two-thirds column">
+			<div class="sixteen columns information-text" id="newsflash">
 					<?php perch_content_custom('News Articles', array(
-					'template'=>'_faust_article_two-thirds.html',
-					'sort'=>'date',
-					'sort-order'=>'DESC',
-					'count'=>2
-				)); ?>
-				</div>
+						'template'=>'faust_article.html',
+						'sort'=>'date',
+						'sort-order'=>'DESC',
+						'count'=>3
+					)); ?>
 			</div>
-			<div class="clear"></div>
+		</div>
+		<div class="news container">
+			<div class="news-lines inner" id="news-lines-1"></div>
+			<div class="sixteen columns">
+				<button class="more-info-button three"><h3 id="the-archives" >&#10524;THE ARCHIVES&#10523;</h3></button>
+			</div>
+			<div class="news-lines inner"></div>
+		</div>
+		<div class="more-info three container">
 			<div class="sixteen columns information-text" id="the-archives">
 				<?php perch_content_custom('News Articles', array(
 					'template'=>'_faust_article_archive.html',
 					'sort'=>'date',
 					'sort-order'=>'DESC',
-					'count'=>9
 				)); ?>
 			</div>
 		</div>

@@ -33,18 +33,12 @@
 		</div>
 		<div class="more-info one container">
 			<div class="eight columns information-text" id="the-project">
-				<h3> HEADLINE </h3>
+				<?php perch_content('The Project'); ?>
 				<div class="article-divide"></div>
-				<p>
-					<?php perch_content('The Project'); ?>
-				</p>
 			</div>
 			<div class="eight columns information-text" id="the-production">
-				<h3> HEADLINE </h3>
+				<?php perch_content('The Production'); ?>
 				<div class="article-divide"></div>
-				<p>
-					<?php perch_content('The Production'); ?>
-				</p>
 			</div>
 		</div>
 	</div>

@@ -9,7 +9,10 @@ $( document ).ready(function() {
 
 	/* init columnize */
 	$(function(columnize){
-		$('.news-copy').columnize();
+		$('.news-copy').columnize({
+			width: 300,
+			height: 280
+		});
 	});
 
 
@@ -29,12 +32,12 @@ function intermissionClick(){
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
 		$('.more-info.one').slideToggle();
 	});
-	
+
 	$(".more-info-button.two").click(function() {
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
 		$('.more-info.two').slideToggle();
 	});
-	
+
 	$(".more-info-button.three").click(function() {
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
 		$('.more-info.three').slideToggle();
@@ -43,7 +46,7 @@ function intermissionClick(){
 	$(".more-info-button.four").click(function() {
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
 		$('.more-info.four').slideToggle();
-	});	
+	});
 
 
 }
@@ -98,7 +101,7 @@ function progressBar(percent, $element) {
 			 		//wait for the fade before sliding up.
 				 	$(".loading-text.loading").css("margin-top", '-55px').addClass("slideUp");
 				 	$(".loading-text.ready").css("display", "block").addClass("slideUp");
-				 	//uses big entrance as well as pulse animation effects					 		
+				 	//uses big entrance as well as pulse animation effects
 			 		$(".ready-arrow").css("display", "block").addClass("pulse");
 			 		//this delays the page content from loading for 2.5s
 					$("#nav-menu").delay(1000).fadeIn(2000);
@@ -107,9 +110,9 @@ function progressBar(percent, $element) {
 				});
 			};
         }
-	}, 
+	},
 	500);
-}	 
+}
 
 //WHEN THE PAGE IS SCALED THE SIDE GRADIENTS ADJUST
 function setMargins() {
@@ -120,7 +123,7 @@ function setMargins() {
 	if ($(window).width() > 1440) {
 		console.log(margin, margin);
 		$(".left-border").css("left", margin);
-		$(".right-border").css("right", margin);			
+		$(".right-border").css("right", margin);
 	}
 	else {
 		$(".left-border").css("left", "0");

@@ -34,11 +34,14 @@
 		</div>
 		<div class="more-info two container">
 			<div class="eight columns information-text" id="listen">
-				<?php perch_content('Listen-Text'); ?>
+				<?php perch_content('Listen-Intro'); ?>
+				<?php perch_content('Listen-TrackLinks'); ?>
+				<div class="article-divide"></div>
 			</div>
 			<div class="eight columns information-text" id="look">
-				<?php perch_content('Look-Text'); ?>
-				<?php perch_content('Look-Links'); ?>
+				<?php perch_content('Look-Section'); ?>
+				<?php perch_content('Look-Embeds'); ?>
+				<div class="article-divide"></div>
 			</div>
 		</div>
 	</div>
