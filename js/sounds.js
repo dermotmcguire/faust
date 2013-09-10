@@ -1,12 +1,4 @@
 $( document ).ready(function() {
-	$('#ex5-mute').on('click', function(){
-		Howler.mute(true);
-	});
-	$('#ex5-unmute').on('click', function(){
-		Howler.unmute(true);
-	});
-
-<<<<<<< HEAD
   //This space is for mute and unmute function
   //function check on click whether the mute class is in place and performs appropriate function
   $(".audio-button").click( function () {
@@ -25,10 +17,6 @@ $( document ).ready(function() {
 
   $('#scene1').bind('inview', function (event, visible) {
     if (visible) {
-=======
-	$('#scene1').bind('inview', function (event, visible) {
-		if (visible) {
->>>>>>> dermot's-work
 			sound1.pause().fadeIn(0.5, 2000);
 			music1.pause().fadeIn(0.5, 1000);
 			music1.loop(false);
