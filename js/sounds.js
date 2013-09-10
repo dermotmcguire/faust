@@ -89,7 +89,7 @@ var sound4 = new Howl({
   volume: 0.8
 });
 var music1 = new Howl({
-  urls: ['sounds/scene-one-music-quiet.mp3', 'sounds/scene-one-music-quiet.ogg'],
+  urls: ['sounds/scene-one-music-instrumental.mp3', 'sounds/scene-one-music-instrumental.ogg'],
   buffer: true,
   volume: 0.1
 });
