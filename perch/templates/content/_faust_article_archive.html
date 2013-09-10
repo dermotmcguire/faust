@@ -1,4 +1,6 @@
-<h3><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h3>
-<p class="date"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></p>
-
-<p class="article-excerpt"><perch:content id="excerpt" type="text" label="Excerpt" textile="true" editor="markitup" required="true" words="20" append="..." /></p>
+<div class="four columns article-archive">
+	<h4 class="archive-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h4>
+	<p class="archive-excerpt"><perch:content id="excerpt" type="text" label="Excerpt" textile="true" editor="markitup" required="true" words="20" append="..." /></p>
+	<div class="archive-content"><perch:content id="body" type="textarea" label="Body" textile="true" editor="markitup" required="true" help="Your blog post" /></div>
+	<span class="archive-reveal-button"><h5 data-attr="">Read more</h5></span>
+</div>

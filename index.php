@@ -112,9 +112,13 @@
 	   			</li>
 	 		</ul>
 		</li>
+<<<<<<< HEAD
 		<li class="audio-button">
 			<span class="icon-volume"></span>
 		</li> 
+=======
+		<li title="Toggle Sounds" class="no-sub the-icons"><a href='#sound-toggle'><i class="icon-volume-up"></i> <span class="i-name"></span><span class="i-code"></span></a></li>
+>>>>>>> dermot's-work
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">

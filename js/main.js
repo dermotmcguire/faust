@@ -9,7 +9,10 @@ $( document ).ready(function() {
 
 	/* init columnize */
 	$(function(columnize){
-		$('.news-copy').columnize();
+		$('.news-copy').columnize({
+			width: 300,
+			height: 400
+		});
 	});
 
 

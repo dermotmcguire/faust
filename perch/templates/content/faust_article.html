@@ -1,27 +1,19 @@
-	<h3><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h3>
-	<p class="date"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></p>
-	<p class="article-excerpt"><perch:content id="excerpt" type="text" label="Excerpt" textile="true" editor="markitup" required="true" words="20" append="..."  help="A short excerpt for the blog post" /></p>
+	<h4 class="article-title"><perch:content id="heading" type="text" label="Heading" required="true" title="true" /></h4>
+	<p class="date">Posted on: <perch:content id="date" type="date" label="Date" format="%d %B %Y" required="true" /></p>
 
 	<perch:if exists="feature-image">
 		<div class="article-feature-image">
-		  	<img src="<perch:content type="image" id="feature-image" label="Image" width="620" />" alt="<perch:content type="text" id="featureimageal" label="Description" required="false" help="A caption for the feature image" title="true" />" />
-			</div>
+		  	<img src="<perch:content type="image" id="feature-image" label="Image" width="620" />" />
+		</div>
 	</perch:if>
-	<aside class="pull-quote">
-		<blockquote>
-			<p class="article-pull-quote"><perch:content id="pull-quote" type="text" label="Pull-Quote" textile="true" editor="markitup" required="true" words="20" help="A pull quote to appear within the blog post" /></p>
+	<perch:if exists="pull-quote">
+	<aside class="article-pull-quote">
+		<blockquote class="article-pull-quote">
+			<perch:content id="pull-quote" type="text" label="Pull-Quote" textile="true" editor="markitup" append="..."  words="26" help="A pull quote to appear within the blog post" />
 		</blockquote>
 	</aside>
-	<p class="article-content"><perch:content id="body" type="textarea" label="Body" textile="true" editor="markitup" required="true" help="Your blog post" /></p>
-
-
-
-
-
-
-
-
-
-
-
+	</perch:if>
+	<div class="article-excerpt"><perch:content id="excerpt" type="text" label="Excerpt" editor="markitup" words="20" append="..." help="An excerpt for the achive section" /></div>
+	<div class="article-content"><perch:content id="body" type="textarea" label="Body" textile="true" editor="markitup" required="true" help="Your blog post" /></div>
+	<div class="article-divide"></div>
 

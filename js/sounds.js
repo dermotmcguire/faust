@@ -1,5 +1,12 @@
 $( document ).ready(function() {
+	$('#ex5-mute').on('click', function(){
+		Howler.mute(true);
+	});
+	$('#ex5-unmute').on('click', function(){
+		Howler.unmute(true);
+	});
 
+<<<<<<< HEAD
   //This space is for mute and unmute function
   //function check on click whether the mute class is in place and performs appropriate function
   $(".audio-button").click( function () {
@@ -18,51 +25,53 @@ $( document ).ready(function() {
 
   $('#scene1').bind('inview', function (event, visible) {
     if (visible) {
+=======
+	$('#scene1').bind('inview', function (event, visible) {
+		if (visible) {
+>>>>>>> dermot's-work
 			sound1.pause().fadeIn(0.5, 2000);
 			music1.pause().fadeIn(0.5, 1000);
 			music1.loop(false);
-    } else {
+		} else {
 			sound1.fadeOut(0, 2000);
 			music1.fadeOut(0, 5000);
-    }
-  });
+    	}
+  	});
 
-  $('#scene2').bind('inview', function (event, visible) {
-    if (visible) {
+	$('#scene2').bind('inview', function (event, visible) {
+    	if (visible) {
 			sound2a.pause().fadeIn(0.5, 2000);
 			sound2b.pause().fadeIn(0.2, 2000);
-      music2.pause().fadeIn(0.5, 2000);
-      music2.loop(true);
-    } else {
+      		music2.pause().fadeIn(0.5, 2000);
+      		music2.loop(true);
+    	} else {
 			sound2a.fadeOut(0, 2000);
 			sound2b.fadeOut(0, 2000);
-      music2.fadeOut(0, 2000);
-
-    }
-  });
+  	    	music2.fadeOut(0, 2000);
+    	}
+  	});
 
   $('#scene3').bind('inview', function (event, visible) {
-    if (visible) {
+    	if (visible) {
 			sound3.pause().fadeIn(0.5, 2000);
-      music3.pause().fadeIn(0.5, 2000);
-      music3.loop(true);
-    } else {
+      		music3.pause().fadeIn(0.5, 2000);
+      		music3.loop(true);
+    	} else {
 			sound3.fadeOut(0, 2000);
-      music3.fadeOut(0, 2000);
-
-    }
-  });
+      		music3.fadeOut(0, 2000);
+    	}
+  	});
 
   $('#scene4').bind('inview', function (event, visible) {
     if (visible) {
 			sound4.pause().fadeIn(0.5, 2000);
-      music4.pause().fadeIn(0.5, 2000);
-      music4.loop(true);
-    } else {
+      		music4.pause().fadeIn(0.5, 2000);
+      		music4.loop(true);
+		} else {
 			sound4.fadeOut(0, 2000);
-      music4.fadeOut(0, 2000);
-    }
-  });
+     		music4.fadeOut(0, 2000);
+   		}
+  	});
 
 });
 
