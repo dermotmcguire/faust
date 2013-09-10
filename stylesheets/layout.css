@@ -1592,8 +1592,13 @@ section.intermission {
 	/*max-height:675px;*/
 	padding: 50px 0;
 	/*padding: 50px 0 10px;*/
-	/*background: url("../images/newspaper-tile.jpg") 0px -2px repeat;*/
-	background: url("../images/newspaper-tile-v2.jpg") 0px -2px repeat;
+	/*background: url("../images/newspaper-tile.jpg") 0px -2px repeat;
+	/*background: url("../images/newspaper-tile-v2.jpg") 0px -2px repeat;*/
+	/*background: url("../images/newspaper-tile-v3.jpg") 0px -2px repeat;*/
+	/*background: url("../images/newspaper-tile-v4.png") 0px -2px repeat;*/
+	/*background: url("../images/newspaper-tile-v5.jpg") 0px -2px repeat;*/
+	/*background: url("../images/newspaper-tile-v6.jpg") 0px -2px repeat;*/
+	background: url("../images/newspaper-tile-v7.jpg") 0px -2px repeat;
 }
 .intermission-content {
 	overflow: hidden;
