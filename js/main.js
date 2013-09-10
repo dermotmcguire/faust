@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	$(function(columnize){
 		$('.news-copy').columnize({
 			width: 300,
-			height: 280
+			height: 380
 		});
 	});
 
