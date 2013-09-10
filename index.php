@@ -46,11 +46,6 @@
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
 	<![endif]-->
 
-	<!-- Contact Form
-	================================================== -->
-	<script src="cfg-contactform-4/js/contactform.js"></script>
-	<link href="cfg-contactform-4/css/contactform.css" rel="stylesheet" type="text/css" />
-
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -112,13 +107,10 @@
 	   			</li>
 	 		</ul>
 		</li>
-<<<<<<< HEAD
 		<li class="audio-button">
 			<span class="icon-volume"></span>
-		</li> 
-=======
-		<li title="Toggle Sounds" class="no-sub the-icons"><a href='#sound-toggle'><i class="icon-volume-up"></i> <span class="i-name"></span><span class="i-code"></span></a></li>
->>>>>>> dermot's-work
+		</li>
+
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">
