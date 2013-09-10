@@ -16,6 +16,12 @@
 
 	<div class="scene intro js-intro-splash"> <!-- Begin Intro -->
 		<div class="container gradient-0">
+			<div class="intro-face centered">
+				<div class="intro-face-complete faceglow"></div>
+				<div class="intro-face-glow"></div>
+				<img class="intro-face-lefteye eyeglow" src="images/face-lefteye.png" />
+				<img class="intro-face-righteye eyeglow" src="images/face-righteye.png" />
+			</div>
 			<div class="title"> <!-- title -->
 				<p class="quote">I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
 				<p class="sub quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
@@ -79,12 +85,6 @@
 				data-0-bottom		= "transform: scale(1.0) translateY(0%);"
 				data-image-url		= "images/city-centre-back.png">
 				<img src="">
-				<div class="intro-face" >
-					<div class="intro-face-complete faceglow"></div>
-					<div class="intro-face-glow"></div>
-					<img class="intro-face-lefteye eyeglow" src="images/face-lefteye.png" />
-					<img class="intro-face-righteye eyeglow" src="images/face-righteye.png" />
-				</div>
 			</div>
 
 			<div class="js-image scene1-layer city-right-mid"

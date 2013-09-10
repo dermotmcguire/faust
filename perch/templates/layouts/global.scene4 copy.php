@@ -6,7 +6,7 @@
 			data-0-bottom		= "position:!fixed;"
 			data--100-bottom    	= "position:!fixed; top:0%;"
 			data--950-bottom		= "position:!fixed; top:-90%;" >
-
+			
 			<div class="spot-gradient"></div>
 
 			<div class="scene-layer moon"
@@ -120,7 +120,7 @@
 					<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 					<div id="mc_embed_signup">
 					<form action="http://emmachee.us7.list-manage.com/subscribe/post?u=cac73c79dd5d05e880c08aa8a&amp;id=9ccf3275fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
+						
 					<div class="mc-field-group">
 						<label for="mce-FNAME">Name </label>
 						<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
@@ -135,14 +135,29 @@
 						</div>
 						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 					</form>
-					</div>
+					</div>						
 						<!--End mc_embed_signup-->
 				</div>
 
 				<div class="eight columns">
-				<?php perch_content('Part 4 Info For Artists'); ?>
-				<div class="clear"></div>
-				<?php perch_content('Part 4 Info For Sponsors'); ?>
+					<!-- EXTRA INFO -->
+					<h4>Info For Artist and Performers</h4>
+					<p>
+						FAUST is a project offering many great opportunities to performers and creative people of serious talent and serious focus. If you sing, design costumes, design sets, direct, act, play, produce music, stage-manage, dance, choreograph, engineer sounds or design lighting etc, AND, you’re serious, we’d like to hear from you.
+					</p>
+					<p>
+						You can send your bios, resumes, portfolios, etc to
+						</br>
+						<a href="mailt-:roles@faust-musical.com">roles@faust-musical.com</a>
+					</p>
+					<p>
+						Where relevant, links to your audio and video files are highly advantageous inclusions.
+					</p>
+					
+					<h4>Info For Sponsors</h4>
+					<p>
+						FAUST is presently in pre-production. Various production scenarios of the project are being financially modeled and we will shortly make these available along with a range of sponsorship and investment ‘packages’.
+					</p>
 				</div>
 
 				<!-- CREDITS SECTION -->
