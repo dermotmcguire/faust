@@ -72,11 +72,11 @@ function loading(){
 				//increase counter of loaded images
 				numberOfLoaded++;
 				//remove the image from the page as we no longer need it
-				this.remove();
+				$(this).remove();
 				progressBar(step * numberOfLoaded, $('.loading-bar'));
 			});
 			// load image into the background of the appropriate div, or this can be set in the css which is preferable.
-			$(item).css('background-image', "url("+imageURL+")");
+			// $(item).css('background-image', "url("+imageURL+")");
 		}
 		else if (imageURL == undefined) {
 			console.log(this);
@@ -86,7 +86,12 @@ function loading(){
 
 //PROGRESS BAR ANIMATION
 function progressBar(percent, $element) {
-
+	var testing = true;
+	if (testing==true) {
+		$("#nav-menu").delay(1000).fadeIn(2000);
+		$("body").css("overflow","hidden");
+		$("body").css("height","auto");
+	}
 	loadingBarWidth = percent * $element.width() / 100;
 	$('.progress').animate({width: loadingBarWidth },{
         complete: function () {
@@ -111,12 +116,14 @@ function progressBar(percent, $element) {
 
 //WHEN THE PAGE IS SCALED THE SIDE GRADIENTS ADJUST
 function setMargins() {
+	var allScene_width = $(".all-scenes").width();
+	var margin = ($("body").width() - allScene_width-20)/2;
 	var marginLeft = $(".all-scenes").css("margin-left");
 	var marginRight = $(".all-scenes").css("margin-right");
 	if ($(window).width() > 1440) {
-		console.log("wide");
-		$(".left-border").css("left", marginLeft);
-		$(".right-border").css("right", marginRight);			
+		console.log(margin, margin);
+		$(".left-border").css("left", margin);
+		$(".right-border").css("right", margin);			
 	}
 	else {
 		$(".left-border").css("left", "0");
