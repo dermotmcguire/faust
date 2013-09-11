@@ -218,6 +218,11 @@ League Gothic*/
 .icon-volume-up:before {
   *zoom: expression(this.runtimeStyle['zoom'] = '1',this.innerHTML = '&#xe00b'): ;
 }
+
+.icon-volume-up:before {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1',this.innerHTML = '&#xe00b'): ;
+}
+
 .icon-volume-off:before {
   *zoom: expression(this.runtimeStyle['zoom'] = '1',this.innerHTML = '&#xe00c'): ;
 }
@@ -808,12 +813,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .quote.sub {
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 	color:grey;
 }
 
 .loading {
-	margin:-15px 0 0;
+	margin:-5px 0 0;
 }
 
 #title-logo {
@@ -830,6 +835,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	line-height: 1.5em;
 	text-transform: uppercase;
 	margin: 0 0 30px;
+	color: grey;
 }
 /************ INTRO FACE ************/
 
@@ -893,6 +899,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	margin:auto;
 	width: 190px;
 	height: 60px;
+	padding-top: 10px;
 }
 .loading-bar {
 	height: 34px;
@@ -918,10 +925,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .ready-arrow {
 	/*cursor: pointer;*/
 	margin: 20px auto;
-	width: 42px;
-	height: 42px;
+	width: 38px;
+	height: 38px;
 	display: none;
-	background-image:url("../images/ready-arrow.png");
+	background-image:url("../images/ready-arrow-v2.png");
 }
 
 /************** SPOTLIGHT ************/
@@ -1130,6 +1137,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	-o-perspective: 800px;
 	perspective: 800px;
 }
+
+.room .room-shadow-left,
+.room .room-shadow-right {
+	width: 50%;
+	height: 100%;
+	display: block;
+	/** To edit this background, follow this link:
+http://svgeneration.com/generate/Wood-Grain?base-color=000000&grain-color=17191d&grain-weight=2.5&turbulence-weight=0.35&
+*/
+background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nNCc+Cgk8ZGVmcyBpZD0nZGVmczQnPgoJCTxmaWx0ZXIgeT0nMCcgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSdzUkdCJyBpZD0ndCc+CgkJCTxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScuOCAwJyByZXN1bHQ9J291dDEnIG51bU9jdGF2ZXM9JzEnLz4KCQkJPGZlQ29sb3JNYXRyaXggdHlwZT0nc2F0dXJhdGUnIGluPSdvdXQxJyByZXN1bHQ9J291dDInIHZhbHVlcz0nMCcvPgoJCQk8ZmVDb21wb3NpdGUgb3BlcmF0b3I9J2FyaXRobWV0aWMnIGsxPScwJyBrMj0nMC4zNScgazM9JzAnIGs0PScwJyBpbj0nb3V0MicgaW4yPSdvdXQxJy8+CgkJPC9maWx0ZXI+Cgk8L2RlZnM+Cgk8cmVjdCBmaWxsPScjMTcxOTFkJyBmaWxsLW9wYWNpdHk9JzAuMjUnIHg9JzUlJyB5PSctNSUnIHdpZHRoPScxMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzYlJyB5PSctNSUnIHdpZHRoPScxMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzclJyB5PSctNSUnIHdpZHRoPScxNCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzklJyB5PSctNSUnIHdpZHRoPScyMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzExJScgeT0nLTUlJyB3aWR0aD0nMTAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyMxNzE5MWQnIGZpbGwtb3BhY2l0eT0nMC4yJyB4PSc1NSUnIHk9Jy01JScgd2lkdGg9JzQwJScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBmaWxsPScjMTcxOTFkJyBmaWxsLW9wYWNpdHk9JzAuMDc1JyB4PSc2MiUnIHk9Jy01JScgd2lkdGg9JzM1JScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBmaWxsPScjMTcxOTFkJyBmaWxsLW9wYWNpdHk9JzAuMTc1MDAwMDAwMDAwMDAwMDInIHg9JzM4JScgeT0nLTUlJyB3aWR0aD0nMjAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyMxNzE5MWQnIGZpbGwtb3BhY2l0eT0nMC4wNzUnIHg9Jzg1JScgeT0nLTUlJyB3aWR0aD0nNDAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyMxNzE5MWQnIGZpbGwtb3BhY2l0eT0nMC4xMjUnIHg9JzUyJScgeT0nLTUlJyB3aWR0aD0nNDAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IHN0eWxlPSdmaWx0ZXI6dXJsKCN0KScgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMCUnLz4KPC9zdmc+');
+background-color: #000000;
+	z-index: 44;
+}
+
+.room .room-shadow-left {
+	border-right: 5px solid #17191D;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+	left:0;
+}
+
+.room .room-shadow-right {
+	border-left: 5px solid #17191D;
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+	right:0;
+}
+
 .room .cityscape-master {
 	width: 1440px !important;
 	height: 600px !important;
@@ -1137,7 +1174,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	position: absolute;
 
 	z-index: 15;
-
 }
 
 .room .window-master {
@@ -1180,6 +1216,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	background: url(../images/room-sparklelights2-master.png) no-repeat;
 	background-position: 50% 40%;
 	opacity:0.5;
+
 	z-index: 16;
 }
 
@@ -1190,7 +1227,149 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	height: 1785px !important;
 	background: url(../images/room-master.png) no-repeat;
 
-		z-index: 24;
+	z-index: 26;
+}
+
+.couch-salome-sprite {
+		background: url("../images/sprite-smoke.png") no-repeat;
+		opacity:1;
+		position: absolute;
+		display: inherit;
+		top: 880px;
+		left: 390px;
+		width: 250px;
+	    height: 300px;
+	    -webkit-animation: smokesprite 3s steps(36) alternate infinite;
+	       -moz-animation: smokesprite 3s steps(36) alternate infinite;
+	        -ms-animation: smokesprite 3s steps(36) alternate infinite;
+	         -o-animation: smokesprite 3s steps(36) alternate infinite;
+	            animation: smokesprite 3s steps(36) alternate infinite;
+
+		z-index: 28;
+	}
+		@-webkit-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@-moz-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@-ms-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@-o-keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+		@keyframes smokesprite {
+		   from { background-position:    0px; }
+		   to { background-position: -9000px; }
+		}
+
+.room .mephisto-master {
+	left: 0;
+	position: absolute;
+	display: inherit;
+	width: 500px !important;
+	height: 1785px !important;
+	background: url(../images/room-mephisto-master-v2.png) no-repeat;
+
+	z-index: 25;
+}
+
+.room .faust-master {
+	right: 0;
+	position: absolute;
+	display: inherit;
+	width: 780px !important;
+	height: 1785px !important;
+	background: url(../images/room-faust-master-v2.png) no-repeat;
+
+	z-index: 26;
+}
+
+/***************** $ROOM SCENE 2 PRESERVED **************
+
+.room {
+	width: 1440px;
+	height: 100%;
+	position: relative;
+	overflow:hidden;
+	display: block;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
+}
+
+.room .cityscape-master {
+	width: 1440px !important;
+	height: 600px !important;
+	display: none;
+	position: absolute;
+
+	z-index: 15;
+}
+
+.room .window-master {
+	position: absolute;
+	display: inherit;
+	width: 2300px !important;
+	height: 1785px !important;
+	background: url(../images/room-window-master.png) no-repeat;
+
+	z-index: 22;
+
+}
+
+.cityscape-master .citylights-master {
+	width: 100%;
+	height: 100%;
+	display: inherit;
+	position: absolute;
+	background: url(../images/room-citylights-master.png) no-repeat;
+	background-position: 50% 100%;
+
+	z-index: 16;
+}
+
+.cityscape-master .sparklelights1-master {
+	width: 100%;
+	height: 100%;
+	display: inherit;
+	position: absolute;
+	background: url(../images/room-sparklelights1-master.png) no-repeat;
+	background-position: 50% 40%;
+	opacity:0.5;
+	z-index: 16;
+}
+.cityscape-master .sparklelights2-master {
+	width: 100%;
+	height: 100%;
+	display: inherit;
+	position: absolute;
+	background: url(../images/room-sparklelights2-master.png) no-repeat;
+	background-position: 50% 40%;
+	opacity:0.5;
+
+	z-index: 16;
+}
+
+.room .room-master {
+	position: absolute;
+	display: inherit;
+	width: 1920px !important;
+	height: 1785px !important;
+	background: url(../images/room-master.png) no-repeat;
+
+	z-index: 24;
 }
 
 .couch-salome-sprite {
@@ -1257,6 +1436,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	z-index: 26;
 }
 
+************* END $ROOM SCENE 2 PRESERVED ***********/
+
+
 /************* ALLEY ***********/
 
 	.alley {
@@ -1276,13 +1458,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 		display:block;		
 		z-index:21;
 		position: absolute;
-/*		background-size: auto!important;
-		display: inherit;
-		position: absolute;
-		width: 100% !important;
-		height: 100%;
-
-		z-index: 24;*/
 	}
 	.alley .alley-rain {
 		background-size: cover;
