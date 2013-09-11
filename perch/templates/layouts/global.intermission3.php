@@ -20,7 +20,7 @@
 		<div class="news-lines"></div>
 		<div class="news container">
 			<div class="narrative-text news-copy">
-
+				<?php perch_content('Part 3 Narrative Content'); ?>
 			</div>
 			<div class="clear"></div>
 			<div class="sixteen columns">
@@ -29,8 +29,12 @@
 		</div>
 		<div class="more-info three container">
 			<div class="sixteen columns information-text" id="newsflash">
-	
-	
+					<?php perch_content_custom('News Articles', array(
+						'template'=>'faust_article.html',
+						'sort'=>'date',
+						'sort-order'=>'DESC',
+						'count'=>3
+					)); ?>
 			</div>
 		</div>
 		<div class="news container">
