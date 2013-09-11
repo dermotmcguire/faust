@@ -20,7 +20,7 @@
 				data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
 				data--8000-top		= "display:!block; opacity: 0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
 				data--10000-top		= "opacity:1;"
-				data--15000-top		= "transform: translate3d(0%, 100%, 0) scale(0.1);">
+				data--13000-top		= "transform: translate3d(0%, 100%, 0) scale(0.1);">
 			</div>
 			<div class="scene-layer city-bg"
 				data-anchor-target 	= "#scene4"
