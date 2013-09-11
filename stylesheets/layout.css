@@ -808,12 +808,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .quote.sub {
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 	color:grey;
 }
 
 .loading {
-	margin:-15px 0 0;
+	margin:-5px 0 0;
 }
 
 #title-logo {
@@ -830,6 +830,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	line-height: 1.5em;
 	text-transform: uppercase;
 	margin: 0 0 30px;
+	color: grey;
 }
 /************ INTRO FACE ************/
 
@@ -893,6 +894,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	margin:auto;
 	width: 190px;
 	height: 60px;
+	padding-top: 10px;
 }
 .loading-bar {
 	height: 34px;
@@ -918,10 +920,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .ready-arrow {
 	/*cursor: pointer;*/
 	margin: 20px auto;
-	width: 42px;
-	height: 42px;
+	width: 38px;
+	height: 38px;
 	display: none;
-	background-image:url("../images/ready-arrow.png");
+	background-image:url("../images/ready-arrow-v2.png");
 }
 
 /************** SPOTLIGHT ************/
