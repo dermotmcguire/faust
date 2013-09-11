@@ -1,5 +1,0 @@
-IMPORTANT!
-
-Keep these files synced with this path:
-
-/perch/templates/layouts/
