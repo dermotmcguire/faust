@@ -8,43 +8,43 @@
 
 			<div class="spot-gradient"></div>
 
-<!-- 			<div class="scene-layer moon"
+			<div class="scene-layer moon"
 				data-anchor-target="#scene4"
-				data-0-top			= "display:!block; top: 0%; opacity: 1.0; transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
+				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
 				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px);">
-			</div> -->
-			<!-- <div class="scene-layer red-moon"
+			</div>
+			<div class="scene-layer red-moon"
 				data-anchor-target="#scene4"
 				data-0-top			= "display:!block;  transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
 				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px); opacity:0;"
 				data--500-bottom	= "opacity:1">
-			</div> -->
-			<!-- <div class="scene-layer city-bg"
+			</div>
+			<div class="scene-layer city-bg"
 				data-anchor-target 	= "#scene4"
 				data-0-top			= "display:!block;"
 				data--2000-top		= "opacity: 0.0; transform: translate3d(1%, -30%, 0) scale(2.5); filter: blur(2px);"
 				data-0-bottom		= "opacity: 0.9; transform: translate3d(0%, -60%, 0) scale(1.2); filter: blur(0px);">
-			</div> -->
+			</div>
 			<div class="scene-layer clouds cloudcruise-one"
 				data-anchor-target 	= "#scene4"
-				data-0-top			= "display:!block; opacity: 0; transform: scale(2); top: 0%; left: 0"
-				data-100-top	= "opacity:0.6;">
+				data-0-top			= "display:!block; opacity:!0; transform: scale(2); top: 0%;"
+				data-500-bottom	= "opacity:!0.4;">
 			</div>
 			<div class="scene-layer clouds cloudcruise-two"
 				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity: 0; transform: scale(1); top: 2%;"
-				data--100-top	= "opacity:0.6;">
+				data-0-top			= "display:!block; opacity:!0; transform: scale(1); top: 0%;"
+				data-500-bottom	= "opacity:!0.4;">
 			</div>
 			<div class="scene-layer clouds cloudcruise-three"
 				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity: 0; transform: scale(0.5); top: 3%;"
-				data--100-top	= "opacity:0.6;">
+				data-0-top			= "display:!block; opacity:!0; transform: scale(0.5); top: 0%;"
+				data-500-bottom	= "opacity:!0.4;">
 			</div>
 			<div class="scene-layer couple"
 				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; top: 10%; opacity: 0.0; transform: translate3d(1%, -10%, 0) scale(3); filter: blur(5px);"
+				data-0-top			= "display:!block; opacity: 0.0; transform: translate3d(1%, -10%, 0) scale(3); filter: blur(5px);"
 				data--3000-top		= "opacity: 1.0; transform: translate3d(1%, -10%, 0) scale(2.75); filter: blur(1px);"
-				data--3000-bottom		= "opacity: 1.0; transform: translate3d(0%, -70%, 0) scale(0.75); filter: blur(0.0px);">
+				data-0-bottom		= "opacity: 1.0; transform: translate3d(0%, -70%, 0) scale(0.75); filter: blur(0.0px);">
 			</div>
 
 		</div>
@@ -138,9 +138,12 @@
 						<!--End mc_embed_signup-->
 				</div>
 
-				<div class="eight columns">
-				<div class="clear"></div>
-				</div>
+ 				<div class="eight columns">
+					<?php perch_content('Part 4 Info For Artists'); ?>
+ 				<div class="clear"></div>
+				<?php perch_content('Part 4 Info For Sponsors'); ?>
+	 				</div>
+
 
 				<!-- CREDITS SECTION -->
 				<ul class="sixteen columns logo-soup credits">
