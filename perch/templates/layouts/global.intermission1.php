@@ -38,7 +38,7 @@
 				<div class="article-divide"></div>
 			</div>
 			<div class="eight columns information-text" id="the-production">
-
+				<?php perch_content('The Production'); ?>
 				<div class="article-divide"></div>
 			</div>
 		</div>

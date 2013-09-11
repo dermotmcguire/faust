@@ -2105,6 +2105,19 @@ p.date {
 .intermission.four h2 {
 	font-size: 110px;
 }
+
+.intermission.four .moon-fullstop {
+	opacity: 1;
+	display: inline-block;
+	position: absolute;
+	margin-top:30px;
+	height:50px;
+	width:30px;
+	text-indent: -9999em;
+	background: url(../images/moon-moon-red.png) bottom center no-repeat;
+	background-size: 30px 30px;
+}
+
 .intermission.four h2, .intermission.four h3 {
 	-webkit-mask-image: none;
 	-moz-mask-image: none;
@@ -2144,7 +2157,7 @@ p.date {
 }
 
 .contact{
-	margin-top: 50px;
+	margin-top: 0px;
 }
 
 .credits {

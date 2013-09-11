@@ -4,7 +4,7 @@
 			data-1-top			= "position: !relative;"
 			data-0-top			= "position: !fixed; top: 0%;"
 			data--100-bottom		= "top:0%;"
-			data--1200-bottom		= "top: -100%; position:!relative">
+			data--1000-bottom		= "top: -100%; position:!relative">
 			<div class="spot-gradient"></div>
 
 			<div class="scene-layer moon"
@@ -67,7 +67,7 @@
 				<div class="headline right">
 					<h2 class="palette-deep-purple">SIGN IN</h2>
 					</br>
-					<h2 class="palette-blood-red">BLOOD</h2>
+					<h2 class="palette-blood-red">BLOOD<span class="moon-fullstop" data--500-bottom = "opacity: 0" data--1-top = "opacity:1;" >.</span></h2>
 				</div>
 			</div>
 			<!-- SECTION MAIN CONTENT -->
@@ -122,28 +122,25 @@
 					<!-- Begin MailChimp Signup Form -->
 					<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 					<div id="mc_embed_signup">
-					<form action="http://emmachee.us7.list-manage.com/subscribe/post?u=cac73c79dd5d05e880c08aa8a&amp;id=9ccf3275fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-					<div class="mc-field-group">
-						<label for="mce-FNAME">Name </label>
-						<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-					</div>
-					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email Address </label>
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-					</div>
-						<div id="mce-responses" class="clear">
-							<div class="response" id="mce-error-response" style="display:none"></div>
-							<div class="response" id="mce-success-response" style="display:none"></div>
+						<form action="http://emmachee.us6.list-manage1.com/subscribe/post?u=e012a3ed241e30c1824ba75a6&amp;id=fc942f19c0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="indicates-required"></div>
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email Address</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 						</div>
-						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-					</form>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+						</form>
 					</div>
 						<!--End mc_embed_signup-->
 				</div>
 
- 				<div class="eight columns">
- 				<div class="clear"></div>
+  				<div class="eight columns">
+					<?php perch_content('Part 4 Info For Artists'); ?>
+  				<div class="clear"></div>
+					<?php perch_content('Part 4 Info For Sponsors'); ?>
  				</div>
 
 

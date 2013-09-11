@@ -30,7 +30,7 @@
 		<div class="more-info three container">
 			<div class="sixteen columns information-text" id="newsflash">
 	
-
+	
 			</div>
 		</div>
 		<div class="news container">
@@ -40,8 +40,11 @@
 		</div>
 		<div class="more-info three container">
 			<div class="sixteen columns information-text" id="the-archives">
-	
-	
+				<?php perch_content_custom('News Articles', array(
+					'template'=>'_faust_article_archive.html',
+					'sort'=>'date',
+					'sort-order'=>'DESC',
+				)); ?>
 			</div>
 		</div>
 	</div>

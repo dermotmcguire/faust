@@ -40,7 +40,7 @@
 			</div>
 			<div class="eight columns information-text" id="look">
 
-
+				<?php perch_content('Look-Embeds'); ?>
 				<div class="article-divide"></div>
 			</div>
 		</div>

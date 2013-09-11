@@ -7,7 +7,7 @@
 		<div class="js-image scene-layer alley-master"
 			data-anchor-target	= "#scene3"
 			data-0-top 			= "opacity: 0; transform: scale(3.0); top: 0%; left:-100px"
-			data--4000-top 		= "opacity: 1; top:-100%; transform: scale(1.0); left: 0px;"
+			data--8000-top 		= "opacity: 1; top:-100%; transform: scale(1.0); left: 0px;"
 			data-image-url		= "images/alley-master.jpg">
 			<img src="">
 		</div>
