@@ -1170,6 +1170,7 @@ background-color: #000000;
 .room .cityscape-master {
 	width: 1440px !important;
 	height: 600px !important;
+	overflow: hidden;
 	display: none;
 	position: absolute;
 

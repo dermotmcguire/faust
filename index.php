@@ -116,6 +116,7 @@
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">
+	<script>setMargins();</script>
 
 <!-- The Intro and the First Scene
 ================================================== -->
@@ -133,8 +134,6 @@
 
 
 <div class="clear"></div>
-
-
 	<!-- Skrollr Lives Here! -->
 	<script src="js/skrollr.min.js" type="text/javascript"></script>
 	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
