@@ -4,47 +4,51 @@
 			data-1-top			= "position: !relative;"
 			data-0-top			= "position: !fixed; top: 0%;"
 			data--100-bottom		= "top:0%;"
-			data--1000-bottom		= "top: -200%; position:!relative">
-
+			data--1200-bottom		= "top: -100%; position:!relative">
 			<div class="spot-gradient"></div>
 
 			<div class="scene-layer moon"
 				data-anchor-target="#scene4"
-				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
-				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px);">
+				data-0-top 			= "top: 0px; transform: translate3d(0%, 120%, 0) scale(0.75); filter: blur(0px); opacity:0;"
+				data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
+				data--8000-top		= "display:!block; opacity: 1.0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
+				data--10000-top		= "opacity:0">
 			</div>
 			<div class="scene-layer red-moon"
 				data-anchor-target="#scene4"
-				data-0-top			= "display:!block;  transform: translate3d(1%, 30%, 0) scale(0.75); filter: blur(0px);"
-				data-0-bottom		= "transform: translate3d(0%, -100%, 0) scale(0.5); filter: blur(5px); opacity:0;"
-				data--500-bottom	= "opacity:1">
+				data-0-top 			= "top: 0px; transform: translate3d(0%, 120%, 0) scale(0.75); filter: blur(0px); opacity:0;"
+				data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
+				data--8000-top		= "display:!block; opacity: 0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
+				data--10000-top		= "opacity:1;"
+				data--15000-top		= "transform: translate3d(0%, 100%, 0) scale(0.1);">
 			</div>
 			<div class="scene-layer city-bg"
 				data-anchor-target 	= "#scene4"
-				data-0-top			= "display:!block;"
-				data--2000-top		= "opacity: 0.0; transform: translate3d(1%, -30%, 0) scale(2.5); filter: blur(2px);"
-				data-0-bottom		= "opacity: 0.9; transform: translate3d(0%, -60%, 0) scale(1.2); filter: blur(0px);">
+				data-0-top			= "display:!block; top: 0%"
+				data--2000-top		= "opacity: 0.0; transform: translate3d(1%, 50%, 0) scale(2.5); filter: blur(5px);"
+				data--8000-top		= "opacity: 0.9; transform: translate3d(0%, 30%, 0) scale(1.2); filter: blur(0px);">
 			</div>
 			<div class="scene-layer clouds cloudcruise-one"
 				data-anchor-target 	= "#scene4"
-				data-0-top			= "display:!block; opacity:!0; transform: scale(2); top: 0%;"
-				data-500-bottom	= "opacity:!0.4;">
+				data-0-top			= "display:!block; opacity:0; transform: scale(2); top: 0%;"
+				data--500-top	= "opacity:0.4;">
 			</div>
 			<div class="scene-layer clouds cloudcruise-two"
 				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity:!0; transform: scale(1); top: 0%;"
-				data-500-bottom	= "opacity:!0.4;">
+				data-0-top			= "display:!block; opacity:0; transform: scale(1); top: 0%;"
+				data--500-top		= "opacity:0.4;">
 			</div>
 			<div class="scene-layer clouds cloudcruise-three"
 				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity:!0; transform: scale(0.5); top: 0%;"
-				data-500-bottom	= "opacity:!0.4;">
+				data-0-top			= "display:!block; opacity:0; transform: scale(0.5); top: 0%;"
+				data--500-top		= "opacity:0.4;">
 			</div>
 			<div class="scene-layer couple"
 				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity: 0.0; transform: translate3d(1%, -10%, 0) scale(3); filter: blur(5px);"
-				data--3000-top		= "opacity: 1.0; transform: translate3d(1%, -10%, 0) scale(2.75); filter: blur(1px);"
-				data-0-bottom		= "opacity: 1.0; transform: translate3d(0%, -70%, 0) scale(0.75); filter: blur(0.0px);">
+				data-0-top			= "display:!block; top:0%;  opacity: 0.0; transform:  scale(3) translate3d(-1%, 22%, 0); filter: blur(5px)"
+				data--1000-top		= "opacity: 0.0;"
+				data--3000-top		= "opacity: 1.0; transform: scale(2.5) translate3d(0%, 25%, 0); filter: blur(1px);"
+				data--8000-top		= "opacity: 1.0; transform: scale(0.75) translate3d(0%, 10%, 0); filter: blur(0.0px);">
 			</div>
 
 		</div>
@@ -139,10 +143,8 @@
 				</div>
 
  				<div class="eight columns">
-					<?php perch_content('Part 4 Info For Artists'); ?>
  				<div class="clear"></div>
-				<?php perch_content('Part 4 Info For Sponsors'); ?>
-	 				</div>
+ 				</div>
 
 
 				<!-- CREDITS SECTION -->

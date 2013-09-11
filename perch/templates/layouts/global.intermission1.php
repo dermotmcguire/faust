@@ -22,7 +22,7 @@
 		<div class="news-lines"></div>
 		<div class="news container">
 			<div class="narrative-text news-copy">
-				<?php perch_content('Part 1 Narrative Content'); ?>
+
 			</div>
 
 			<div class="eight columns">
@@ -34,11 +34,11 @@
 		</div>
 		<div class="more-info one container">
 			<div class="eight columns information-text" id="the-project">
-				<?php perch_content('The Project'); ?>
+
 				<div class="article-divide"></div>
 			</div>
 			<div class="eight columns information-text" id="the-production">
-				<?php perch_content('The Production'); ?>
+
 				<div class="article-divide"></div>
 			</div>
 		</div>

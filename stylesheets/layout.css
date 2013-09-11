@@ -1450,7 +1450,6 @@ background-color: #000000;
 	}
 
 	.alley .alley-master {
-		/*background-position: top center;*/
 		opacity:0;
 		background: url(../images/alley-master.jpg) no-repeat;
 		width: 100%;
@@ -1539,7 +1538,7 @@ background-color: #000000;
 .night {
 	/*width: 100%;*/
 	display: block;
-	height: 10000px;
+	height: 15000px;
 	position: relative;
 	overflow:hidden;
 	display: block;
@@ -1624,7 +1623,7 @@ background-color: #000000;
 
 	@-webkit-keyframes cloudcruise {
 		0% {
-			-webkit-transform: translate3d(-125%, 0, 0);
+			-webkit-transform: translate3d(-25%, 0, 0);
 		}
 		100% {
 			-webkit-transform: translate3d(125%, 0, 0);
@@ -1633,7 +1632,7 @@ background-color: #000000;
 
 	@-moz-keyframes cloudcruise {
 		0% {
-			-moz-transform: translate3d(-125%, 0, 0);
+			-moz-transform: translate3d(-25%, 0, 0);
 		}
 		100% {
 			-moz-transform: translate3d(125%, 0, 0);
@@ -1642,7 +1641,7 @@ background-color: #000000;
 
 	@-ms-keyframes cloudcruise {
 		0% {
-			-ms-transform: translate3d(-125%, 0, 0);
+			-ms-transform: translate3d(-25%, 0, 0);
 		}
 		100% {
 			-ms-transform: translate3d(125%, 0, 0);
@@ -1651,7 +1650,7 @@ background-color: #000000;
 
 	@-o-keyframes cloudcruise {
 		0% {
-			-o-transform: translate3d(-125%, 0, 0);
+			-o-transform: translate3d(-25%, 0, 0);
 		}
 		100% {
 			-o-transform: translate3d(125%, 0, 0);
@@ -1660,7 +1659,7 @@ background-color: #000000;
 
 	@keyframes cloudcruise {
 		0% {
-			transform: translate3d(-125%, 0, 0);
+			transform: translate3d(-25%, 0, 0);
 		}
 		100% {
 			transform: translate3d(125%, 0, 0);
@@ -1705,7 +1704,7 @@ background-color: #000000;
 #scene4{
 	margin-top: -20px;
 	background:#111;
-	height: 20000px;
+	height: 13000px;
 }
 
 /*.scene-container {
