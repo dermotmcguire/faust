@@ -2002,6 +2002,15 @@ section.intermission {
 	width: 300px !important;
 }
 
+
+.narrative-text .first.column p:first-child:first-letter {
+	font-size: 90px;
+	float: left;
+	margin: 0px 10px 0 0;
+	line-height: 0.8;
+	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
 /*this add a nice article looking border*/
 .more-info .information-text:first-child {
 	margin-right: 0px;
