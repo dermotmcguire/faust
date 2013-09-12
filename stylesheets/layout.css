@@ -1928,6 +1928,11 @@ section.intermission {
 	cursor: pointer;
 	border: 3px solid rgba(0, 0, 0, 1);
 	outline: 1px solid rgba(0, 0, 0, 1);
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
 }
 
 .information-text {
