@@ -1,4 +1,4 @@
-<div id="scene2" class="scene part2 gradient-2"> <!-- Part 2 -->
+<div id="scene2" class="scene part2 gradient-2 gradient-fixer"> <!-- Part 2 -->
 	<div class="room centered scene-container"
 	data-anchor-target  = "#scene2"
 	data--1-top			= "position:!fixed;"

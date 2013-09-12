@@ -544,6 +544,20 @@ p {
 
 
 /***************** $GRADIENTS **************/
+
+.gradient-fixer {
+	-webkit-transform-style: preserve-3d !important;
+    -moz-transform-style: preserve-3d !important;
+    -ms-transform-style: preserve-3d !important;
+    -o-transform-style: preserve-3d !important;
+    transform-style: preserve-3d !important;
+	-webkit-backface-visibility: hidden !important;
+	-moz-backface-visibility: hidden !important;
+	-ms-backface-visibility: hidden !important;
+	-o-backface-visibility: hidden !important;
+	backface-visibility: hidden !important;
+}
+
 .intermission-gradient-vignette {
 	width:100%;
 	height:100%;
@@ -624,6 +638,8 @@ background: -ms-radial-gradient(center, ellipse cover, rgba(112,7,0,0.4) 0%,rgba
 background: radial-gradient(ellipse at center, rgba(112,7,0,0.4) 0%,rgba(45,3,0,0) 60%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66700700', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	/* Spotlight gradient from .palette-blood-red to .palette-near-black: http://www.colorzilla.com/gradient-editor/#700700+0,000000+100&1+0,0.4+0,0+100;Custom */
+
+z-index: 99;
 }
 
 .gradient-1  /* Floods from start of intro to the end of Part 1 */ {
@@ -826,8 +842,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	display: block;
 	width: 421px;
 	height: 191px;
-	background: url('../images/intro-title-blue.png');
+
+	z-index: inherit;
+
 }
+	#title-logo .red-mask,
+	#title-logo .blue {
+		position: absolute;
+		width: 421px;
+		height: 191px;
+		-webkit-transition: opacity 1s ease-in-out;
+  		-moz-transition: opacity 1s ease-in-out;
+  		-o-transition: opacity 1s ease-in-out;
+ 		transition: opacity 1s ease-in-out;
+	}
+		#title-logo .blue { background: url('../images/intro-title-blue.png'); }
+		#title-logo .red-mask { background: url('../images/intro-title-red.png'); }
+		#title-logo:hover > .blue { opacity: 0; }
 
 .title-sub-heading {
 	font-family: 'League Gothic', Copperplate, 'Copperplate Gothic Light', fantasy;
@@ -836,7 +867,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	text-transform: uppercase;
 	margin: 0 0 30px;
 	color: grey;
+	-webkit-transition: color 1s ease-in-out;
+	-moz-transition: color 1s ease-in-out;
+	-o-transition: color 1s ease-in-out;
+	transition: color 1s ease-in-out;
+
+	z-index: inherit;
 }
+
+.title-sub-heading:hover {
+	color: #F7F7F6;
+}
+
 /************ INTRO FACE ************/
 
 .intro-face {
@@ -1601,6 +1643,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	z-index: 32;
 	background: url(../images/moon-citybg.png) no-repeat;
 }
+.night .city-bg-maskg2189 {
+	display: none;
+	position: absolute;
+	width: 1330px;
+	height: 930px;
+	z-index: 32;
+	background: url(../images/moon-citybg-mask.png) no-repeat;
+}
 
 .night .clouds {
 	display: block;
@@ -1696,6 +1746,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	left: 35%;
 	background: url(../images/moon-couple.png) no-repeat;
 }
+.night .couple-mask {
+	display: none;
+	position: absolute;
+	width: 485px;
+	height: 1175px;
+	z-index: 40;
+	left: 35%;
+	background: url(../images/moon-couple-mask.png) no-repeat;
+}
 
 /************* SCENES ***********/
 .scene {
@@ -1751,17 +1810,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	background-position: center bottom;
 	background-repeat: no-repeat;
 
-	-webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
 	-o-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
+
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -2173,7 +2232,7 @@ p.date {
 	opacity: 1;
 	display: inline-block;
 	position: absolute;
-	margin-top:30px;
+	margin-top:34px;
 	height:50px;
 	width:30px;
 	text-indent: -9999em;

@@ -1,4 +1,4 @@
-<div class="body-gradient-flood gradient-1" id="scene0">
+<div class="body-gradient-flood gradient-1 gradient-fixer" id="scene0">
 	<div class="js-image faust-falling"
 		data-anchor-target = "#scene0"
 		data-0-top		   = "top[swing]: -100%; display: !block;opacity:0.0;"
@@ -15,13 +15,15 @@
 	</div>
 
 	<div class="scene intro js-intro-splash"> <!-- Begin Intro -->
-		<div class="container gradient-0">
+		<div class="container gradient-0 gradient-fixer">
 			<div class="title"> <!-- title -->
 				<p class="quote">I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
 				<p class="sub quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
 
+
 				<div id="title-logo" class="loading-start">
-					<div class="loading-ready"></div>
+					<div class="red-mask"></div>
+					<div class="blue"></div>
 				</div>
 				<h3 class="title-sub-heading">The Musical</h3>
 				<div class="loading-container">
