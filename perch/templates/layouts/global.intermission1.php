@@ -2,8 +2,8 @@
 		data-anchor-target  = "#intermission1"
 		data-0-top			= "display:!block;">
 
-	<div class="intermission-gradient-top gradient-fixer"></div>
-	<div class="intermission-gradient-vignette gradient-fixer"></div>
+	<div class="intermission-gradient-top"></div>
+	<div class="intermission-gradient-vignette"></div>
 
 	<div class="intermission-content">
 		<header> </header>
@@ -67,7 +67,7 @@
 		<footer></footer>
 	</div><!-- End Intermission-Content -->
 
-	<div class="intermission-gradient-bottom gradient-fixer"></div>
+	<div class="intermission-gradient-bottom"></div>
 
 </section>
 

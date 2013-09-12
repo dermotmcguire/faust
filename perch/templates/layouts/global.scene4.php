@@ -1,5 +1,5 @@
 <div id="scene4" class="scene part4 "> <!-- Part 4 -->
-		<div class="body-gradient-flood gradient-4 night scene-container gradient-fixer"
+		<div class="body-gradient-flood gradient-4 night scene-container"
 		data-anchor-target  = "#scene4"
 		data-1-top			= "position: !relative;"
 		data-0-top			= "position: !fixed; top: 0%;"

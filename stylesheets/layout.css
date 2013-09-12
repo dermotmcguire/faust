@@ -29,7 +29,7 @@ body {
 				url(../images/skewed_print.png) repeat;
 				/* 80% black; http://bit.ly/15Ycag1 */
 				background-color: black;
-	color: #17191D;
+	color: black;
 	/*text-align:center;*/
 	font: 16px/21px 'PT Serif', sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -544,19 +544,6 @@ p {
 
 
 /***************** $GRADIENTS **************/
-
-.gradient-fixer {
-	-webkit-transform-style: preserve-3d !important;
-    -moz-transform-style: preserve-3d !important;
-    -ms-transform-style: preserve-3d !important;
-    -o-transform-style: preserve-3d !important;
-    transform-style: preserve-3d !important;
-	-webkit-backface-visibility: hidden !important;
-	-moz-backface-visibility: hidden !important;
-	-ms-backface-visibility: hidden !important;
-	-o-backface-visibility: hidden !important;
-	backface-visibility: hidden !important;
-}
 
 .intermission-gradient-vignette {
 	width:100%;
@@ -2009,6 +1996,7 @@ section.intermission {
 	margin: 0px 10px 0 0;
 	line-height: 0.8;
 	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
+	font-family: 'Old Standard TT', sans-serif;
 }
 
 /*this add a nice article looking border*/
