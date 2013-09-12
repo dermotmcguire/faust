@@ -2033,6 +2033,10 @@ section.intermission {
 	outline: 1px solid rgba(0, 0, 0, 0.6);
 	outline-offset: -6px;
 	text-align: center;
+	-webkit-transition: border 0.3s ease-in-out;
+	-moz-transition: border 0.3s ease-in-out;
+	-o-transition: border 0.3s ease-in-out;
+	transition: border 0.3s ease-in-out;
 }
 
 .more-info-button:hover{
