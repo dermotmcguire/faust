@@ -26,7 +26,7 @@ audio {
 
 body {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGA4AwAA1gDOIG8pFwAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+				url(../images/skewed_print.png) repeat;
 				/* 80% black; http://bit.ly/15Ycag1 */
 				background-color: black;
 	color: #17191D;
@@ -2121,18 +2121,15 @@ p.date {
 
 /* @TODO: put in real bg images*/
 .intermission.four .intermission-main {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGCoBwAAiQCB1bUosQAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+	background: url(../images/skewed_print.png) repeat;
 }
 
 .intermission.four header {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGCoBwAAiQCB1bUosQAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+	background: url(../images/skewed_print.png) repeat;
 }
 
 .intermission.four footer {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGCoBwAAiQCB1bUosQAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+	background: url(../images/skewed_print.png) repeat;
 }
 
 .intermission.four .intermission-main, .intermission.four .intermission-main p {
