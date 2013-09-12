@@ -818,6 +818,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .loading {
+	/*display:none;*/
 	margin:-5px 0 0;
 }
 
@@ -1498,9 +1499,10 @@ background-color: #000000;
 	}
 
 	.alley .alley-rain.rain-three {
+		opacity:0.2;
 		top: -260px;
 		left:-60px;
-		background: url(../images/rain-1.gif) no-repeat;
+		background: url(../images/rain-2.gif) no-repeat;
 		height:10000px;
 		z-index: 22;
 	}

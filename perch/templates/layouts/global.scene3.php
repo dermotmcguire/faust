@@ -23,7 +23,9 @@
 		</div>
 		<div class="js-image scene-layer alley-rain rain-three"
 			data-anchor-target 	= "#scene3"
-			data-image-url		= "images/rain.gif">
+			data-top			= "display: none;"
+			data--8000-top		= "display: block;"
+			data-image-url		= "images/rain-2.gif">
 			<img src="">
 		</div>
 	</div>

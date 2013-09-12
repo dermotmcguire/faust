@@ -31,7 +31,12 @@
 					</div>
 					<ul class="loading-text slides">
 						<li class="slide">
-							<p class="loading-text loading pulse">Loading</p>
+							<p class="loading-text loading fadeIn">Loading</p>
+							<script>
+							$(".loading").fadeIn(2000, function(){
+								$(this).addClass("pulse");
+							});
+							</script>
 						</li>
 						<li class="slide">
 							<p class="loading-text ready ">Start Scrolling</p>
@@ -49,7 +54,7 @@
 		<div class="js-image scene-layer one-c" data-image-url="images/spotlight-left.png">
 			<img src="">
 		</div>
-		<div class="intro-spotlights">
+		<div class="intro-spotlights fadeIn">
 			<!-- <div class="js-image spotlight-left-outer"> -->
 				<img class="spotlight-left-outer"		src="images/spotlight-left.png"  />
 			<!-- </div> -->
