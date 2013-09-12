@@ -21,5 +21,10 @@
 			data-image-url		= "images/alley-rain-long-fade.png">
 			<img src="">
 		</div>
+		<div class="js-image scene-layer alley-rain rain-three"
+			data-anchor-target 	= "#scene3"
+			data-image-url		= "images/rain.gif">
+			<img src="">
+		</div>
 	</div>
 </div>

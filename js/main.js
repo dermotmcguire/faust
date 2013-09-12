@@ -85,12 +85,12 @@ function loading(){
 
 //PROGRESS BAR ANIMATION
 function progressBar(percent, $element) {
-	var testing = true;
-	if (testing==true) {
-		$("#nav-menu").delay(1000).fadeIn(2000);
-		$("body").css("overflow","hidden");
-		$("body").css("height","auto");
-	}
+	// var testing = true;
+	// if (testing==true) {
+	// 	$("#nav-menu").delay(1000).fadeIn(2000);
+	// 	$("body").css("overflow","hidden");
+	// 	$("body").css("height","auto");
+	// }
 	loadingBarWidth = percent * $element.width() / 100;
 	$('.progress').animate({width: loadingBarWidth },{
         complete: function () {

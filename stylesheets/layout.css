@@ -1496,6 +1496,14 @@ background-color: #000000;
 		-webkit-animation: rainsimple 25s 1.5s infinite;
 	            animation: rainsimple 25s 1.5s infinite;
 	}
+
+	.alley .alley-rain.rain-three {
+		top: -260px;
+		left:-60px;
+		background: url(../images/rain-1.gif) no-repeat;
+		height:10000px;
+		z-index: 22;
+	}
 		@keyframes rainsimple {
 		0% {
 			background-position: 50% 0%;
