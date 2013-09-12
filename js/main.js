@@ -6,7 +6,6 @@ $( document ).ready(function() {
 	setMargins();
 	loading();
 	intermissionClick();
-
 	/* init columnize */
 	$(function(columnize){
 		$('.news-copy').columnize({
@@ -24,6 +23,7 @@ $( document ).ready(function() {
 
 
 });
+
 
 //USED TO CHECK WHICH INTERMISSON IS SELECTED AND OPEN/CLOSE CONTENT
 function intermissionClick(){
@@ -65,7 +65,6 @@ function loading(){
 		// console.log("image element : ", $(this);
 		imageURL = $(this).data("image-url");
 		if (imageURL != undefined) {
-
 			//I have split the directory path from the image name to accomodate a changing file path
 			//sets the image src to that in the data type so we can measure the load time
 			$(item).children('img').attr('src', imageURL).load( function() {
@@ -101,7 +100,7 @@ function progressBar(percent, $element) {
 			 		//wait for the fade before sliding up.
 				 	$(".loading-text.loading").css("margin-top", '-55px').addClass("slideUp");
 				 	$(".loading-text.ready").css("display", "block").addClass("slideUp");
-				 	//uses big entrance as well as pulse animation effects
+				 	//uses pulse animation effect
 			 		$(".ready-arrow").css("display", "block").addClass("pulse");
 			 		//this delays the page content from loading for 2.5s
 					$("#nav-menu").delay(1000).fadeIn(2000);

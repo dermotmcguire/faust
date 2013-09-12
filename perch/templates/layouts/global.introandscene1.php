@@ -29,8 +29,15 @@
 						<div class="progress">
 						</div>
 					</div>
-					<p class="loading-text loading pulse">Loading</p>
-					<p class="loading-text ready ">Start Scrolling</p>
+					<ul class="loading-text slides">
+						<li class="slide">
+							<p class="loading-text loading pulse">Loading</p>
+						</li>
+						<li class="slide">
+							<p class="loading-text ready ">Start Scrolling</p>
+						</li>
+					</ul>
+
 				</div>
 				<a href="#scene-one"><span class="ready-arrow pulse"> </span></a>
 			</div>

@@ -918,6 +918,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	background:url("../images/loading-bar-mask-red.png");
 	/*background-color:#888888;*/
 }
+.slides {
+
+	width: 380px;
+	height:60px;
+}
+.slides .slide {
+	margin-left: 0;
+	width: 190px;
+	height:60px;
+}
 
 .loading-text.ready {
 	display:none;
