@@ -98,8 +98,11 @@ function progressBar(percent, $element) {
 			 	$(".loading-bar").animate({opacity:"0"}, 200);
 			 	$(".loading-text.loading").animate({opacity:"0"}, 500, function(){
 			 		//wait for the fade before sliding up.
-				 	$(".loading-text.loading").css("margin-top", '-55px').addClass("slideUp");
-				 	$(".loading-text.ready").css("display", "block").addClass("slideUp");
+				 	// $(".loading-text.loading").css("margin-top", '-55px').addClass("slideUp");
+				 	// $(".loading-text.ready").css("display", "block").addClass("slideUp");
+					// $(".loading-text.ready").css("display", "block");
+					$(".slides").animate({marginTop:"-100px"}, 600);
+					$(".loading-text.ready").delay(500).fadeIn().addClass("slideUp");
 				 	//uses pulse animation effect
 			 		$(".ready-arrow").css("display", "block").addClass("pulse");
 			 		//this delays the page content from loading for 2.5s
