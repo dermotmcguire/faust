@@ -54,11 +54,11 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" 	 href="images/misc/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" sizes="57x57"		href="images/misc/touch-icon-iphone-114.png" />
-	<link rel="apple-touch-icon" sizes="114x114"	href="images/misc/touch-icon-iphone-114.png" />
-	<link rel="apple-touch-icon" sizes="72x72"		href="images/misc/touch-icon-ipad-144.png" />
-	<link rel="apple-touch-icon" sizes="144x144"	href="images/misc/touch-icon-ipad-144.png" />
+	<link rel="shortcut icon" 	 href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57"		href="images/touch-icon-iphone-114.png" />
+	<link rel="apple-touch-icon" sizes="114x114"	href="images/touch-icon-iphone-114.png" />
+	<link rel="apple-touch-icon" sizes="72x72"		href="images/touch-icon-ipad-144.png" />
+	<link rel="apple-touch-icon" sizes="144x144"	href="images/touch-icon-ipad-144.png" />
 
 	<!-- Image Load Parser c.f. http://codepen.io/patrickkunka/pen/zxgas
 	================================================== -->
@@ -66,8 +66,8 @@
 
 </head>
 <body>
-<div class="left-border"></div>
-<div class="right-border"></div>
+<div class="left-border gradient-fixer"></div>
+<div class="right-border gradient-fixer"></div>
 <div id="nav-menu">
 	<ul>
 		<li class='has-sub'><a href='#intermission1'><span>Part I</span></a>
@@ -116,8 +116,7 @@
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">
-	<script>setMargins();</script>
-
+<script>setMargins();</script>
 <!-- The Intro and the First Scene
 ================================================== -->
 <!-- Part 1 Start -->
@@ -134,6 +133,8 @@
 
 
 <div class="clear"></div>
+
+
 	<!-- Skrollr Lives Here! -->
 	<script src="js/skrollr.min.js" type="text/javascript"></script>
 	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
