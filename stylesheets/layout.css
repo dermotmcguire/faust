@@ -1775,8 +1775,50 @@ section.intermission {
 	/*background: url("../images/newspaper-tile-v6.jpg") 0px -2px repeat;*/
 	background: url("../images/newspaper-tile-v7.jpg") 0px -2px repeat;
 }
+
+.intermission-accessories {
+	z-index: 104;
+}
+
+	.intermission-accessories .stain-1 {
+		position: absolute;
+		top: 100px;
+		left: 100px;
+		width: 175px;
+		height: 164px;
+		background:url("../images/newspaper-stain-1.png") no-repeat;
+	}
+
+	.intermission-accessories .stain-2 {
+		position: absolute;
+		top: 250px;
+		right: 300px;
+		width: 89px;
+		height: 95px;
+		background:url("../images/newspaper-stain-2.png") no-repeat;
+	}
+	/*
+	.intermission-accessories .scrawledtext-1 {
+		position: absolute;
+		top: 300px;
+		left: 300px;
+		width: 100px;
+		height: 101px;
+		background:url("../images/newspaper-scrawledtext-1.png") no-repeat;
+	}
+
+	.intermission-accessories .scrawledtext-2 {
+		position: absolute;
+		top: 400px;
+		left: 400px;
+		width: 110px;
+		height: 60px;
+		background:url("../images/newspaper-scrawledtext-2.png") no-repeat;
+	}
+	*/
 .intermission-content {
 	overflow: hidden;
+	z-index: 105;
 }
 .intermission footer, .intermission header {
 	/*background-image: url("../images/sprite-newspaper.png");*/
