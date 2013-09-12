@@ -1252,6 +1252,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 	z-index: 26;
 }
+	.room .room-master-mask {
+		background: url(../images/room-master-mask.png) no-repeat;
+		position: absolute;
+		display: block;
+		height:1785px;
+		width:1920px;
+		top:0;
+		left:0;
+		z-index: 26;
+	}
 
 .couch-salome-sprite {
 		background: url("../images/sprite-smoke.png") no-repeat;

@@ -37,6 +37,7 @@
 			data-image-url		= "images/room-sparklelights2-master.png">
 			<img src="">
 			</div>
+
 		</div>
 
 		<div class="js-image scene-layer room-master"
@@ -47,6 +48,13 @@
 		<span class="couch-salome-sprite"></span>
 		<img src="">
 
+			<div class="js-image scene-layer room-master-mask"
+			data-anchor-target  = "#scene2"
+			data-500-top		= "display:!block; opacity:1;"
+			data--7500-top		= "opacity:0;"
+			data-image-url		= "images/room-master-mask.png">
+			<img src="">
+			</div>
 
 		</div>
 
