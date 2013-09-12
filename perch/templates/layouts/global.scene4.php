@@ -144,7 +144,7 @@
 					<!-- Begin MailChimp Signup Form -->
 					<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 					<div id="mc_embed_signup">
-						<form action="http://emmachee.us6.list-manage1.com/subscribe/post?u=e012a3ed241e30c1824ba75a6&amp;id=fc942f19c0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<form action="ttp://alphacrucisarts.us7.list-manage.com/subscribe/post?u=d943f5972398e07dfef801218&amp;id=a5647fcb08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="indicates-required"></div>
 						<div class="mc-field-group">
 							<label for="mce-EMAIL">Email Address</label>
