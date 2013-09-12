@@ -89,7 +89,7 @@
 				<div class="headline right">
 					<h2 class="palette-deep-purple">SIGN IN</h2>
 					</br>
-					<h2 class="palette-blood-red">BLOOD<span class="moon-fullstop" data-anchor-target = "#intermission4" data-230-top = "opacity: 0.9; transform: translate3d(0,-100px,0) scale(0);" data-130-top = "opacity: 0.9; transform: translate3d(0,10px,0) scale(0.76);" data-100-top = "opacity: 0.9; transform: translate3d(0,0,0) scale(0.75);" >.</span></h2>
+					<h2 class="palette-blood-red">BLOOD<span class="moon-fullstop" data-anchor-target = "#intermission4" data-230-top = "opacity: 0.9; transform: translate3d(0,-160px,0) scale(0);" data-130-top = "opacity: 0.9; transform: translate3d(0,10px,0) scale(0.76);" data-100-top = "opacity: 0.9; transform: translate3d(0,0,0) scale(0.75);" >.</span></h2>
 				</div>
 			</div>
 			<!-- SECTION MAIN CONTENT -->
