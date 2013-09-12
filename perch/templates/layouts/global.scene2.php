@@ -43,7 +43,7 @@
 		<div class="js-image scene-layer room-master"
 		data-anchor-target	= "#scene2"
 		data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(-5%, -30%, 0px) scale(1.55); filter: blur(3px);"
-		data-1000-bottom	= "filter: blur(1px); transform: translate3d(-12%, -26%, 0) scale(0.55);"
+		data-1000-bottom	= "filter: blur(1px); transform: translate3d(-12%, -28%, 0) scale(0.55);"
 		data-500-bottom		= "filter: blur(2px);"
 		data-image-url		= "images/room-master.png">
 		<span class="couch-salome-sprite"></span>
