@@ -23,25 +23,12 @@
 	<!-- CSS
   ================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Old+Standard+TT:400,400italic,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-  	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/fixed-positioning.css">
-	<link rel="stylesheet" href="stylesheets/animations.css">
-	<link rel='stylesheet' media='screen and (min-width: 767px)' href="stylesheets/layout.css"/>
-	<link rel='stylesheet' media='screen and (max-width: 767px)' href="stylesheets/mobile.css"/>
-
+	<link type="text/css" rel="stylesheet" href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,layout.css" />
 
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-	<script src="js/smartpreload.js" type="text/javascript"></script>
-	<script src="js/modernizr.custom.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/jquery.inview.js"></script>
-	<script type="text/javascript" src="js/howler.min.js"></script>
-	<script type="text/javascript" src="js/sounds.js"></script>
-	<script src="js/smooth-scroll.js" type="text/javascript"></script>
-	<script src="js/jquery.columnizer.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+  	<script type="text/javascript" src="/min/b=js&amp;f=smartpreload.js,modernizr.custom.js,jquery.inview.js,howler.min.js,sounds.js,smooth-scroll.js,jquery.columnizer.js,main.js"></script>
 
 
 	<!--[if lt IE 9]>
@@ -54,11 +41,11 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" 	 href="images/misc/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" sizes="57x57"		href="images/misc/touch-icon-iphone-114.png" />
-	<link rel="apple-touch-icon" sizes="114x114"	href="images/misc/touch-icon-iphone-114.png" />
-	<link rel="apple-touch-icon" sizes="72x72"		href="images/misc/touch-icon-ipad-144.png" />
-	<link rel="apple-touch-icon" sizes="144x144"	href="images/misc/touch-icon-ipad-144.png" />
+	<link rel="shortcut icon" 	 href="images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="57x57"		href="images/touch-icon-iphone-114.png" />
+	<link rel="apple-touch-icon" sizes="114x114"	href="images/touch-icon-iphone-114.png" />
+	<link rel="apple-touch-icon" sizes="72x72"		href="images/touch-icon-ipad-144.png" />
+	<link rel="apple-touch-icon" sizes="144x144"	href="images/touch-icon-ipad-144.png" />
 
 	<!-- Image Load Parser c.f. http://codepen.io/patrickkunka/pen/zxgas
 	================================================== -->
@@ -66,8 +53,8 @@
 
 </head>
 <body>
-<div class="left-border"></div>
-<div class="right-border"></div>
+<div class="left-border gradient-fixer"></div>
+<div class="right-border gradient-fixer"></div>
 <div id="nav-menu">
 	<ul>
 		<li class='has-sub'><a href='#intermission1'><span>Part I</span></a>
@@ -116,8 +103,7 @@
 	</ul>
 </div>
 <div class="all-scenes  gradient-1">
-	<script>setMargins();</script>
-
+<script>setMargins();</script>
 <!-- The Intro and the First Scene
 ================================================== -->
 <!-- Part 1 Start -->
@@ -134,11 +120,25 @@
 
 
 <div class="clear"></div>
+
+
 	<!-- Skrollr Lives Here! -->
 	<script src="js/skrollr.min.js" type="text/javascript"></script>
 	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
 	<script src="js/skrollr.ie.min.js" type="text/javascript"></script>
 
+	<!-- Set browser update warning -->
+	<script type="text/javascript">
+	var $buoop = {vs:{i:8,f:20,o:10.6,s:4,n:9}}
+		$buoop.ol = window.onload;
+		window.onload=function(){
+		 try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+		 var e = document.createElement("script");
+		 e.setAttribute("type", "text/javascript");
+		 e.setAttribute("src", "http://browser-update.org/update.js");
+		 document.body.appendChild(e);
+	}
+	</script>
 
 
 <!-- End Document

@@ -26,10 +26,10 @@ audio {
 
 body {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGA4AwAA1gDOIG8pFwAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+				url(../images/skewed_print.png) repeat;
 				/* 80% black; http://bit.ly/15Ycag1 */
 				background-color: black;
-	color: #17191D;
+	color: black;
 	/*text-align:center;*/
 	font: 16px/21px 'PT Serif', sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -503,6 +503,25 @@ p {
 	margin: 10px 0; /* reduced margins on intermission sub-headings */
 }
 
+.fleurdelis-left,
+.fleurdelis-right {
+	display: inline-block;
+	position: absolute;
+	opacity:0.9;
+	height: 27px;
+	width: 27px;
+	text-indent: -9999em;
+	background-size: 27px 27px;
+}
+.fleurdelis-left {
+	background:url(../images/fleurdelis-left.png) no-repeat;
+	margin-left: -30px;
+}
+.fleurdelis-right {
+	background:url(../images/fleurdelis-right.png) no-repeat;
+	margin-left: 5px;
+}
+
 .eight.columns.button {
 /*	border: 3px solid rgba(0, 0, 0, 0.5);
 	outline: 1px solid rgba(0, 0, 0, 0.6);
@@ -510,8 +529,9 @@ p {
 }
 
 .more-info-button h3 {
-	margin:20px 0;
 	line-height: 1em;
+	margin:20px 0;
+	width: 100%;
 }
 .intermission h2, .intermission h3, h4.article-title, h4.archive-title {
 	-webkit-mask-image: url(../images/grunge-noise.png);
@@ -544,6 +564,7 @@ p {
 
 
 /***************** $GRADIENTS **************/
+
 .intermission-gradient-vignette {
 	width:100%;
 	height:100%;
@@ -624,6 +645,8 @@ background: -ms-radial-gradient(center, ellipse cover, rgba(112,7,0,0.4) 0%,rgba
 background: radial-gradient(ellipse at center, rgba(112,7,0,0.4) 0%,rgba(45,3,0,0) 60%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66700700', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	/* Spotlight gradient from .palette-blood-red to .palette-near-black: http://www.colorzilla.com/gradient-editor/#700700+0,000000+100&1+0,0.4+0,0+100;Custom */
+
+z-index: 99;
 }
 
 .gradient-1  /* Floods from start of intro to the end of Part 1 */ {
@@ -827,8 +850,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	display: block;
 	width: 421px;
 	height: 191px;
-	background: url('../images/intro-title-blue.png');
+
+	z-index: inherit;
+
 }
+	#title-logo .red-mask,
+	#title-logo .blue {
+		position: absolute;
+		width: 421px;
+		height: 191px;
+		-webkit-transition: opacity 1s ease-in-out;
+  		-moz-transition: opacity 1s ease-in-out;
+  		-o-transition: opacity 1s ease-in-out;
+ 		transition: opacity 1s ease-in-out;
+	}
+		#title-logo .blue { background: url('../images/intro-title-blue.png'); }
+		#title-logo .red-mask { background: url('../images/intro-title-red.png'); }
+		#title-logo:hover > .blue { opacity: 0; }
 
 .title-sub-heading {
 	font-family: 'League Gothic', Copperplate, 'Copperplate Gothic Light', fantasy;
@@ -837,7 +875,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	text-transform: uppercase;
 	margin: 0 0 30px;
 	color: grey;
+	-webkit-transition: color 1s ease-in-out;
+	-moz-transition: color 1s ease-in-out;
+	-o-transition: color 1s ease-in-out;
+	transition: color 1s ease-in-out;
+
+	z-index: inherit;
 }
+
+.title-sub-heading:hover {
+	color: #F7F7F6;
+}
+
 /************ INTRO FACE ************/
 
 .intro-face {
@@ -1154,16 +1203,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width: 50%;
 	height: 100%;
 	display: block;
-	/** To edit this background, follow this link:
-http://svgeneration.com/generate/Wood-Grain?base-color=000000&grain-color=17191d&grain-weight=2.5&turbulence-weight=0.35&
-*/
-background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nNCc+Cgk8ZGVmcyBpZD0nZGVmczQnPgoJCTxmaWx0ZXIgeT0nMCcgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSdzUkdCJyBpZD0ndCc+CgkJCTxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScuOCAwJyByZXN1bHQ9J291dDEnIG51bU9jdGF2ZXM9JzEnLz4KCQkJPGZlQ29sb3JNYXRyaXggdHlwZT0nc2F0dXJhdGUnIGluPSdvdXQxJyByZXN1bHQ9J291dDInIHZhbHVlcz0nMCcvPgoJCQk8ZmVDb21wb3NpdGUgb3BlcmF0b3I9J2FyaXRobWV0aWMnIGsxPScwJyBrMj0nMC4zNScgazM9JzAnIGs0PScwJyBpbj0nb3V0MicgaW4yPSdvdXQxJy8+CgkJPC9maWx0ZXI+Cgk8L2RlZnM+Cgk8cmVjdCBmaWxsPScjMTcxOTFkJyBmaWxsLW9wYWNpdHk9JzAuMjUnIHg9JzUlJyB5PSctNSUnIHdpZHRoPScxMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzYlJyB5PSctNSUnIHdpZHRoPScxMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzclJyB5PSctNSUnIHdpZHRoPScxNCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzklJyB5PSctNSUnIHdpZHRoPScyMCUnIGhlaWdodD0nMTEwJScvPgoJPHJlY3QgZmlsbD0nIzE3MTkxZCcgZmlsbC1vcGFjaXR5PScwLjEnIHg9JzExJScgeT0nLTUlJyB3aWR0aD0nMTAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyMxNzE5MWQnIGZpbGwtb3BhY2l0eT0nMC4yJyB4PSc1NSUnIHk9Jy01JScgd2lkdGg9JzQwJScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBmaWxsPScjMTcxOTFkJyBmaWxsLW9wYWNpdHk9JzAuMDc1JyB4PSc2MiUnIHk9Jy01JScgd2lkdGg9JzM1JScgaGVpZ2h0PScxMTAlJy8+Cgk8cmVjdCBmaWxsPScjMTcxOTFkJyBmaWxsLW9wYWNpdHk9JzAuMTc1MDAwMDAwMDAwMDAwMDInIHg9JzM4JScgeT0nLTUlJyB3aWR0aD0nMjAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyMxNzE5MWQnIGZpbGwtb3BhY2l0eT0nMC4wNzUnIHg9Jzg1JScgeT0nLTUlJyB3aWR0aD0nNDAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IGZpbGw9JyMxNzE5MWQnIGZpbGwtb3BhY2l0eT0nMC4xMjUnIHg9JzUyJScgeT0nLTUlJyB3aWR0aD0nNDAlJyBoZWlnaHQ9JzExMCUnLz4KCTxyZWN0IHN0eWxlPSdmaWx0ZXI6dXJsKCN0KScgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMCUnLz4KPC9zdmc+');
-background-color: #000000;
+	background: #000000 url("../images/dark-wood-75.png") repeat;
 	z-index: 44;
 }
 
 .room .room-shadow-left {
-	border-right: 5px solid #17191D;
 	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
 	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
@@ -1171,7 +1215,6 @@ background-color: #000000;
 }
 
 .room .room-shadow-right {
-	border-left: 5px solid #17191D;
 	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
 	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
@@ -1181,7 +1224,6 @@ background-color: #000000;
 .room .cityscape-master {
 	width: 1440px !important;
 	height: 600px !important;
-	overflow: hidden;
 	display: none;
 	position: absolute;
 
@@ -1241,6 +1283,16 @@ background-color: #000000;
 
 	z-index: 26;
 }
+	.room .room-master-mask {
+		background: url(../images/room-master-mask.png) no-repeat;
+		position: absolute;
+		display: block;
+		height:1785px;
+		width:1920px;
+		top:0;
+		left:0;
+		z-index: 26;
+	}
 
 .couch-salome-sprite {
 		background: url("../images/sprite-smoke.png") no-repeat;
@@ -1451,25 +1503,53 @@ background-color: #000000;
 ************* END $ROOM SCENE 2 PRESERVED ***********/
 
 
-/************* ALLEY ***********/
+/************* $ALLEY SCENE 3  ***********/
 
 	.alley {
-		width: 1440px;
-		height: 100%;
-		position: relative;
-		overflow:hidden;
-		display: inherit;
+	width: 1440px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-ms-perspective: 800px;
+	-o-perspective: 800px;
+	perspective: 800px;
 	}
 
 	.alley .alley-master {
 		opacity:0;
-		background: url(../images/alley-master.jpg) no-repeat;
-		width: 100%;
-		height: 1827px;
-		display:block;		
-		z-index:21;
+		background: url(../images/alley-master-v2.jpg) no-repeat;
+		margin: 0 auto;
+		width: 1438px;
+		height: 1748px;
+		display: none;
 		position: absolute;
+
+		z-index: 21;
 	}
+		.alley-master .alley-margarite {
+			position:absolute;
+			display: inherit;
+			width: 743px;
+			height: 519px;
+			background:url(../images/alley-margarite.png) no-repeat;
+			bottom: 200px;
+			left: 320px;
+			z-index: 23;
+		}
+		.alley-master .alley-mephisto {
+			position:absolute;
+			display: inherit;
+			width: 266px;
+			height: 736px;
+			background:url(../images/alley-mephisto.jpg) no-repeat;
+			z-index: 24;
+			bottom: 220px;
+			left: 0;
+		}
+
 	.alley .alley-rain {
 		background-size: cover;
 		position: absolute;
@@ -1477,7 +1557,6 @@ background-color: #000000;
 	    width: 100%;
 	    height: 100%;
 	    opacity: 1;
-
 		-webkit-animation-direction: normal !important;
 				animation-direction: normal !important;
 	}
@@ -1485,14 +1564,14 @@ background-color: #000000;
 	.alley .alley-rain.rain-one {
 		background: url(../images/alley-rain-long.png) repeat;
 		height:10000px;
-		z-index: 22;
+		z-index: 33;
 		-webkit-animation: rainsimple 13s 0.5s infinite;
 	            animation: rainsimple 13s 0.5s infinite;
 	}
 
 	.alley .alley-rain.rain-two {
 		background: url(../images/alley-rain-long-fade.png) no-repeat;
-		z-index: 23;
+		z-index: 34;
 		height:10000px;
 		-webkit-animation: rainsimple 25s 1.5s infinite;
 	            animation: rainsimple 25s 1.5s infinite;
@@ -1602,6 +1681,14 @@ background-color: #000000;
 	z-index: 32;
 	background: url(../images/moon-citybg.png) no-repeat;
 }
+.night .city-bg-maskg2189 {
+	display: none;
+	position: absolute;
+	width: 1330px;
+	height: 930px;
+	z-index: 32;
+	background: url(../images/moon-citybg-mask.png) no-repeat;
+}
 
 .night .clouds {
 	display: block;
@@ -1691,11 +1778,20 @@ background-color: #000000;
 .night .couple {
 	display: none;
 	position: absolute;
-	width: 485px;
-	height: 1175px;
+	width: 970px;
+	height: 2336px;
 	z-index: 33;
-	left: 35%;
-	background: url(../images/moon-couple.png) no-repeat;
+	left: 240px;
+	background: url(../images/moon-couple-v2.png) no-repeat;
+}
+.night .couple-mask {
+	display: none;
+	position: absolute;
+	width: 970px;
+	height: 2336px;
+	z-index: 40;
+	left: 240px;
+	background: url(../images/moon-couple-mask-v2.png) no-repeat;
 }
 
 /************* SCENES ***********/
@@ -1752,17 +1848,17 @@ background-color: #000000;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 
-	-webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
 	-o-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
+
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -1803,8 +1899,50 @@ section.intermission {
 	/*background: url("../images/newspaper-tile-v6.jpg") 0px -2px repeat;*/
 	background: url("../images/newspaper-tile-v7.jpg") 0px -2px repeat;
 }
+
+.intermission-accessories {
+	z-index: 104;
+}
+
+	.intermission-accessories .stain-1 {
+		position: absolute;
+		top: 100px;
+		left: 100px;
+		width: 175px;
+		height: 164px;
+		background:url("../images/newspaper-stain-1.png") no-repeat;
+	}
+
+	.intermission-accessories .stain-2 {
+		position: absolute;
+		top: 250px;
+		right: 300px;
+		width: 89px;
+		height: 95px;
+		background:url("../images/newspaper-stain-2.png") no-repeat;
+	}
+	/*
+	.intermission-accessories .scrawledtext-1 {
+		position: absolute;
+		top: 300px;
+		left: 300px;
+		width: 100px;
+		height: 101px;
+		background:url("../images/newspaper-scrawledtext-1.png") no-repeat;
+	}
+
+	.intermission-accessories .scrawledtext-2 {
+		position: absolute;
+		top: 400px;
+		left: 400px;
+		width: 110px;
+		height: 60px;
+		background:url("../images/newspaper-scrawledtext-2.png") no-repeat;
+	}
+	*/
 .intermission-content {
 	overflow: hidden;
+	z-index: 105;
 }
 .intermission footer, .intermission header {
 	/*background-image: url("../images/sprite-newspaper.png");*/
@@ -1902,6 +2040,16 @@ section.intermission {
 	width: 300px !important;
 }
 
+
+.narrative-text .first.column p:first-child:first-letter {
+	font-size: 90px;
+	float: left;
+	margin: 0px 10px 0 0;
+	line-height: 0.8;
+	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
+	font-family: 'Old Standard TT', sans-serif;
+}
+
 /*this add a nice article looking border*/
 .more-info .information-text:first-child {
 	margin-right: 0px;
@@ -1921,7 +2069,7 @@ section.intermission {
 }
 
 .more-info.container {
-	margin: 63px auto;
+	margin: 21px auto;
 	display:none;
 }
 
@@ -1933,6 +2081,10 @@ section.intermission {
 	outline: 1px solid rgba(0, 0, 0, 0.6);
 	outline-offset: -6px;
 	text-align: center;
+	-webkit-transition: border 0.3s ease-in-out;
+	-moz-transition: border 0.3s ease-in-out;
+	-o-transition: border 0.3s ease-in-out;
+	transition: border 0.3s ease-in-out;
 }
 
 .more-info-button:hover{
@@ -2143,7 +2295,7 @@ p.date {
 	opacity: 1;
 	display: inline-block;
 	position: absolute;
-	margin-top:30px;
+	margin-top:34px;
 	height:50px;
 	width:30px;
 	text-indent: -9999em;
@@ -2160,18 +2312,15 @@ p.date {
 
 /* @TODO: put in real bg images*/
 .intermission.four .intermission-main {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGCoBwAAiQCB1bUosQAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+	background: url(../images/skewed_print.png) repeat;
 }
 
 .intermission.four header {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGCoBwAAiQCB1bUosQAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+	background: url(../images/skewed_print.png) repeat;
 }
 
 .intermission.four footer {
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NkYGCoBwAAiQCB1bUosQAAAABJRU5ErkJggg==) repeat,
-				url(../images/bg-pattern.png) repeat;
+	background: url(../images/skewed_print.png) repeat;
 }
 
 .intermission.four .intermission-main, .intermission.four .intermission-main p {

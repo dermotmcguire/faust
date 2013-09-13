@@ -1,55 +1,77 @@
 <div id="scene4" class="scene part4 "> <!-- Part 4 -->
 		<div class="body-gradient-flood gradient-4 night scene-container"
-			data-anchor-target  = "#scene4"
-			data-1-top			= "position: !relative;"
-			data-0-top			= "position: !fixed; top: 0%;"
-			data--100-bottom		= "top:0%;"
-			data--1000-bottom		= "top: -100%; position:!relative">
+		data-anchor-target  = "#scene4"
+		data-1-top			= "position: !relative;"
+		data-0-top			= "position: !fixed; top: 0%;"
+		data--100-bottom		= "top:0%;"
+		data--1600-bottom		= "top: -100%; position:!relative">
+
 			<div class="spot-gradient"></div>
 
 			<div class="scene-layer moon"
-				data-anchor-target="#scene4"
-				data-0-top 			= "top: 0px; transform: translate3d(0%, 120%, 0) scale(0.75); filter: blur(0px); opacity:0;"
-				data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
-				data--8000-top		= "display:!block; opacity: 1.0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
-				data--10000-top		= "opacity:0">
+			data-anchor-target="#scene4"
+			data-0-top 			= "top: 0px; transform: translate3d(0%, 120%, 0) scale(0.75); filter: blur(0px); opacity:0;"
+			data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
+			data--8000-top		= "display:!block; opacity: 1.0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
+			data--10000-top		= "opacity:0">
 			</div>
+
 			<div class="scene-layer red-moon"
-				data-anchor-target="#scene4"
-				data-0-top 			= "top: 0px; transform: translate3d(0%, 120%, 0) scale(0.75); filter: blur(0px); opacity:0;"
-				data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
-				data--8000-top		= "display:!block; opacity: 0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
-				data--10000-top		= "opacity:1;"
-				data--13000-top		= "transform: translate3d(0%, 100%, 0) scale(0.1);">
+			data-anchor-target="#scene4"
+			data-0-top 			= "top: 0px; transform: translate3d(0%, 120%, 0) scale(0.75); filter: blur(0px); opacity:0;"
+			data-3000-top		= "top: 0%; transform: translate3d(0%, 100%, 0) scale(0.75); filter: blur(0px); opacity:1"
+			data--8000-top		= "display:!block; opacity: 0; transform: translate3d(0%, -20%, 0) scale(0.5); filter: blur(5px);"
+			data--10000-top		= "opacity:1;"
+			data--13000-top		= "transform: translate3d(0%, 100%, 0) scale(0.1);">
 			</div>
+
 			<div class="scene-layer city-bg"
-				data-anchor-target 	= "#scene4"
-				data-0-top			= "display:!block; top: 0%"
-				data--2000-top		= "opacity: 0.0; transform: translate3d(1%, 50%, 0) scale(2.5); filter: blur(5px);"
-				data--8000-top		= "opacity: 0.9; transform: translate3d(0%, 30%, 0) scale(1.2); filter: blur(0px);">
+			data-anchor-target 	= "#scene4"
+			data-0-top			= "display:!block; top: 0%;"
+			data--2000-top		= "opacity: 0.0; transform: translate3d(1%, 50%, 0) scale(2.5); filter: blur(5px);"
+			data--8000-top		= "opacity: 1.0; transform: translate3d(0%, 30%, 0) scale(1.2); filter: blur(0px);">
 			</div>
+
+			<div class="scene-layer city-bg-mask"
+			data-anchor-target 	= "#scene4"
+			data-0-top			= "display:!block; top: 0%;"
+			data--8000-top		= "opacity: 0; transform: translate3d(0%, 30%, 0) scale(1.2);"
+			data--10000-top		= "opacity:1;">
+			</div>
+
 			<div class="scene-layer clouds cloudcruise-one"
-				data-anchor-target 	= "#scene4"
-				data-0-top			= "display:!block; opacity:0; transform: scale(2); top: 0%;"
-				data--500-top	= "opacity:0.4;">
+			data-anchor-target 	= "#scene4"
+			data-0-top			= "display:!block; opacity:0; transform: scale(2); top: 0%;"
+			data--500-top	= "opacity:0.4;">
 			</div>
+
 			<div class="scene-layer clouds cloudcruise-two"
-				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity:0; transform: scale(1); top: 0%;"
-				data--500-top		= "opacity:0.4;">
+			data-anchor-target	= "#scene4"
+			data-0-top			= "display:!block; opacity:0; transform: scale(1); top: 0%;"
+			data--500-top		= "opacity:0.4;">
 			</div>
+
 			<div class="scene-layer clouds cloudcruise-three"
-				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; opacity:0; transform: scale(0.5); top: 0%;"
-				data--500-top		= "opacity:0.4;">
+			data-anchor-target	= "#scene4"
+			data-0-top			= "display:!block; opacity:0; transform: scale(0.5); top: 0%;"
+			data--500-top		= "opacity:0.4;">
 			</div>
+
 			<div class="scene-layer couple"
-				data-anchor-target	= "#scene4"
-				data-0-top			= "display:!block; top:0%;  opacity: 0.0; transform:  scale(3) translate3d(-1%, 22%, 0); filter: blur(5px)"
-				data--1000-top		= "opacity: 0.0;"
-				data--3000-top		= "opacity: 1.0; transform: scale(2.5) translate3d(0%, 25%, 0); filter: blur(1px);"
-				data--8000-top		= "opacity: 1.0; transform: scale(0.75) translate3d(0%, 10%, 0); filter: blur(0.0px);">
+			data-anchor-target	= "#scene4"
+			data-0-top			= "display:!block; top:0%; opacity: 0.0; transform: scale(1.5) translate3d(1%, 15%, 0); filter: blur(2px);"
+			data--1000-top		= "opacity: 1.0;"
+			data--6000-top		= "transform: scale(0.65) translate3d(1%, -20%, 0); filter: blur(1px);"
+			data--8000-top		= "transform: scale(0.40) translate3d(1%, -60%, 0); filter: blur(0px);">
 			</div>
+
+			<div class="scene-layer couple-mask"
+			data-anchor-target	= "#scene4"
+			data-0-top			= "display:!block; top:0%; transform: scale(1.5) translate3d(1%, 20%, 0);"
+			data--8000-top		= "opacity: 0; transform: scale(0.40) translate3d(1%, -60%, 0);"
+			data--10000-top		= "opacity: 1;">
+			</div>
+
 
 		</div>
 </div>
@@ -67,7 +89,7 @@
 				<div class="headline right">
 					<h2 class="palette-deep-purple">SIGN IN</h2>
 					</br>
-					<h2 class="palette-blood-red">BLOOD<span class="moon-fullstop" data--500-bottom = "opacity: 0" data--1-top = "opacity:1;" >.</span></h2>
+					<h2 class="palette-blood-red">BLOOD<span class="moon-fullstop" data-anchor-target = "#intermission4" data-230-top = "opacity: 0.9; transform: translate3d(0,-160px,0) scale(0);" data-130-top = "opacity: 0.9; transform: translate3d(0,10px,0) scale(0.76);" data-100-top = "opacity: 0.9; transform: translate3d(0,0,0) scale(0.75);" >.</span></h2>
 				</div>
 			</div>
 			<!-- SECTION MAIN CONTENT -->
@@ -122,7 +144,7 @@
 					<!-- Begin MailChimp Signup Form -->
 					<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 					<div id="mc_embed_signup">
-						<form action="http://emmachee.us6.list-manage1.com/subscribe/post?u=e012a3ed241e30c1824ba75a6&amp;id=fc942f19c0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<form action="ttp://alphacrucisarts.us7.list-manage.com/subscribe/post?u=d943f5972398e07dfef801218&amp;id=a5647fcb08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div class="indicates-required"></div>
 						<div class="mc-field-group">
 							<label for="mce-EMAIL">Email Address</label>

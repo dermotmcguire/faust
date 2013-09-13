@@ -20,8 +20,10 @@
 				<p class="quote">I see my discourse leaves you cold;<br/>Dear kids, I do not take offense;<br/>Recall: the Devil, he is old,<br/>Grow old yourselves, and he'll make sense!</p>
 				<p class="sub quote">&mdash;Johann Wolfgang Von Goethe, Faust</p>
 
+
 				<div id="title-logo" class="loading-start">
-					<div class="loading-ready"></div>
+					<div class="red-mask"></div>
+					<div class="blue"></div>
 				</div>
 				<h3 class="title-sub-heading">The Musical</h3>
 				<div class="loading-container">
