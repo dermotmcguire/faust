@@ -49,7 +49,16 @@ $( document ).ready(function() {
       } else {
         scene4sounds.fadeOut(0, 2000);
       }
-  	});
+    });
+
+  $('#intermission4').bind('inview', function (event, visible) {
+      if (visible) {
+        scene4sounds.pause().fadeIn(0.7, 3000);
+        scene4sounds.loop(true);
+      } else {
+        scene4sounds.fadeOut(0, 2000);
+      }
+    });
 
 });
 

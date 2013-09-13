@@ -1,5 +1,5 @@
 <div id="scene3" class="scene part3 gradient-3"> <!-- Part 3 -->
-	<div class="body-gradient-flood centered alley"
+	<div class="centered alley"
 	data-1-top			= "position: !relative;"
 	data-0-top			= "position: !fixed; top: 0%;"
 	data--100-bottom		= "top:0%;"
