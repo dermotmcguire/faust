@@ -503,6 +503,25 @@ p {
 	margin: 10px 0; /* reduced margins on intermission sub-headings */
 }
 
+.fleurdelis-left,
+.fleurdelis-right {
+	display: inline-block;
+	position: absolute;
+	opacity:0.9;
+	height: 27px;
+	width: 27px;
+	text-indent: -9999em;
+	background-size: 27px 27px;
+}
+.fleurdelis-left {
+	background:url(../images/fleurdelis-left.png) no-repeat;
+	margin-left: -30px;
+}
+.fleurdelis-right {
+	background:url(../images/fleurdelis-right.png) no-repeat;
+	margin-left: 5px;
+}
+
 .eight.columns.button {
 /*	border: 3px solid rgba(0, 0, 0, 0.5);
 	outline: 1px solid rgba(0, 0, 0, 0.6);
@@ -510,8 +529,9 @@ p {
 }
 
 .more-info-button h3 {
-	margin:20px 0;
 	line-height: 1em;
+	margin:20px 0;
+	width: 100%;
 }
 .intermission h2, .intermission h3, h4.article-title, h4.archive-title {
 	-webkit-mask-image: url(../images/grunge-noise.png);

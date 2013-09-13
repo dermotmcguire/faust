@@ -44,7 +44,7 @@
 					</div>
 					<div class="clear"></div>
 					<div class="sixteen columns">
-						<button class="more-info-button three"><h3 id="newsflash" >&#10524;NEWSFLASH&#10523;</h3></button>
+						<button class="more-info-button three"><h3 id="newsflash" ><span class="fleurdelis-left">-</span>NEWSFLASH<span class="fleurdelis-right">-</span></h3></button>
 					</div>
 				</div>
 				<div class="more-info three container">
@@ -59,7 +59,7 @@
 				</div>
 				<div class="news container">
 					<div class="sixteen columns">
-						<button class="more-info-button three"><h3 id="the-archives" >&#10524;THE ARCHIVES&#10523;</h3></button>
+						<button class="more-info-button three"><h3 id="the-archives" ><span class="fleurdelis-left">-</span>THE ARCHIVES<span class="fleurdelis-right">-</span></h3></button>
 					</div>
 				</div>
 				<div class="more-info three container">
