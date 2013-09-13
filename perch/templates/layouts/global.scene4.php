@@ -59,15 +59,16 @@
 
 			<div class="scene-layer couple"
 			data-anchor-target	= "#scene4"
-			data-0-top			= "display:!block; top:0%;  opacity: 0.0; transform: scale(1.5) translate3d(1%, 20%, 0); filter: blur(2px);"
+			data-0-top			= "display:!block; top:0%; opacity: 0.0; transform: scale(1.5) translate3d(1%, 15%, 0); filter: blur(2px);"
 			data--1000-top		= "opacity: 1.0;"
-			data--8000-top		= "transform: scale(0.375) translate3d(1%, -60%, 0); filter: blur(0px);">
+			data--6000-top		= "transform: scale(0.65) translate3d(1%, -20%, 0); filter: blur(1px);"
+			data--8000-top		= "transform: scale(0.40) translate3d(1%, -60%, 0); filter: blur(0px);">
 			</div>
 
 			<div class="scene-layer couple-mask"
 			data-anchor-target	= "#scene4"
 			data-0-top			= "display:!block; top:0%; transform: scale(1.5) translate3d(1%, 20%, 0);"
-			data--8000-top		= "opacity: 0; transform: scale(0.375) translate3d(1%, -60%, 0);"
+			data--8000-top		= "opacity: 0; transform: scale(0.40) translate3d(1%, -60%, 0);"
 			data--10000-top		= "opacity: 1;">
 			</div>
 
