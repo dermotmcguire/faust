@@ -17,7 +17,6 @@ $( document ).ready(function() {
 
 
 	/* init skrollr */
-	console.log( "ready!" );
 	skrollr.init({
 		forceHeight: false
 	});
@@ -131,7 +130,6 @@ function setMargins() {
 	var marginLeft = $(".all-scenes").css("margin-left");
 	var marginRight = $(".all-scenes").css("margin-right");
 	if ($(window).width() > 1440) {
-		console.log(margin, margin);
 		$(".left-border").css("left", margin);
 		$(".right-border").css("right", margin);
 	}
