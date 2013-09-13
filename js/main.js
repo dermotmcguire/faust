@@ -34,6 +34,7 @@ function archivesClick() {
 		// }
 	    $(".archive-content-main .article-archive").replaceWith($(this).parent().clone().removeClass("four").addClass("sixteen"));
 	    $(".archive-content-main .archive-reveal-button").hide();
+	    $(".archive-content-main").show();	    
 	    $(".archive-content-main .archive-content").show();
 	});
 }

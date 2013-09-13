@@ -2099,12 +2099,15 @@ p.date {
 
 .archive-content-main {
 	display:none;
-	margin-top: 50px;
 	text-align: left;
 }
 
 .archive-content {
 	display:none;
+}
+
+.the-archives .information-text{
+	margin-bottom: 40px;
 }
 
 .more-info.three .information-text:first-child {
