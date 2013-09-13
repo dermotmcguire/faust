@@ -31,7 +31,7 @@
 					</div>
 					<ul class="loading-text slides">
 						<li class="slide">
-							<p class="loading-text loading fadeIn">Loading</p>
+							<p class="loading-text loading">Loading</p>
 							<script>
 							$(".loading").fadeIn(2000, function(){
 								$(this).addClass("pulse");

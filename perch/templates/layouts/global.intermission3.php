@@ -24,10 +24,10 @@
 			</div>
 			<div class="clear"></div>
 			<div class="sixteen columns">
-				<button class="more-info-button three"><h3 id="newsflash" >&#10524;NEWSFLASH&#10523;</h3></button>
+				<button class="more-info-button newsflash three"><h3 id="newsflash" >&#10524;NEWSFLASH&#10523;</h3></button>
 			</div>
 		</div>
-		<div class="more-info three container">
+		<div class="more-info newsflash three container">
 			<div class="sixteen columns information-text" id="newsflash">
 					<?php perch_content_custom('News Articles', array(
 						'template'=>'faust_article.html',
@@ -36,13 +36,12 @@
 						'count'=>3
 					)); ?>
 			</div>
-		</div>
 		<div class="news container">
 			<div class="sixteen columns">
-				<button class="more-info-button three"><h3 id="the-archives" >&#10524;THE ARCHIVES&#10523;</h3></button>
+				<button class="more-info-button the-archives three"><h3 id="the-archives" >&#10524;THE ARCHIVES&#10523;</h3></button>
 			</div>
 		</div>
-		<div class="more-info three container">
+		<div class="more-info the-archives three container">
 			<div class="sixteen columns information-text" id="the-archives">
 				<?php perch_content_custom('News Articles', array(
 					'template'=>'_faust_article_archive.html',
@@ -50,7 +49,13 @@
 					'sort-order'=>'DESC',
 				)); ?>
 			</div>
+			<div class="archive-content-main">
+				<div class="article-archive">
+				</div>
+			</div>
 		</div>
+		</div>
+
 	</div>
 	<footer></footer>
 	<div class="intermission-gradient-bottom">

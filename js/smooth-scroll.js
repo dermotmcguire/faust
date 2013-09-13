@@ -26,22 +26,17 @@ $(document).ready(function() {
           }
           if (locationToGo == '#the-project' ){ 
               $('.more-info.one').show('slow');
-              console.log('one');
           };
           if (locationToGo == '#the-production') {
               $('.more-info.one').show('slow');
-              console.log('one');
           };
 
           if (locationToGo == '#listen' || locationToGo == '#look') {
               $('.more-info.two').show('slow');
-              console.log('two');
           };
-          if (locationToGo == '#newsflash' || locationToGo == 'the-archives') {
-              $('.more-info.three').show('slow');
-              console.log('three');
+          if (locationToGo == '#newsflash') {
+              $('.more-info.newsflash.three').show('slow');
           };
-
       });
     }
     });

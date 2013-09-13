@@ -95,7 +95,7 @@
 	   			<li class='has-sub'><a href="#intermission3"><span>The Stars Never Shine</span></a>
 	     			<ul class="part3-submenu">
 	       				<li><a href="#newsflash"><span>Newsflash</span></a></li>
-	       				<li class='last'><a href="#the-archives"><span>The Archives</span></a></li>
+	       				<li class='last'><a href="#newsflash"><span>The Archives</span></a></li>
 	     			</ul>
 	   			</li>
 	 		</ul>

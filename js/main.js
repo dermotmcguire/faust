@@ -6,6 +6,7 @@ $( document ).ready(function() {
 	setMargins();
 	loading();
 	intermissionClick();
+	archivesClick();
 	/* init columnize */
 	$(function(columnize){
 		$('.news-copy').columnize({
@@ -24,6 +25,19 @@ $( document ).ready(function() {
 
 });
 
+function archivesClick() {
+	$(".archive-reveal-button").click(function() {
+		// $(this).toggleClass("less");
+		// if ($(this).hasClass("less") == true){
+		// 	$(".archive-reveal-button").find("h5").text("Show more", function(){
+		// 		$(this).find("h5").text("Show less");				
+		// 	});
+		// }
+	    $(".archive-content-main .article-archive").replaceWith($(this).parent().clone().removeClass("four").addClass("sixteen"));
+	    $(".archive-content-main .archive-reveal-button").hide();
+	    $(".archive-content-main .archive-content").show();
+	});
+}
 
 //USED TO CHECK WHICH INTERMISSON IS SELECTED AND OPEN/CLOSE CONTENT
 function intermissionClick(){
@@ -38,10 +52,15 @@ function intermissionClick(){
 		$('.more-info.two').slideToggle();
 	});
 
-	$(".more-info-button.three").click(function() {
+	$(".more-info-button.newsflash").click(function() {
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
-		$('.more-info.three').slideToggle();
+		$('.more-info.newsflash').slideToggle();
 	});
+
+	$(".more-info-button.the-archives").click(function() {
+		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
+		$('.more-info.the-archives').slideToggle();
+	});	
 
 	$(".more-info-button.four").click(function() {
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
@@ -74,8 +93,6 @@ function loading(){
 				$(this).remove();
 				progressBar(step * numberOfLoaded, $('.loading-bar'));
 			});
-			// load image into the background of the appropriate div, or this can be set in the css which is preferable.
-			// $(item).css('background-image', "url("+imageURL+")");
 		}
 		else if (imageURL == undefined) {
 			console.log(this);
@@ -85,12 +102,6 @@ function loading(){
 
 //PROGRESS BAR ANIMATION
 function progressBar(percent, $element) {
-	// var testing = true;
-	// if (testing==true) {
-	// 	$("#nav-menu").delay(1000).fadeIn(2000);
-	// 	$("body").css("overflow","hidden");
-	// 	$("body").css("height","auto");
-	// }
 	loadingBarWidth = percent * $element.width() / 100;
 	$('.progress').animate({width: loadingBarWidth },{
         complete: function () {
@@ -98,9 +109,6 @@ function progressBar(percent, $element) {
 			 	$(".loading-bar").animate({opacity:"0"}, 200);
 			 	$(".loading-text.loading").animate({opacity:"0"}, 500, function(){
 			 		//wait for the fade before sliding up.
-				 	// $(".loading-text.loading").css("margin-top", '-55px').addClass("slideUp");
-				 	// $(".loading-text.ready").css("display", "block").addClass("slideUp");
-					// $(".loading-text.ready").css("display", "block");
 					$(".slides").animate({marginTop:"-100px"}, 600);
 					$(".loading-text.ready").delay(500).fadeIn().addClass("slideUp");
 				 	//uses pulse animation effect

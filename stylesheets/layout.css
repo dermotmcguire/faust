@@ -818,7 +818,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .loading {
-	/*display:none;*/
+	display:none;
 	margin:-5px 0 0;
 }
 
@@ -1502,10 +1502,36 @@ background-color: #000000;
 		opacity:0.2;
 		top: -260px;
 		left:-60px;
-		background: url(../images/rain-2.gif) no-repeat;
-		height:10000px;
+		background: url(../images/rain-animate.png) 0 -472px no-repeat;
 		z-index: 22;
+				-webkit-animation: raindrops 25s 1.5s infinite;
+	            animation: raindrops 25s 1.5s infinite;
 	}
+		@-webkit-keyframes raindrops {
+		   from { background-position:    0px; }
+		    to { background-position: -9000px; }
+		}
+
+		@-moz-keyframes raindrops {
+		   from { background-position:    0px; }
+		    to { background-position: -9000px; }
+		}
+
+		@-ms-keyframes raindrops {
+		   from { background-position:    0px; }
+		    to { background-position: -9000px; }
+		}
+
+		@-o-keyframes raindrops {
+		   from { background-position:    0px; }
+		    to { background-position: -9000px; }
+		}
+
+		@keyframes raindrops {
+		   from { background-position:    0px; }
+		    to { background-position: -9000px; }
+		}
+
 		@keyframes rainsimple {
 		0% {
 			background-position: 50% 0%;
@@ -2094,6 +2120,12 @@ p.date {
 .article-pull-quote blockquote:after,
 .archive-excerpt:after {
 	content:"\201D";
+}
+
+.archive-content-main {
+	display:none;
+	margin-top: 50px;
+	text-align: left;
 }
 
 .archive-content {
