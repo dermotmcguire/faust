@@ -1737,20 +1737,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .night .couple {
 	display: none;
 	position: absolute;
-	width: 485px;
-	height: 1175px;
+	width: 970px;
+	height: 2336px;
 	z-index: 33;
-	left: 35%;
-	background: url(../images/moon-couple.png) no-repeat;
+	left: 240px;
+	background: url(../images/moon-couple-v2.png) no-repeat;
 }
 .night .couple-mask {
 	display: none;
 	position: absolute;
-	width: 485px;
-	height: 1175px;
+	width: 970px;
+	height: 2336px;
 	z-index: 40;
-	left: 35%;
-	background: url(../images/moon-couple-mask.png) no-repeat;
+	left: 240px;
+	background: url(../images/moon-couple-mask-v2.png) no-repeat;
 }
 
 /************* SCENES ***********/
