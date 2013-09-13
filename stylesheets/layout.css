@@ -1225,6 +1225,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width: 1440px !important;
 	height: 600px !important;
 	display: none;
+	overflow: hidden;
 	position: absolute;
 
 	z-index: 15;
@@ -1681,7 +1682,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	z-index: 32;
 	background: url(../images/moon-citybg.png) no-repeat;
 }
-.night .city-bg-maskg2189 {
+.night .city-bg-mask {
 	display: none;
 	position: absolute;
 	width: 1330px;
@@ -2234,6 +2235,10 @@ p.date {
 	margin: 5px;
     border-top: 3px solid rgba(0, 0, 0, 0.5);
     border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.archive-reveal-button:hover{
+	cursor: pointer;
 }
 
 .archive-excerpt {
