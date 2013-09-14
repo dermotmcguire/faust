@@ -23,7 +23,8 @@
 	<!-- CSS
   ================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Old+Standard+TT:400,400italic,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link type="text/css" rel="stylesheet" href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,layout.css" />
+	<link rel='stylesheet' media='screen and (min-width: 767px)' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,layout.css"/>
+	<link rel='stylesheet' media='screen and (max-width: 767px)' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,mobile.css"/>
 
 	<!-- JS
 	================================================== -->
@@ -719,32 +720,32 @@
 						Or check us out here:
 					</p>
 					<ul class="social">
-						<a href="https://www.facebook.com/pages/FAUST-A-Musical/1405003313058613" target="blank">
+						<a href="https://www.facebook.com/pages/FAUST-A-Musical/1405003313058613" target="_blank">
 							<li class="facebook">
 								facebook
 							</li>
 						</a>
-						<a href="https://twitter.com/FAUST_Musical" target="blank">
+						<a href="https://twitter.com/FAUST_Musical" target="_blank">
 							<li class="twitter">
 								twitter
 							</li>
 						</a>
-						<a href="www.instagram.com/faust_musical/" target="blank">
+						<a href="http://www.instagram.com/faust_musical/" target="_blank">
 							<li class="instagram">
 								instagram
 							</li>
 						</a>
-						<a href="pinterest.com/FAUSTmusical/" target="blank">
+						<a href="http://pinterest.com/FAUSTmusical/" target="_blank">
 							<li class="pinterest">
 								pinterest
 							</li>
 						</a>
-						<a href="http://soundcloud.com/faust_musical" target="blank">
+						<a href="http://soundcloud.com/faust_musical" target="_blank">
 							<li class="soundcloud">
 								soundcloud
 							</li>
 						</a>
-						<a href="https://vimeo.com/faustmusical/" target="blank">
+						<a href="https://vimeo.com/faustmusical/" target="_blank">
 							<li class="vimeo">
 								vimeo
 							</li>
