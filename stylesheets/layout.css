@@ -1293,6 +1293,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 		top:0;
 		left:0;
 		z-index: 26;
+
+
+		overflow: hidden;
 	}
 
 .couch-salome-sprite {
@@ -1640,7 +1643,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .night {
 	/*width: 100%;*/
 	display: block;
-	height: 15000px;
+	height: 13000px;
 	position: relative;
 	overflow:hidden;
 	display: block;
