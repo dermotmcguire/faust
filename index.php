@@ -152,7 +152,7 @@
 							</ul>
 
 						</div>
-						<a href="#scene-one"><span class="ready-arrow pulse"> </span></a>
+						<span class="ready-arrow pulse"> </span>
 					</div>
 					<!-- end title -->
 				</div>
@@ -326,215 +326,223 @@
 			<div class="room centered scene-container"
 			data-anchor-target  = "#scene2"
 			data--1-top			= "position:!fixed;"
-			data-0-top			= "position:!relative;"
-			data-0-bottom	= "top:0;"
-			data--500-bottom	= "top:-200%;">
+			data-0-top			= "position:!relative; top: 0%;"
+			data--14300-top		= "top:0%"
+			data--15800-top		= "top:-100%; position:!relative;">
 
-			<div class="scene-layer room-shadow-left"
-			data-anchor-target  = "#scene2"
-			data-500-top		= "width:50%; box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);"
-			data--5000-top		= "width:-10%; box-shadow: 20px 0px 20px 0px rgba(0,0,0,0.5);">
-			</div>
+			<div class="overflow">
+				<div class="scene-layer room-shadow-left"
+				data-anchor-target  = "#scene2"
+				data-500-top		= "width:50%; box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);"
+				data--5000-top		= "width:-10%; box-shadow: 20px 0px 20px 0px rgba(0,0,0,0.5);">
+				</div>
 
-			<div class="scene-layer room-shadow-right"
-			data-anchor-target  = "#scene2"
-			data-500-top		= "width:50%; box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);"
-			data--5000-top		= "width:-10%; box-shadow: -20px 0px 20px 0px rgba(0,0,0,0.5);">
-			</div>
+				<div class="scene-layer room-shadow-right"
+				data-anchor-target  = "#scene2"
+				data-500-top		= "width:50%; box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);"
+				data--5000-top		= "width:-10%; box-shadow: -20px 0px 20px 0px rgba(0,0,0,0.5);">
+				</div>
 
-				<div class="scene-layer cityscape-master"
-				data-anchor-target	= "#scene2"
-				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(200px, -10px, 0) scale(1.2);"
-				data-0-bottom	= "opacity: 1.0; transform: translate3d(-40px, 0, 0) scale(0.8);">
-
-					<div class="js-image scene-layer citylights-master"
+					<div class="scene-layer cityscape-master"
 					data-anchor-target	= "#scene2"
-					data-image-url		= "images/room-citylights-master.png">
+					data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(200px, -10px, 0) scale(1.2);"
+					data-0-bottom	= "opacity: 1.0; transform: translate3d(-40px, 0, 0) scale(0.8);">
+
+						<div class="js-image scene-layer citylights-master"
+						data-anchor-target	= "#scene2"
+						data-image-url		= "images/room-citylights-master.png">
+							<img src="">
+						</div>
+						<div class="js-image scene-layer sparklelights1-master flicker-slow-one"
+						data-anchor-target	= "#scene2"
+						data-image-url		= "images/room-sparklelights1-master.png">
 						<img src="">
+						</div>
+						<div class="js-image scene-layer sparklelights2-master flicker-slow-one"
+						data-anchor-target	= "#scene2"
+						data-image-url		= "images/room-sparklelights2-master.png">
+						<img src="">
+						</div>
+
 					</div>
-					<div class="js-image scene-layer sparklelights1-master flicker-slow-one"
+
+					<div class="js-image scene-layer room-master"
 					data-anchor-target	= "#scene2"
-					data-image-url		= "images/room-sparklelights1-master.png">
+					data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(-5%, -30%, 0px) scale(1.55); filter: blur(3px);"
+					data-0-bottom	= "filter: blur(1px); transform: translate3d(-12%, -28%, 0) scale(0.55);"
+					data-image-url		= "images/room-master.png">
+					<span class="couch-salome-sprite"></span>
 					<img src="">
+
+						<div class="js-image scene-layer room-master-mask"
+						data-anchor-target  = "#scene2"
+						data-500-top		= "display:!block; opacity:1; width:50%;"
+						data--7500-top		= "opacity:0; width:90%;"
+						data-image-url		= "images/room-master-mask.png">
+						<img src="">
+						</div>
+
 					</div>
-					<div class="js-image scene-layer sparklelights2-master flicker-slow-one"
-					data-anchor-target	= "#scene2"
-					data-image-url		= "images/room-sparklelights2-master.png">
-					<img src="">
-					</div>
 
-				</div>
-
-				<div class="js-image scene-layer room-master"
-				data-anchor-target	= "#scene2"
-				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(-5%, -30%, 0px) scale(1.55); filter: blur(3px);"
-				data-0-bottom	= "filter: blur(1px); transform: translate3d(-12%, -32%, 0) scale(0.55);"
-				data-image-url		= "images/room-master.png">
-				<span class="couch-salome-sprite"></span>
-				<img src="">
-
-					<div class="js-image scene-layer room-master-mask"
-					data-anchor-target  = "#scene2"
-					data-500-top		= "display:!block; opacity:1; width:50%;"
-					data--7500-top		= "opacity:0; width:90%;"
-					data-image-url		= "images/room-master-mask.png">
+					<div class="js-image scene-layer mephisto-master"
+					data-anchor-target 	= "#scene2"
+					data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(15%, -30%, 0) scale(0.8);"
+					data-0-bottom	= "transform: translate3d(-20%, -30%, 0) scale(0.6);"
+					data-image-url		= "images/room-mephisto-master-v2.png">
 					<img src="">
 					</div>
 
+					<div class="js-image scene-layer faust-master"
+					data-anchor-target 	= "#scene2"
+					data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(-10%, -30%, 0) scale(1.55);"
+					data-0-bottom	= "transform: translate3d(15%, -34%, 0) scale(0.6);"
+					data-image-url		= "images/room-faust-master-v2.png">
+					<img src="">
+					</div>
 				</div>
-
-				<div class="js-image scene-layer mephisto-master"
-				data-anchor-target 	= "#scene2"
-				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(15%, -30%, 0) scale(0.8);"
-				data-0-bottom	= "transform: translate3d(-20%, -30%, 0) scale(0.6);"
-				data-image-url		= "images/room-mephisto-master-v2.png">
-				<img src="">
+				<div class="test">
 				</div>
-
-				<div class="js-image scene-layer faust-master"
-				data-anchor-target 	= "#scene2"
-				data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(-10%, -30%, 0) scale(1.55);"
-				data-0-bottom	= "transform: translate3d(15%, -34%, 0) scale(0.6);"
-				data-image-url		= "images/room-faust-master-v2.png">
-				<img src="">
-				</div>
-
 			</div>
 		</div>
+			<section class="intermission two" id="intermission2"
+			data-16501-top = "position:!relative; top:0px"
+			data-16500-top = "position:!fixed; top:2531px"
+			data-15000-top = "top:901px"
+			data-901-top		= "position:!fixed;"
+			data-900-top 		= "position:!relative; top:0px">
 
-		<section class="intermission two" id="intermission2" 				>
+					<div class="intermission-gradient-top"></div>
+					<div class="intermission-gradient-vignette"></div>
 
-			<div class="intermission-gradient-top"></div>
-			<div class="intermission-gradient-vignette"></div>
+					<div class="intermission-content">
+						<header> </header>
+						<div class="intermission-accessories">
+							<div class="js-image stain-1"
+							data-image-url = "images/newspaper-stain-1.png">
+							<img src="">
+							</div>
+							<div class="js-image stain-2"
+							data-image-url = "images/newspaper-stain-2.png">
+							<img src="">
+							</div>
+							<!--
+							<div class="js-image scrawledtext-1"
+							data-image-url = "images/newspaper-scrawledtext-1.png">
+							<img src="">
+							</div>
+							<div class="js-image scrawledtext-2"
+							data-image-url = "images/newspaper-scrawledtext-1.png">
+							<img src="">
+							</div>
+							-->
 
-			<div class="intermission-content">
-				<header> </header>
-				<div class="intermission-accessories">
-					<div class="js-image stain-1"
-					data-image-url = "images/newspaper-stain-1.png">
-					<img src="">
-					</div>
-					<div class="js-image stain-2"
-					data-image-url = "images/newspaper-stain-2.png">
-					<img src="">
-					</div>
-					<!--
-					<div class="js-image scrawledtext-1"
-					data-image-url = "images/newspaper-scrawledtext-1.png">
-					<img src="">
-					</div>
-					<div class="js-image scrawledtext-2"
-					data-image-url = "images/newspaper-scrawledtext-1.png">
-					<img src="">
-					</div>
-					-->
-
-					<div class="intermission-main">
-						<div class="news-lines"></div>
-						<div class="container">
-							<div class="headlines">
-								<div class="headline columns three left">
-									<h3 class="palette-blood-red">PART II</h3>
+							<div class="intermission-main">
+								<div class="news-lines"></div>
+								<div class="container">
+									<div class="headlines">
+										<div class="headline columns three left">
+											<h3 class="palette-blood-red">PART II</h3>
+										</div>
+										<div class="headline columns thirteen right">
+											<h2>THE WAGES OF SIN</h2>
+										</div>
+									</div>
 								</div>
-								<div class="headline columns thirteen right">
-									<h2>THE WAGES OF SIN</h2>
+								<div class="news-lines"></div>
+								<div class="news container">
+									<div class="narrative-text news-copy">
+										<?php perch_content('Part 2 Narrative Content'); ?>
+									</div>
+
+									<div class="clear"></div>
+
+									<div class="eight columns">
+										<button class="more-info-button two"><h3 id="listen" ><span class="fleurdelis-left">-</span>LISTEN<span class="fleurdelis-right">-</span></h3></button>
+									</div>
+									<div class="eight columns">
+										<button class="more-info-button two"><h3 id="look" ><span class="fleurdelis-left">-</span>LOOK<span class="fleurdelis-right">-</span></h3></button>
+									</div>
+								</div>
+								<div class="more-info two container">
+									<div class="eight columns information-text" id="listen">
+										<?php perch_content('Listen-Intro'); ?>
+										<?php perch_content('Listen-TrackLinks'); ?>
+										<div class="article-divide"></div>
+									</div>
+									<div class="eight columns information-text" id="look">
+										<?php perch_content('Look-Section'); ?>
+										<?php perch_content('Look-Embeds'); ?>
+										<div class="article-divide"></div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="news-lines"></div>
-						<div class="news container">
-							<div class="narrative-text news-copy">
-								<?php perch_content('Part 2 Narrative Content'); ?>
-							</div>
+						</div><!-- End Intermission-Accessories -->
+						<footer></footer>
+					</div><!-- End Intermission-Content -->
 
-							<div class="clear"></div>
+					<div class="intermission-gradient-bottom"></div>
 
-							<div class="eight columns">
-								<button class="more-info-button two"><h3 id="listen" ><span class="fleurdelis-left">-</span>LISTEN<span class="fleurdelis-right">-</span></h3></button>
-							</div>
-							<div class="eight columns">
-								<button class="more-info-button two"><h3 id="look" ><span class="fleurdelis-left">-</span>LOOK<span class="fleurdelis-right">-</span></h3></button>
-							</div>
-						</div>
-						<div class="more-info two container">
-							<div class="eight columns information-text" id="listen">
-								<?php perch_content('Listen-Intro'); ?>
-								<?php perch_content('Listen-TrackLinks'); ?>
-								<div class="article-divide"></div>
-							</div>
-							<div class="eight columns information-text" id="look">
-								<?php perch_content('Look-Section'); ?>
-								<?php perch_content('Look-Embeds'); ?>
-								<div class="article-divide"></div>
-							</div>
-						</div>
-					</div>
-				</div><!-- End Intermission-Accessories -->
-				<footer></footer>
-			</div><!-- End Intermission-Content -->
-
-			<div class="intermission-gradient-bottom"></div>
-
-		</section>
-
+				</section>
 		<div id="scene3" class="scene part3 gradient-3"> <!-- Part 3 -->
 			<div class="centered alley"
-			data-1-top			= "position: !relative;"
-			data-0-top			= "position: !fixed; top: 0%;"
-			data-0-bottom		= "top:0;"
-			data--1000-bottom	= "top:!-200%; position: !relative;">
-
-				<div class="js-image scene-layer alley-master"
-				data-anchor-target	= "#scene3"
-				data-500-top		= "display:!block; opacity: 0; transform: translate3d(-600px, 720px, 0px) scale(1.8);"
-				data--1000-top		= "opacity: 1; transform: translate3d(-500px, 420px, 0px) scale(1.6);"
-				data--2000-bottom 	= "transform: translate3d(50px, -944px, 0px) scale(1);"
-				data-0-bottom 		= "transform: translate3d(50px, -944px, 0px) scale(1);"
-				data-image-url		= "images/alley-master-v2.jpg">
-				<img src="">
-
-					<div class="js-image scene-layer alley-margarite"
-					data-anchor-target 	= "#scene3"
-					data-0-top	 		= "position:!absolute; filter: blur(6px);"
-					data--8000-top 		= "filter: blur(3px);"
-					data-0-bottom 		= "filter: blur(0px);"
-					data-image-url		= "images/alley-margarite.png">
-					<img src=""></div>
-
-					<div class="js-image scene-layer alley-mephisto"
-					data-anchor-target 	= "#scene3"
-					data-0-top	 		= "position:!absolute; display:!block; opacity: 0.0; filter: blur(2px); transform: translate3d(-600px, 0, 0px);"
-					data--8000-top	 	= "opacity: 0.6; filter: blur(2px); transform: translate3d(0px, 0, 0px);"
-					data-0-bottom 		= "opacity: 1.0; filter: blur(0px);"
-					data-image-url		= "images/alley-mephisto.jpg">
-					<img src=""></div>
-
-				</div>
-
-				<div class="js-image scene-layer alley-rain rain-one"
-					data-anchor-target 	= "#scene3"
-					data-image-url		= "images/alley-rain-long.png">
+			data-101-top			= "position: !relative;"
+			data--100-top			= "position: !fixed; top: 0%;"
+			data--14500-top		= "top:0%;"
+			data--16000-top		= "top:-100%"
+			data--16001-top		= "position:!relative;">
+				<div class="overflow" 
+				data-101-top		= "opacity: 0"
+				data--100-top		= "opacity: 1">
+					<div class="js-image scene-layer alley-master"
+					data-anchor-target	= "#scene3"
+					data-500-top		= "display:!block; opacity: 0; transform: translate3d(-600px, 720px, 0px) scale(1.8);"
+					data--1000-top		= "opacity: 1; transform: translate3d(-500px, 420px, 0px) scale(1.6);"
+					data--2000-bottom 	= "transform: translate3d(50px, -944px, 0px) scale(1);"
+					data-0-bottom 		= "transform: translate3d(50px, -944px, 0px) scale(1);"
+					data-image-url		= "images/alley-master-v2.jpg">
 					<img src="">
-				</div>
-				<div class="js-image scene-layer alley-rain rain-two"
-					data-anchor-target 	= "#scene3"
-					data-image-url		= "images/alley-rain-long-fade.png">
-					<img src="">
-				</div>
+						<div class="overflow">
+							<div class="js-image scene-layer alley-margarite"
+							data-anchor-target 	= "#scene3"
+							data-0-top	 		= "position:!absolute; filter: blur(6px);"
+							data--8000-top 		= "filter: blur(3px);"
+							data-0-bottom 		= "filter: blur(0px);"
+							data-image-url		= "images/alley-margarite.png">
+							<img src=""></div>
 
-				<!--<div class="js-image scene-layer alley-rain rain-three"
-					data-anchor-target 	= "#scene3"
-					data-top			= "display: none;"
-					data--8000-top		= "display: block;"
-					data-image-url		= "images/rain-2.gif">
-					<img src="">
-				</div>-->
-
+							<div class="js-image scene-layer alley-mephisto"
+							data-anchor-target 	= "#scene3"
+							data-0-top	 		= "position:!absolute; display:!block; opacity: 0.0; filter: blur(2px); transform: translate3d(-600px, 0, 0px);"
+							data--8000-top	 	= "opacity: 0.6; filter: blur(2px); transform: translate3d(0px, 0, 0px);"
+							data-0-bottom 		= "opacity: 1.0; filter: blur(0px);"
+							data-image-url		= "images/alley-mephisto.jpg">
+							<img src="">
+							</div>
+							<div class="js-image scene-layer alley-rain rain-one"
+								data-anchor-target 	= "#scene3"
+								data-image-url		= "images/alley-rain-long.png">
+								<img src="">
+							</div>
+							<div class="js-image scene-layer alley-rain rain-two"
+								data-anchor-target 	= "#scene3"
+								data-image-url		= "images/alley-rain-long-fade.png">
+								<img src="">
+							</div>							
+						</div>
+					</div>
+				</div>		
+				<div class="test">
+				</div>
 			</div>
 		</div>
-
-		<section class="intermission three" id="intermission3">
-
+		<section class="intermission three" id="intermission3"
+			data-16001-top 		= "position:!relative; top:0;"
+			data-16000-top 		= "position:!fixed; opacity:0;"
+			data-15000-top		= "top:830px;"
+			data-14000-top 		= "position:!fixed; top:830px;"
+			data-14100-top 		= "opacity:1"
+			data-701-top		= "position:!fixed;"
+			data-700-top 		= "position:!relative; top:0px">
 			<div class="intermission-gradient-top"></div>
 			<div class="intermission-gradient-vignette"></div>
 
@@ -605,16 +613,16 @@
 			</div><!-- End Intermission-Content -->
 
 			<div class="intermission-gradient-bottom"></div>
+		</section>	
 
-		</section>
 		<div id="scene4" class="scene part4 "> <!-- Part 4 -->
-				<div class="body-gradient-flood gradient-4 night scene-container"
-				data-anchor-target  = "#scene4"
-				data-1-top			= "position: !relative;"
-				data-0-top			= "position: !fixed; top: 0%;"
-				data--100-bottom		= "top:0%;"
-				data--1600-bottom		= "top: -100%; position:!relative">
-
+			<div class="body-gradient-flood gradient-4 night scene-container"
+			data-anchor-target  = "#scene4"
+			data-1-top			= "position: !relative;"
+			data-0-top			= "position: !fixed; top: 0%;"
+			data--12000-top		= "top:0%;"
+			data--13000-top		= "top: -200%;">
+				<div class="overlay">
 					<div class="spot-gradient"></div>
 
 					<div class="scene-layer moon"
@@ -680,11 +688,11 @@
 					data--8000-top		= "opacity: 0; transform: scale(0.40) translate3d(1%, -60%, 0);"
 					data--10000-top		= "opacity: 1;">
 					</div>
-
-
 				</div>
+				<div class="test">
+				</div>
+			</div>				
 		</div>
-
 		<!-- Intermission 4 -->
 		<section class="intermission four" id="intermission4">
 			<header> </header>
@@ -803,7 +811,6 @@
 			</div>
 			<footer></footer>
 		</section>
-
 </div>
 
 <div class="clear"></div>

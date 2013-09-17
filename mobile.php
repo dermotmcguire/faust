@@ -18,7 +18,7 @@
 
 	<!-- Mobile Specific Metas
  	================================================== -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
   	================================================== -->
@@ -28,7 +28,7 @@
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-  	<script type="text/javascript" src="/min/b=js&amp;f=smartpreload.js,modernizr.custom.js,jquery.inview.js,howler.min.js,sounds.js,smooth-scroll.js,jquery.columnizer.js,main.js"></script>
+  	<script type="text/javascript" src="/min/b=js&amp;f=smartpreload.js,modernizr.custom.js,jquery.inview.js,howler.min.js,sounds.js,smooth-scroll.js,jquery.columnizer.js,main-mobile.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
@@ -47,29 +47,106 @@
 
 <body>
 
-This is the mobile version of the site.
+	<!--Begin Pattern HTML-->
+		<div class="wrap container" id="wrap">
+			<a href="#menu" class="menu-link sixteen columns">More</a>
+			<aside class="oc" id="menu eight columns" role="navigation">
+				<div id="nav-menu" class="mobile-menu">
+					<ul>
+						<li class='has-sub'><a href='#intermission1'><span>Part I</span></a>
+							<ul>
+								<li class='has-sub'><a href="#intermission1"><span>Before the Fall</span></a>
+									<ul class="part1-submenu">
+					       				<li><a href="#the-project"><span>The Project</span></a></li>
+					       				<li class='last'><a href="#the-production"><span>The Production</span></a></li>
+					     			</ul>
+					   			</li>
+					 		</ul>
+						</li>
+						<li class='has-sub'><a href='#intermission2'><span>Part II</span></a>
+					 		<ul>
+					   			<li class='has-sub'><a href="#intermission2"><span>The Wages of Sin</span></a>
+				   					<ul class="part2-submenu">
+					      				<li><a href="#listen"><span>Listen</span></a></li>
+					       				<li class='last'><a href="#look"><span>Look</span></a></li>
+					     			</ul>
+				   				</li>
+					 		</ul>
+						</li>
+						<li class='has-sub'><a href='#intermission3'><span>Part III</span></a>
+					 		<ul>
+					   			<li class='has-sub'><a href="#intermission3"><span>The Stars Never Shine</span></a>
+					     			<ul class="part3-submenu">
+					       				<li><a href="#newsflash"><span>Newsflash</span></a></li>
+					       				<li class='last'><a href="#newsflash"><span>The Archives</span></a></li>
+					     			</ul>
+					   			</li>
+					 		</ul>
+						</li>
+						<li class='has-sub'><a href='#intermission4'><span>Part IV</span></a>
+					 		<ul>
+					   			<li class='has-sub'><a href="#intermission4"><span>Sign in Blood</span></a>
+					     			<ul class="part4-submenu">
+					       				<li class='last'><a href="#intermission4"><span>Contact Us</span></a></li>
+					     			</ul>
+					   			</li>
+					 		</ul>
+						</li>
+						<li class="audio-button">
+							<span class="icon-volume"></span>
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+			<!-- Start mobile content -->
+			<div class="mobile-sections sixteen columns">
+
+				<!-- Scene 0 -->
+				<section class="mobile-section" id="scene0">
+					Intro Section. Scene0.
+				</section>
+
+				<!-- Scene 1 -->
+				<section class="mobile-section" id="scene1">
+					City Fall Scene. Scene1.
+				</section>
+
+				<!-- Intermission 1 -->
+				<section class="mobile-section" id="intermission1">
+					The Project and The Production. Intermission1.
+				</section>
+
+				<!-- Scene 2 -->
+				<section class="mobile-section" id="scene2">
+					The Couch Scene. Scene2.
+				</section>
+
+				<!-- Intermission 2 -->
+				<section class="mobile-section" id="intermission2">
+					The Couch Scene. Scene2.
+				</section>
+
+				<!-- Scene 3 -->
+				<section class="mobile-section" id="scene3"></section>
+
+				<!-- Intermission 3 -->
+				<section class="mobile-section" id="intermission3"></section>
+
+				<!-- Scene 4 -->
+				<section class="mobile-section" id="scene4"></section>
+			</div>
+
+
+		<!-- End mobile content -->
+		</div>
 
 <div class="clear"></div>
-
 
 	<!-- Skrollr Lives Here! -->
 	<script src="js/skrollr.min.js" type="text/javascript"></script>
 	<script src="js/skrollr.menu.min.js" type="text/javascript"></script>
 	<script src="js/skrollr.ie.min.js" type="text/javascript"></script>
-
-	<!-- Set browser update warning -->
-	<script type="text/javascript">
-	var $buoop = {vs:{i:8,f:20,o:10.6,s:4,n:9}}
-		$buoop.ol = window.onload;
-		window.onload=function(){
-		 try {if ($buoop.ol) $buoop.ol();}catch (e) {}
-		 var e = document.createElement("script");
-		 e.setAttribute("type", "text/javascript");
-		 e.setAttribute("src", "http://browser-update.org/update.js");
-		 document.body.appendChild(e);
-	}
-	</script>
-
 
 <!-- End Document
 ================================================== -->
