@@ -164,5 +164,9 @@
 	"Different posts types can contain different content fields.":"Different posts types can contain different content fields.",
 	"Switching a post to a different type can result in content being lost if the same fields aren't present in both types.":"Switching a post to a different type can result in content being lost if the same fields aren't present in both types.",
 	"Sorry, that category could not be updated.":"Sorry, that category could not be updated.",
-	"Creating a New Category":"Creating a New Category"
+	"Creating a New Category":"Creating a New Category",
+	"Blog post page path":"Blog post page path",
+	"Slug format":"Slug format",
+	"Akismet API key":"Akismet API key",
+	"Notify author of new comments":"Notify author of new comments"
 }

@@ -1,0 +1,305 @@
+/* $MOBILE-UNIQUE STYLES
+================================================== */
+
+/* Off-canvas layout...*/
+
+.wrap {
+	position: relative;
+	}
+
+	.menu-container {
+			clear:both;
+			overflow: hidden;
+			width: 100%;
+			font-size: 28px;
+			position: fixed;
+			padding: 0.5em 0em 0.5em 2.25em;
+			background-color: #351330;
+			-webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .5);
+			box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .5);
+
+			z-index: 999;
+		}
+
+			a.menu-link {
+				margin: -1em;
+				padding: 1em 2em;
+    			position: relative;
+			    float: left;
+			    display: block;
+			    color: #F7F7F6;
+			    text-decoration: none;
+				font-family: 'League Gothic', Copperplate, 'Copperplate Gothic Light', fantasy;
+				-webkit-transition: all 0.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-ms-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+
+				-webkit-tap-highlight-color: rgba(black, 0);
+
+			}
+				a.menu-link:before {
+				content: "";
+				position: absolute;
+			 	left: -.25em;
+			  	top: 1.07em;
+				width: 1em;
+				height: 0.125em;
+				background: white;
+				box-shadow:
+					0 0.25em 0 0 white,
+					0 0.5em 0 0 white;
+				-webkit-transition: all 0.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-ms-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+			}
+
+				a.menu-link:hover,
+				a.menu-link:active {
+					color: #700700;
+				}
+				a.menu-link:hover:before,
+				a.menu-link:active:before {
+				background: #700700;
+				box-shadow:
+					0 0.25em 0 0 #700700,
+					0 0.5em 0 0 #700700;
+				}
+
+
+		.open-close {
+			display: block;
+			position: fixed;
+			width: 100%;
+			top: 0;
+			height: 0%;
+			margin-left: 0%;
+			overflow: hidden;
+			clear: both;
+
+			-webkit-transition: all 0.3s ease-out;
+			-moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+
+			z-index: 998;
+		}
+
+			.open-close.active {
+				display: block;
+				height: 640px;
+				margin-left: 0%;
+			}
+			@media only screen and (max-width: 959px) and (min-width: 768px) {
+				.open-close.active {
+					height: 320px;
+				}
+			}
+
+#mobile-container {
+	clear: both;
+	width: 100%;
+	margin-left: 0; float: left;
+}
+
+#mobile-container { position: relative; }
+
+.mobile-scenes {
+	clear: both;
+	margin: 0 auto;
+}
+
+
+
+	/* $NAV
+	================================================== */
+
+	#nav-menu {
+		margin-top: 40px;
+	  	top: 0;
+	  	left: 0;
+		width: 100%;
+	  	background: rgba(223, 223, 223, 1);
+		-webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .5);
+		box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, .5);
+	}
+
+	#nav-menu > ul {
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	vertical-align: middle;
+	line-height: 21px;
+  	display: block;
+	}
+
+	li.section-link {
+		display: block;
+		position: relative;
+		margin: 10px auto !important;
+		padding: 0 0 10px 0;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+	}
+    	@media only screen and (max-width: 767px) {
+
+			li:last-child.section-link {
+				border-bottom: 0px solid #000000;
+			}
+		}
+
+		@media only screen and (min-width: 768px) {
+			li.section-link {
+				margin: 10px !important;
+			}
+			li:last-child.section-link {
+				border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+			}
+		}
+
+	li.section-link a.scene-link {
+		margin: -1em;
+		padding: 0.5em 0;
+		display: block;
+		position: relative;
+		margin: 0;
+		text-align: center;
+		font-family: 'League Gothic', Copperplate, 'Copperplate Gothic Light', fantasy;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 28px;
+		line-height: 30px;
+		font-weight: 400;
+		color: #17191D;
+		opacity: 0.8;
+		text-decoration: none !important;
+
+		z-index: 999;
+	}
+
+		ul li.section-link > a span {
+			/*border-bottom: 2px solid rgba(0, 0, 0, 0.4);*/
+		}
+
+	/* THE SUBMENUS */
+	#nav-menu > ul li .submenu {
+		position: relative;
+		width: 100%;
+		opacity: 1;
+		margin: 10px 0;
+		height: 28px;
+
+
+	}
+		#nav-menu > ul li .submenu .first,
+		#nav-menu > ul li .submenu .last,
+		#nav-menu > ul li .submenu .center,
+		#nav-menu > ul li .submenu .amp {
+			float: left;
+			width: 128px;
+		    font-size: 18px;
+		    line-height:22px;
+			font-style: italic;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-family: 'League Gothic', Copperplate, 'Copperplate Gothic Light', fantasy;
+		}
+
+		#nav-menu > ul li .submenu .first {
+			margin: 0 0 0 5px;
+			text-align: right;
+		}
+		#nav-menu > ul li .submenu .last {
+			margin: 0 5px 0 0;
+			text-align: left;
+		}
+		#nav-menu > ul li .submenu .center {
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+		}
+		#nav-menu > ul li .submenu .amp {
+			display: inline;
+			font-size: 19px;
+			margin: 1px 5px;
+			font-style: normal;
+			width: 10px;
+		}
+
+			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				#nav-menu > ul li .submenu .first,
+				#nav-menu > ul li .submenu .last,
+				#nav-menu > ul li .submenu .center {
+					width: 195px;
+				}
+			}
+
+			@media only screen and (min-width: 768px) {
+				#nav-menu > ul li .submenu .first,
+				#nav-menu > ul li .submenu .last,
+				#nav-menu > ul li .submenu .center {
+					width: 215px;
+				}
+			}
+
+		li.center a {
+			font-style: italic;
+			margin:-1em 0em;
+			padding: 1em 5px;
+			text-decoration: none !important;
+
+			z-index: 999;
+		}
+
+		li.first a {
+			font-style: italic;
+			margin: -1em 0em -1em -1em;
+			padding: 1em 5px 1em 0em;
+			text-decoration: none !important;
+
+			z-index: 999;
+		}
+		li.last a {
+			font-style: italic;
+			margin: -1em 0em -1em 0em;
+			padding: 1em 0em 1em 5px;
+			text-decoration: none !important;
+
+			z-index: 999;
+		}
+
+			@media only screen and (min-width: 768px) {
+				li.first a {
+					margin: -1em 0em -1em 0em;
+					padding: 1em 5px 1em 0em;
+				}
+			}
+
+			@media only screen and (min-width: 768px) {
+				li.last a {
+					margin: -1em 0em -1em 0em;
+					padding: 1em 0em 1em 0em;
+				}
+			}
+
+
+	/* The hover state of the menu/submenu links */
+	#nav-menu > ul li a.active,
+	#nav-menu > ul li a:hover,
+	#nav-menu > ul li:hover > a {
+	  color: #700700;
+	  opacity: 1;
+	}
+
+	/* Showing the submenu when the user is hovering the parent link */
+	#nav-menu > ul li:hover > .submenu {
+
+	  }
+
+
+
+

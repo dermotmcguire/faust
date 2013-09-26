@@ -46,7 +46,7 @@
 					</ul>
 
 				</div>
-				<a href="#scene-one"><span class="ready-arrow pulse"> </span></a>
+				<span class="ready-arrow pulse"> </span>
 			</div>
 			<!-- end title -->
 		</div>

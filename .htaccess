@@ -1,0 +1,24 @@
+# AuthType Basic
+# AuthName "Access Restricted: www.faust-musical.com"
+# AuthUserFile /home/174880/domains/faust-musical.com/html/.htpasswd
+# Require valid-user
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+RewriteEngine On
+RewriteCond %{QUERY_STRING} !^desktop
+RewriteCond %{HTTP_USER_AGENT} "ipad|android|blackberry|googlebot-mobile|iemobile|iphone|ipod|#opera mobile|palmos|webos" [NC]
+RewriteRule ^$ http://www.faust-musical.com/mobile [L,R=302]
+
+# RewriteCond %{REQUEST_URI} !^/mobile.*$
+# RewriteCond %{HTTP_USER_AGENT} "android|blackberry|ipad|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
+# RewriteRule ^(.*)$ /mobile [L,R=302]
+
+# BEGIN (mt) controlled settings
+<IfModule pagespeed_module>
+  ModPagespeed on
+</IfModule>
+# END (mt) controlled settings

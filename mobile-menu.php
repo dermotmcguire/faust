@@ -5,6 +5,8 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 
 	<!-- Basic Page Needs
@@ -19,17 +21,34 @@
 	<!-- Mobile Specific Metas
  	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
 
 	<!-- CSS
   	================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Old+Standard+TT:400,400italic,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css"/>
-	<link rel='stylesheet' href="stylesheets/mobile.css"/>
+	<!-- <link rel='stylesheet' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css"/> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/fixed-positioning.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/animations.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/mobile-menu.css">
 
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-  	<script type="text/javascript" src="/min/b=js&amp;f=smartpreload.js,modernizr.custom.js,jquery.inview.js,howler.min.js,sounds.js,smooth-scroll.js,jquery.columnizer.js,main-mobile.js"></script>
+  	<script type="text/javascript" src="js/fastclick.js"></script>
+  	<script type="text/javascript" src="js/smartpreload.js"></script>
+  	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+  	<script type="text/javascript" src="js/jquery.inview.js"></script>
+  	<script type="text/javascript" src="js/howler.min.js"></script>
+  	<script type="text/javascript" src="js/sounds.js"></script>
+  	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+  	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
+  	<script type="text/javascript" src="js/main-mobile.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
@@ -48,7 +67,7 @@
 
 <body>
 
-	<!--Begin Pattern HTML-->
+	<!--COPY THIS HTML - MAKE SURE THIS EVERYTHING IS WRAPPED INSIDE #WRAP-->
 	<div class="wrap" id="wrap">
 
 		<div class="menu-container slideDown">
@@ -57,31 +76,31 @@
 
 		<aside class="open-close" id="menu" role="navigation">
 			<div id="nav-menu" class="mobile-menu">
-				<ul>
-					<li class="section-link"><a href='#scene1'><span>Part I: Before the Fall</span></a>
+				<ul class="container">
+					<li class="eight columns section-link"><a class="scene-link" href='#scene1'><span>Part I: Before the Fall</span></a>
 						<ul class="part1 submenu">
 		       				<li class='first'><a href="#intermission1"><span>The Project</span></a></li>
 		       				<li class='amp'><span>+</span></li>
 		       				<li class='last'><a href="#intermission1"><span>The Production</span></a></li>
 		     			</ul>
 					</li>
-					<li class="section-link"><a href='#scene2'><span>Part II: The Wages of Sin</span></a>
+					<li class="eight columns section-link"><a class="scene-link" href='#scene2'><span>Part II: The Wages of Sin</span></a>
 				 		<ul class="part2 submenu">
 		      				<li class='first'><a href="#intermission2"><span>Listen</span></a></li>
 		       				<li class='amp'><span>+</span></li>
 		       				<li class='last'><a href="#intermission2"><span>Look</span></a></li>
 		     			</ul>
 					</li>
-					<li class="section-link"><a href='#scene3'><span>Part III: The Stars Never Shine</span></a>
+					<li class="eight columns section-link"><a class="scene-link" href='#scene3'><span>Part III: The Stars Never Shine</span></a>
 				 		<ul class="part3 submenu">
 		       				<li class='first'><a href="#intermission3"><span>Newsflash</span></a></li>
 		       				<li class='amp'><span>+</span></li>
 		       				<li class='last'><a href="#intermission3"><span>The Archives</span></a></li>
 		     			</ul>
 					</li>
-					<li class="section-link"><a href='#scene4'><span>Part IV: Sign in Blood</span></a>
+					<li class="eight columns section-link"><a class="scene-link" href='#scene4'><span>Part IV: Sign in Blood</span></a>
 				 		<ul class="part4 submenu">
-		       				<li class='center'><a href="#intermission4"><span>Contact Us</span></a></li>
+		       				<li class='center'><a class="center-link" href="#intermission4"><span>Contact Us</span></a></li>
 		     			</ul>
 					</li>
 				</ul>
