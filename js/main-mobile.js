@@ -1,5 +1,6 @@
 var twoColumns;
-
+var initHeight;
+// var s;
 $(window).load(function() {
 	/* init flexslider */
 	$('.flexslider').flexslider();
@@ -44,15 +45,12 @@ $(window).load(function() {
 		    //return Math.abs(currentTop - targetTop) * 10;
 		},
 	});
-
-	s.refresh();
 });
 	
 $( document ).ready(function() {
 	archivesClick();
-
 	$(window).resize(function() {
-		s.refresh();
+		// skrollr.init().refresh();
 		// this checks the page to see if the content needs to
 		// be columnizes or not
 		if ($(window).width() < 600 && twoColumns != false) {
@@ -62,10 +60,6 @@ $( document ).ready(function() {
 			wrapArticle();
 		}
 	});
-
-	/* ======================================== */
-	/* 				ADDED BY DERMOT				*/
-	/* ======================================== */
 
 	/* Top Menu click handlers */
 	$( ".menu-link" ).click(function() {
@@ -80,25 +74,36 @@ $( document ).ready(function() {
     $(function() {
     FastClick.attach(document.body);
 	});
+	document.addEventListener("touchstart", function(){
+		// skrollr.init().refresh();
+	}, true)
 
-	document.addEventListener("touchstart", function(){}, true)
+	// initHeight = $("#skrollr-body").height();
+	
 
-	/* ======================================== */
-	/* 				ADDED BY DERMOT				*/
-	/* ======================================== */
+	// flexArrows = document.getElementsByClassName('flex-next')
+
+	// for (i=0; i<flexArrows.length; i++){
+	// 	flexArrows[i].addEventListener("touchstart", function(){
+	// 		skrollr.init().refresh();
+	// 	}, true);
+	// }
+
 });
 
 //columnizes
 function wrapArticle() {
+	// skrollr.init().refresh();
 	twoColumns = true;
 	$('.two-cols').columnize({
 		columns:2,
-		buildOnce: true
+		buildOnce: false
 	});
 }
 
 //de-columnizes
 function unwrapArticle() {
+	// skrollr.init().refresh();
 	twoColumns = false;
 	$(".article-column p").unwrap();
 	$(".column p").unwrap();
@@ -109,6 +114,7 @@ function unwrapArticle() {
 }
 
 function archivesClick() {
+	// skrollr.init().refresh();
 	$(".archive-reveal-button").click(function() {
 		$(this).siblings(".archive-content").slideToggle("slow", function() {
 			if ($(this).is(':visible')){

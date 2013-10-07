@@ -1,5 +1,6 @@
 $(window).resize(function() {
 	setMargins();
+	skrollr.init().refresh();
 });
 
 $( document ).ready(function() {
@@ -17,10 +18,71 @@ $( document ).ready(function() {
 	});
 
 	/* init skrollr */
-	skrollr.init({
+	// skrollr.init({
+	// 	smoothScrolling: false,
+	// 	forceHeight: false
+	// });
+
+ 	var s = skrollr.init({
 		smoothScrolling: false,
 		forceHeight: false
 	});
+
+	skrollr.menu.init(s, {
+		//skrollr will smoothly animate to the new position using `animateTo`.
+		animate: true,
+
+		//The easing function to use.
+		easing: 'sqrt',
+
+		//How long the animation should take in ms.
+		duration: function(currentTop, targetTop) {
+		    //By default, the duration is hardcoded at 500ms.
+		    return 500;
+
+		    //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+		    //return Math.abs(currentTop - targetTop) * 10;
+		},
+	});
+	skrollr.init().refresh();
+	int1 = $("#intermission1").offset().top;
+	int2 = $("#intermission2").offset().top;
+	int3 = $("#intermission3").offset().top;	
+	int4 = $("#intermission4").offset().top;
+	linkLook = $("#look").offset().top;
+	linkListen = $("#listen").offset().top;
+	// linkArchives = $("#the-archives").offset().top;
+	linkNewsflash = $("#newsflash").offset().top;
+
+	$(".link-look").attr("data-menu-top", linkLook);
+	$(".link-listen").attr("data-menu-top", linkListen);
+	$(".link-the-archives").attr("data-menu-top", linkNewsflash);
+	$(".link-newsflash").attr("data-menu-top", linkNewsflash);
+	$(".link-1").attr("data-menu-top", int1);
+	$(".link-2").attr("data-menu-top", int2);
+	$(".link-3").attr("data-menu-top", int3);
+	$(".link-4").attr("data-menu-top", int4);
+
+	//KEEP THIS STUFF IT OPENS THE INTERMISSIONS
+    $("a[href*=#]").on('click', function(e) {
+      var locationToGo = $(this).attr('href');
+
+      // $('.more-info').hide();
+	    if (locationToGo == '#the-project' ){ 
+	        $('.more-info.one').show('slow');
+	    };
+	    if (locationToGo == '#the-production') {
+	        $('.more-info.one').show('slow');
+	    };
+
+	    if (locationToGo == '#listen' || locationToGo == '#look') {
+	        $('.more-info.two').show('slow');
+	    };
+	    if (locationToGo == '#newsflash') {
+	        $('.more-info.newsflash.three').show('slow');
+	    };
+    });
+
 
 });
 
@@ -85,8 +147,29 @@ function intermissionClick(){
 		// $(".more-info-button").closest('.intermission-main').children('.more-info').toggle();
 		$('.more-info.four').slideToggle();
 	});
+	resetDataPoints();
 
+}
 
+function resetDataPoints(){
+	console.log("update points");
+	int1 = $("#intermission1").offset().top;
+	int2 = $("#intermission2").offset().top;
+	int3 = $("#intermission3").offset().top;	
+	int4 = $("#intermission4").offset().top;
+	linkLook = $("#look").offset().top;
+	linkListen = $("#listen").offset().top;
+	linkNewsflash = $("#newsflash").offset().top;
+	// linkArchives = $("#the-archives").offset().top;
+
+	$(".link-look").data("data-menu-top", linkLook);
+	$(".link-listen").data("data-menu-top", linkListen);
+	$(".link-newsflash").data("data-menu-top", linkNewsflash);
+	$(".link-newsflash").data("data-menu-top", linkNewsflash);
+	$(".link-1").data("data-menu-top", int1);
+	$(".link-2").data("data-menu-top", int2);
+	$(".link-3").data("data-menu-top", int3);
+	$(".link-4").data("data-menu-top", int4);
 }
 
 //SETS UP THE VARIABLES NEEDED FOR THE PROGESS BAR
@@ -137,6 +220,7 @@ function progressBar(percent, $element) {
 					$("body").css("overflow","hidden");
 					$("body").css("height","auto");
 				});
+				skrollr.init().refresh();
 			};
         }
 	},

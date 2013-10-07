@@ -23,20 +23,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cleartype" content="on">
 
 
 	<!-- CSS
   	================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Old+Standard+TT:400,400italic,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,flexslider.css,mobile.css"/>
-
+	<!-- <link rel='stylesheet' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,flexslider.css,mobile.css"/> -->
+	<link rel='stylesheet' type="text/css" href="stylesheets/base.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/skeleton.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/fixed-positioning.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/animations.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/mobile.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/flexslider.css">
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-	<script type="text/javascript" src="/min/b=js&amp;f=fastclick.js,smooth-scroll.js,jquery.columnizer.js,jquery.flexslider.js,skrollr.min.js,skrollr.menu.min.js,main-mobile.js"></script>
-
+	<!-- J<script type="text/javascript" src="/min/b=js&amp;f=audioplayer.min.js,fastclick.js,jquery.columnizer.js,jquery.flexslider.js,skrollr.min.js,skrollr.menu.min.js,main-mobile.js"></script> -->
+	<script type="text/javascript" src="js/audioplayer.min.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.menu.min.js"></script>
+	<script type="text/javascript" src="js/main-mobile.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="javascripts/skrollr.ie.min.js" type="text/javascript"></script>
@@ -87,7 +97,6 @@
 				</ul>
 			</div>
 		</aside>
-
 		<!-- Start mobile content -->
 		<div class="mobile-container" id="skrollr-body">
 			<!-- Scene 0 -->
@@ -112,10 +121,13 @@
 			<!-- Scene 1 -->
 			<section class="mobile-section scene part1" id="scene1">
 				<div class="faust-container"
-					data-0-top	= "opacity:0; display: block; top: -10%;"
-					data-0-bottom	= "opacity:1; display: block; top:75% "
-					data--100-bottom = "opacity: 0; display: none; top: 75%">
+					data-0-top	= "opacity:1;"
+					data-0-bottom	= "opacity:1;">
 					<div class="js-image faust-falling"
+						data-2p-top 		= "opacity:0.0; top:0%"
+						data--5p-top		= "opacity:1.0; top: 15%;"
+						data--100p-top		= "opacity: 1.0; top: 50%;"
+						data--200p-top		= "opacity: 1.0; top: 100%"
 						data-image-url	 	= "images/sprite-faust-falling-mobile.png">
 					</div>
 				</div>
@@ -196,6 +208,7 @@
 						<div class="main-article-content">
 							<?php perch_content('Listen-Intro'); ?>
 							<?php perch_content('Listen-TrackLinks'); ?>
+							<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
 						</div>
 					</li>
 					<li>

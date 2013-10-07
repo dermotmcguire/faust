@@ -1,7 +1,3 @@
-# AuthType Basic
-# AuthName "Access Restricted: www.faust-musical.com"
-# AuthUserFile /home/174880/domains/faust-musical.com/html/.htpasswd
-# Require valid-user
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -19,6 +15,17 @@ RewriteRule ^$ http://www.faust-musical.com/mobile [L,R=302]
 
 # BEGIN (mt) controlled settings
 <IfModule pagespeed_module>
-  ModPagespeed on
+  ModPagespeed off
 </IfModule>
 # END (mt) controlled settings
+
+# HTML5 MIME type support
+AddType audio/mpeg .mp3
+AddType audio/ogg .ogg
+
+# Font MIME type support
+AddType application/vnd.ms-fontobject    .eot
+AddType application/x-font-opentype      .otf
+AddType image/svg+xml                    .svg
+AddType application/x-font-ttf           .ttf
+AddType application/font-woff            .woff

@@ -63,22 +63,22 @@ $( document ).ready(function() {
 });
 
 var scene1sounds = new Howl({
-  urls: ['sounds/scene1-combined.mp3', 'sounds/scene1-combined.ogg'],
+  urls: ['sounds/scene1-combined.ogg', 'sounds/scene1-combined.mp3'],
   buffer: true,
   volume: 0.7
 });
 var scene2sounds = new Howl({
-  urls: ['sounds/scene2-combined.mp3', 'sounds/scene2-combined.ogg'],
+  urls: ['sounds/scene2-combined.ogg', 'sounds/scene2-combined.mp3'],
   buffer: true,
   volume: 0.7
 });
 var scene3sounds = new Howl({
-  urls: ['sounds/scene3-combined.mp3', 'sounds/scene3-combined.ogg'],
+  urls: ['sounds/scene3-combined.ogg', 'sounds/scene3-combined.mp3'],
   buffer: true,
   volume: 0.7
 });
 var scene4sounds = new Howl({
-  urls: ['sounds/scene4-combined.mp3', 'sounds/scene4-combined.ogg'],
+  urls: ['sounds/scene4-combined.ogg', 'sounds/scene4-combined.mp3'],
   buffer: true,
   volume: 0.7
 });

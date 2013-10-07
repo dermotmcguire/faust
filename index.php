@@ -20,26 +20,27 @@
 	<!-- CSS
 	================================================== -->
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Old+Standard+TT:400,400italic,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-	<!-- <link rel='stylesheet' type='text/css' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,layout.css"> -->
-	<link rel='stylesheet' type='text/css' href="stylesheets/base.css">
-	<link rel='stylesheet' type='text/css' href="stylesheets/skeleton.css">
-	<link rel='stylesheet' type='text/css' href="stylesheets/fixed-positioning.css">
-	<link rel='stylesheet' type='text/css' href="stylesheets/animations.css">
-	<link rel='stylesheet' type='text/css' href="stylesheets/layout.css">
+	<!-- <link rel='stylesheet' href="/min/b=stylesheets&amp;f=base.css,skeleton.css,fixed-positioning.css,animations.css,layout.css"> -->
+	<link rel='stylesheet' type="text/css" href="stylesheets/base.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/skeleton.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/fixed-positioning.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/animations.css">
+	<link rel='stylesheet' type="text/css" href="stylesheets/layout.css">
 
 	<!-- JS
 	================================================== -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/conditionizr.js/2.2.0/conditionizr.min.js" ></script>
-	<!-- <script type="text/javascript" src="/min/b=js&amp;f=smartpreload.js,jquery.inview.js,howler.min.js,sounds.js,smooth-scroll.js,jquery.columnizer.js,skrollr.min.js,main.js"></script> -->
-	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<!--	<script type="text/javascript" src="/min/b=js&amp;f=smartpreload.js,audioplayer.min.js,modernizr.custom.js,jquery.inview.js,howler.min.js,sounds.js,smooth-scroll.js,jquery.columnizer.js,main.js"></script>-->
 	<script type="text/javascript" src="js/smartpreload.js"></script>
+	<script type="text/javascript" src="js/audioplayer.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="js/jquery.inview.js"></script>
 	<script type="text/javascript" src="js/howler.min.js"></script>
 	<script type="text/javascript" src="js/sounds.js"></script>
-	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+	<!--<script type="text/javascript" src="js/smooth-scroll.js"></script>-->
 	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 	<!--[if lt IE 9]>
@@ -97,7 +98,7 @@
 			<ul>
 				<li class='has-sub'><a href='#scene1'><span>Part I</span></a>
 					<ul>
-						<li class='has-sub'><a href="#intermission1"><span>Before the Fall</span></a>
+						<li class='has-sub'><a href="#intermission1" class="link-1"><span>Before the Fall</span></a>
 							<ul class="part1-submenu">
 			       				<li><a href="#the-project"><span>The Project</span></a></li>
 			       				<li class='last'><a href="#the-production"><span>The Production</span></a></li>
@@ -107,27 +108,27 @@
 				</li>
 				<li class='has-sub'><a href='#scene2'><span>Part II</span></a>
 			 		<ul>
-			   			<li class='has-sub'><a href="#intermission2"><span>The Wages of Sin</span></a>
+			   			<li class='has-sub'><a href="#intermission2" class="link-2"><span>The Wages of Sin</span></a>
 		   					<ul class="part2-submenu">
-			      				<li><a href="#listen"><span>Listen</span></a></li>
-			       				<li class='last'><a href="#look"><span>Look</span></a></li>
+			      				<li><a href="#listen" class="link-listen"><span>Listen</span></a></li>
+			       				<li class='last'><a href="#look" class="link-look"><span>Look</span></a></li>
 			     			</ul>
 		   				</li>
 			 		</ul>
 				</li>
 				<li class='has-sub'><a href='#scene3'><span>Part III</span></a>
 			 		<ul>
-			   			<li class='has-sub'><a href="#intermission3"><span>The Stars Never Shine</span></a>
+			   			<li class='has-sub'><a href="#intermission3" class="link-3"><span>The Stars Never Shine</span></a>
 			     			<ul class="part3-submenu">
-			       				<li><a href="#newsflash"><span>Newsflash</span></a></li>
-			       				<li class='last'><a href="#the-archives"><span>The Archives</span></a></li>
+			       				<li><a href="#newsflash" class="link-newsflash"><span>Newsflash</span></a></li>
+			       				<li class='last'><a href="#the-archives" class="link-the-archives"><span>The Archives</span></a></li>
 			     			</ul>
 			   			</li>
 			 		</ul>
 				</li>
 				<li class='has-sub'><a href='#scene4'><span>Part IV</span></a>
 			 		<ul>
-			   			<li class='has-sub'><a href="#intermission4"><span>Sign in Blood</span></a>
+			   			<li class='has-sub'><a href="#intermission4" class="link-4"><span>Sign in Blood</span></a>
 			     			<ul class="part4-submenu">
 			       				<li class='last'><a href="#intermission4"><span>Contact Us</span></a></li>
 			     			</ul>
@@ -244,7 +245,7 @@
 					data-800-top		= "display:!block; position:!relative; opacity: 0; transform: scale(1.2) translate3d(0,800px,0);"
 					data-450-top		= "opacity: 1;"
 					data-0-bottom 		= "transform: scale(1) translate3d(0,-20px,0);"
-					data-image-url		= "images/city-compilation1-v2.png">
+					data-image-url		= "images/city-compilation1.png">
 					<img src="">
 
 						<div class="intro-face">
@@ -351,8 +352,8 @@
 			data-anchor-target  = "#scene2"
 			data--1-top			= "position:!fixed;"
 			data-0-top			= "position:!relative; top: 0%;"
-			data--14300-top		= "top:0%"
-			data--15800-top		= "top:-100%; position:!relative;">
+			data--14100-top		= "top:0%"
+			data--14900-top		= "top:-100%; position:!relative;">
 
 				<div class="overflow">
 
@@ -422,7 +423,7 @@
 					<div class="js-image scene-layer faust-master"
 					data-anchor-target 	= "#scene2"
 					data-0-top			= "display:!block; opacity: 1.0; transform: translate3d(-10%, -30%, 0) scale(1.55);"
-					data-0-bottom		= "transform: translate3d(15%, -34%, 0) scale(0.6);"
+					data-0-bottom		= "transform: translate3d(15%, -31%, 0) scale(0.6);"
 					data-image-url		= "images/room-faust-master-v2.png">
 					<img src="">
 					</div>
@@ -442,8 +443,8 @@
 			data-anchor-target  = ".scene2no3d"
 			data--1-top			= "position:!fixed;"
 			data-0-top			= "position:!relative; top: 0%;"
-			data--14300-top		= "top:0%"
-			data--15800-top		= "top:-100%; position:!relative;">
+			data--14100-top		= "top:0%"
+			data--14900-top		= "top:-100%; position:!relative;">
 
 				<div class="overflow">
 
@@ -528,7 +529,7 @@
 
 
 		<!-- start intermission2 -->
-		<section class="intermission two" id="intermission2"
+		<section class="intermission two" id="intermission2" 
 		data-16501-top = "position:!relative; top:0px"
 		data-16500-top = "position:!fixed; top:2531px"
 		data-15000-top = "top:901px"
@@ -566,7 +567,7 @@
 								</div>
 							</div>
 
-							<div class="news-lines" id="intermission2"></div>
+							<div class="news-lines"></div>
 
 							<div class="news container">
 								<div class="narrative-text news-copy">
@@ -587,6 +588,7 @@
 								<div class="eight columns information-text" id="listen">
 									<?php perch_content('Listen-Intro'); ?>
 									<?php perch_content('Listen-TrackLinks'); ?>
+									<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
 									<div class="article-divide"></div>
 								</div>
 
@@ -610,14 +612,14 @@
 		<!-- start part3 .csstransforms3d -->
 		<div id="scene3" class="scene part3 gradient-3 csstransforms3d">
 			<div class="centered alley"
-			data-101-top		= "position: !relative;"
+			data--99-top		= "position: !relative;"
 			data--100-top		= "position: !fixed; top: 0%;"
 			data--14500-top		= "top:0%;"
 			data--16000-top		= "top:-100%"
 			data--16001-top		= "position:!relative;">
 
 				<div class="overflow"
-				data-101-top		= "opacity: 0"
+				data--99-top		= "opacity: 0"
 				data--100-top		= "opacity: 1">
 
 					<div class="js-image scene-layer alley-master"
@@ -674,14 +676,14 @@
 		<!-- start part3 .no-csstransforms3d -->
 		<div id="scene3" class="scene part3 gradient-3 no-csstransforms3d scene3no3d">
 			<div class="centered alley"
-			data-101-top			= "position: !relative;"
+			data--99-top			= "position: !relative;"
 			data--100-top			= "position: !fixed; top: 0%;"
 			data--14500-top			= "top:0%;"
 			data--16000-top			= "top:-100%"
 			data--16001-top			= "position:!relative;">
 
 				<div class="overflow"
-				data-101-top		= "opacity: 0"
+				data--99-top		= "opacity: 0"
 				data--100-top		= "opacity: 1">
 
 					<div class="js-image scene-layer alley-master"
@@ -838,8 +840,8 @@
 			data-anchor-target  = "#scene4"
 			data-1-top			= "position: !relative;"
 			data-0-top			= "position: !fixed; top: 0%;"
-			data--12000-top		= "top:0%;"
-			data--13000-top		= "top: -200%;">
+			data--11600-top		= "top:0%;"
+			data--12400-top		= "top: -200%;">
 
 				<div class="overlay">
 
@@ -920,11 +922,10 @@
 		<!-- start part4 .no-csstransforms3d -->
 		<div id="scene4" class="scene part4 no-csstransforms3d scene4no3d"> <!-- Part 4 -->
 			<div class="body-gradient-flood gradient-4 night scene-container"
-			data-anchor-target  = ".scene4no3d"
 			data-1-top			= "position: !relative;"
 			data-0-top			= "position: !fixed; top: 0%;"
-			data--12000-top		= "top:0%;"
-			data--13000-top		= "top: -200%;">
+			data--11600-top		= "top:0%;"
+			data--12400-top		= "top: -200%;">
 
 				<div class="overlay">
 
@@ -1087,6 +1088,11 @@
 	</div>
 	<div class="clear"></div>
 
+
+	<!-- load skrollr.min.js-->
+	<script src="js/skrollr.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/skrollr.menu.min.js"></script>
+
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="skrollr.ie.min.js"></script>
 	<![endif]-->
@@ -1103,6 +1109,7 @@
 		if (!Modernizr.csstransforms) {
 			$(".version-suggestion").css("display", "block");
 		}
+
 
 	</script>
 

@@ -3,7 +3,7 @@
  * Copyright 2012 WooThemes
  * Contributing Author: Tyler Smith
  */
-;
+
 (function ($) {
 
   //FlexSlider: Object Instance
@@ -460,11 +460,13 @@
                 }
               }
               el.removeEventListener('touchend', onTouchEnd, false);
-
               startX = null;
               startY = null;
               dx = null;
               offset = null;
+              $(".faust-falling").css("top","0");
+              skrollr.init().refresh();
+              // console.log("refresh");
             }
         }else{
             el.style.msTouchAction = "none";
@@ -722,7 +724,7 @@
           }
         } else { // FADE:
           if (!touch) {
-            console.log("that");
+            // console.log("that");
             //slider.slides.eq(slider.currentSlide).fadeOut(slider.vars.animationSpeed, slider.vars.easing);
             //slider.slides.eq(target).fadeIn(slider.vars.animationSpeed, slider.vars.easing, slider.wrapup);
 
@@ -730,7 +732,7 @@
             slider.slides.eq(target).css({"zIndex": 2}).animate({"opacity": 1}, slider.vars.animationSpeed, slider.vars.easing, slider.wrapup);
 
           } else {
-            console.log("this");
+            // console.log("this");
             slider.slides.eq(slider.currentSlide).css({ "opacity": 0, "zIndex": 1 });
             slider.slides.eq(target).css({ "opacity": 1, "zIndex": 2 });
             slider.wrapup(dimension);
