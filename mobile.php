@@ -20,7 +20,7 @@
 
 	<!-- Mobile Specific Metas
  	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1;">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta http-equiv="cleartype" content="on">
@@ -132,7 +132,7 @@
 					</div>
 				</div>
 				<div class="city">
-				    <img src="images/city-composite-tablet.jpg" class="city-composite" alt="scene1 cityscape" />
+				    <img src="images/city-composite-mobile.jpg"  data-interchange="[images/city-composite-tablet.jpg, (small)]" class="city-composite" alt="scene1 cityscape" />
 				</div>
 			</section>
 
@@ -181,7 +181,7 @@
 				<div class="room"
 				data-bottom-top = " transform: scale(2);"
 				data-top = "transform: scale(1);">
-				    <img src="images/room-composite-tablet-v2.jpg" class="room-composite" alt="scene2 room" />
+				    <img src="images/room-composite-mobile-v2.jpg" data-interchange="[images/room-composite-tablet-v2.jpg, (small)]" class="room-composite" alt="scene2 room" />
 			    </div>
 			</section>
 
@@ -229,7 +229,7 @@
 				<div class="alley"
 					data-bottom-top	= "transform: scale(2);"
 					data-top = "transform: scale(1); ">
-				    <img src="images/alley-composite-tablet.jpg" class="alley-composite" alt="scene3 alley" />
+				    <img src="images/alley-composite-mobile.jpg" data-interchange="[images/alley-composite-tablet.jpg, (small)]" class="alley-composite" alt="scene3 alley" />
 				</div>
 			</section>
 
@@ -284,7 +284,7 @@
 				<div class="moon"
 					data-bottom-top 	= "transform: scale(2); top:0px;"
 					data-top 		= "transform: scale(1); top: 0px;">
-				    <img src="images/moon-composite-tablet.jpg" class="moon-composite" alt="scene4 moon" />
+				    <img src="images/moon-composite-mobile.jpg" data-interchange="[images/moon-composite-tablet.jpg, (small)]" class="moon-composite" alt="scene4 moon" />
 				</div>
 			</section>
 
@@ -415,7 +415,19 @@
 	</div>
 
 <div class="clear"></div>
+  <script>
+      document.write('<script src=/js/vendor/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js><\/script>');
+    </script>
 
+  <script src="js/foundation.js"></script>
+  <script src="js/foundation.interchange.js"></script>
+  <!-- Other JS plugins can be included here -->
+
+  <script>
+    $(document).foundation();
+  </script>
 
 <!-- End Document
 ================================================== -->

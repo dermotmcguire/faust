@@ -78,6 +78,23 @@ $( document ).ready(function() {
 		// skrollr.init().refresh();
 	}, true)
 
+  $('#scene1').bind('inview', function (event, visible) {
+  	var inView;
+  	var prevView;
+    if (visible) {
+    	prevView = inView;
+    	inView = true;
+    	console.log(inView, prevView);
+		}
+		else {
+		prevView = inView;
+		inView = false;
+    	console.log(inView, prevView);
+		}
+		if (prevView != inView){
+			console.log("something");
+		}
+  	});
 	// initHeight = $("#skrollr-body").height();
 	
 
@@ -97,7 +114,7 @@ function wrapArticle() {
 	twoColumns = true;
 	$('.two-cols').columnize({
 		columns:2,
-		buildOnce: false
+		buildOnce: true
 	});
 }
 

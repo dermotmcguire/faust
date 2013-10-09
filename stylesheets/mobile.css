@@ -884,7 +884,7 @@
 	width: 100%;
 	display: block;
 	height: 100%;
-	background:url("../images/city-composite-tablet.jpg");
+	/*background:url("../images/city-composite-tablet.jpg");*/
 }
 
 	.city .city-composite {
@@ -907,6 +907,7 @@
 	display: block;
 	height: 100%;
 	position:relative!important;
+	/*background:url("../images/room-composite-tablet-v2.jpg");*/
 }
 
 .room .room-composite {
@@ -927,6 +928,7 @@
 	display: block;
 	height: 100%;
 	position: relative!important;
+	/*background:url("../images/alley-composite-tablet.jpg");*/
 }
 
 	.alley .alley-composite {
@@ -948,6 +950,7 @@
 	display: block;
 	height: 100%;
 	position:relative!important;
+	/*background:url("images/moon-composite-tablet.jpg");*/
 }
 
 	.moon .moon-composite {
